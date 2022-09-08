@@ -1,0 +1,50 @@
+{
+    "editor.fontSize": 12,
+    "editor.minimap.enabled": false,
+    "editor.tabSize": 8,
+    "editor.cursorStyle": "line",
+    "editor.insertSpaces": false,
+    "editor.lineNumbers": "on",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.wordWrap": "off",
+
+    "go.buildOnSave": "off",
+    "go.useLanguageServer": true,
+    "go.toolsManagement.autoUpdate": true,
+    "go.autocompleteUnimportedPackages": true,
+    "go.formatTool": "goimports",
+    "go.delveConfig": {
+        "dlvLoadConfig": {
+            "followPointers": true,
+            "maxVariableRecurse": 1,
+            "maxStringLen": 256,
+            "maxArrayValues": 64,
+            "maxStructFields": -1
+        },
+        "apiVersion": 2,
+        "showGlobalVariables": false,
+        "debugAdapter": "legacy",
+        "substitutePath": []
+    },
+    "go.coverOnSingleTest": true,
+    
+    "security.workspace.trust.untrustedFiles": "open",
+    "security.workspace.trust.enabled": false,
+
+    "terminal.external.osxExec": "iTerm.App",
+
+    "workbench.editor.enablePreview": false,
+    "workbench.sideBar.location": "right",
+    "workbench.startupEditor": "none",
+
+    "window.zoomLevel": 1,
+    "explorer.confirmDelete": false,
+    "remote.SSH.remoteServerListenOnSocket": true,
+    "remote.SSH.remotePlatform": {
+        "jimvm.cogolo.cloud": "linux",
+        "linux": "linux",
+        "jimvm": "linux",
+        "jlinux": "linux"
+    },
+    "extensions.ignoreRecommendations": true,
+}

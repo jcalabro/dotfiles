@@ -1,0 +1,135 @@
+#!/usr/bin/env bash
+
+export GOPATH=$(echo "$HOME/go" | sed 's/\/root/\/home\/jcalabro/g')
+export GOBIN="$GOPATH/bin"
+export PATH="$PATH:$GOPATH/bin"
+
+#
+# Golang aliases
+#
+alias gg="go build"
+alias g="go run main.go"
+alias i="go install"
+alias gt="go test ./... -race -covermode=atomic -v -count=1"
+alias gtq="go test ./... -race -covermode=atomic -count=1"
+alias gloc="cloc cmd pkg internal"
+
+#
+# Cloning in to the GOPATH
+#
+function goclone {
+    CLONE_PATH="$GOPATH/src/$1/$2"
+    mkdir -p $CLONE_PATH
+    cd $CLONE_PATH
+    git clone "git@$1:$2/$3" "$3"
+    cd "$CLONE_PATH/$3"
+}
+alias clone="goclone github.com"
+
+#
+# Function to easily jump to anywhere in the GOPATH
+#
+function godir {
+    basedir="$GOPATH/src"
+    # If not argument is provided, go the $basedir
+    # Otherwise, use the argument as a regex to jump to the first matching path
+    if [ -z $1 ]; then
+        pushd "${basedir}" > /dev/null
+    else
+        if which bfind &> /dev/null; then
+            newdir=$(bfind -type d -name ".*${1}.*" -1 "$GOPATH/src")
+        else
+            newdir=$(find "$GOPATH/src" -type d -path "*${1}*" -print -quit)
+        fi
+        pushd "${newdir}" > /dev/null
+    fi
+}
+
+#
+# Jump to go project
+#
+# Usage:
+# $ godir github.com organization repository
+#
+# e.g.:
+# $ godir github.com jcalabro dotfiles
+# or
+# $ godir github.com jcalabro/dotfiles
+#
+function godir {
+    # given github.com, jcalabro, repo
+    # try github.com/jcalabro/repo
+    TARGET_DIR="$GOPATH/src/$1/$2/$3"
+    cd "$TARGET_DIR" 2> /dev/null
+    if [ "$?" -eq "1" ]; then
+
+        # given github.com, jcalabro, repo
+        # try github.com/jcalabro/repo.git
+        cd "$TARGET_DIR.git" 2> /dev/null
+        if [ "$?" -eq "1" ]; then
+
+            # given github.com, jcalabro/repo
+            # try github.com/jcalabro/repo
+            TARGET_DIR="$GOPATH/src/$1/$2"
+            cd "$TARGET_DIR" 2> /dev/null
+            if [ "$?" -eq "1" ]; then
+
+                # given github.com, jcalabro/repo
+                # try github.com/jcalabro/repo.git
+                cd "$TARGET_DIR.git" 2> /dev/null
+                if [ "$?" -eq "1" ]; then
+                    echo "directory $TARGET_DIR does not exist"
+                    return 1
+                fi
+            fi
+        fi
+    fi
+}
+alias gh="godir github.com"
+alias gj="godir github.com jcalabro"
+
+#
+# Run a main file under a cmd folder
+# from a project's root directory
+#
+function run {
+    N=$(ls -l cmd | wc -l)
+    if [ "$N" -eq "1" ]; then
+        FIRST=$(ls -l cmd | awk '{print $7}')
+        go run "cmd/$FIRST/main.go" "$@"
+    else
+        # specify your own command
+        go run "cmd/$1/main.go" "${@:2}"
+    fi
+}
+
+#
+# Runs the named test
+#
+function gotest {
+    go test -v ./... -race -run "^($1)$"
+}
+
+function gotesthere {
+    go test -v . -race -run "^($1)$"
+}
+
+function dlvtest {
+    dlv test -- -test.v -test.run "^($1)$"
+}
+
+alias modon="export GO111MODULE=on"
+alias modoff="export GO111MODULE=off"
+
+#
+# pprof
+#
+PPROF_TMPDIR="$GOPATH"
+function capture_pprof {
+    go tool pprof -http=0.0.0.0:8080 "$1/debug/pprof/profile?seconds=5"
+}
+
+function gomodbypass {
+    export GOPROXY=direct
+    export GOSUMDB=off
+}

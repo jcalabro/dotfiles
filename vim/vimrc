@@ -1,0 +1,184 @@
+set encoding=utf-8
+
+" fix colorscheme in tmux
+set t_Co=256
+
+cabbrev vbl e $HOME/.bash_local
+cabbrev vbs e $HOME/.bash_secrets
+cabbrev vrc e $HOME/.vimrc
+cabbrev vt e .travis.yml
+
+" CtrlP ignore settings
+set wildignore+=*/gen/*,*.so,*.swp,*.zip,*/node_modules/*,*.swp,*.zip,*.jpeg,
+set wildignore+=*.o,*/www/*,*.out,*/bin/*,*.pyc,*/client/dist/*,
+set wildignore+=*/branches/*,*.obj,*.pdb,*/vendor/*,*/target/*,Cargo.lock,
+set wildignore+=**/*.rs.bk
+
+" Include plugins
+source $HOME/.vim_plugins
+
+colorscheme nighted
+
+if has("win32")
+    " fix copy paste
+    nmap <C-V> "+gP
+    imap <C-V> <ESC><C-V>i
+    vmap <C-C> "+y
+endif
+
+if has("gui_running")
+    set guifont=Monaco:h14
+    set lines=400 columns=400
+
+    " disable sidebars
+    set guioptions-=L
+    set guioptions-=r
+
+    " disable toolbars
+    set guioptions -=m 
+    set guioptions -=T
+    
+    if has("win32")
+        set guifont=Consolas:h14
+
+        " start in full screen
+        au GUIEnter * simalt ~x
+    endif
+endif
+
+" set the backspace to delete normally
+set backspace=indent,eol,start
+
+" Always show the filename and status line
+set laststatus=2
+
+" Switch between buffers without having to save first
+set hidden
+
+" Highlight while searching with / or ?.
+set incsearch
+
+" Faster redrawing
+set ttyfast
+
+" Map Ctrl+S to save
+noremap  <silent> <C-S>      :update<CR>
+vnoremap <silent> <C-S> <C-C>:update<CR>
+inoremap <silent> <C-S> <C-O>:update<CR>
+
+" Map Enter to cycle buffers in normal mode
+noremap  <silent> <Enter>      :bn<CR>
+
+" Map Ctrl+J to close buffer
+noremap  <silent> <C-J>      :bd<CR>
+vnoremap <silent> <C-J> <C-C>:bd<CR>
+inoremap <silent> <C-J> <C-O>:bd<CR>
+
+" Map Ctrl+Q to quit
+noremap  <silent> <C-Q>       :q<CR>
+inoremap <silent> <C-Q> <C-C> :q<CR>
+vnoremap <silent> <C-Q> <C-O> :q<CR>
+
+" Map :Q to :qall
+:command! -bar -bang Q qall<bang>
+
+" Turn on syntax highlighting
+syntax on
+
+" remove TODO highlighting
+hi clear Todo
+
+" Cycle between windows with Ctrl+N
+nmap <silent> <C-N> <C-w>w
+
+" Support multi-line paste in insert mode with Ctrl+h
+imap <C-H> <C-R>*
+
+" Remap jj and similar combinations to Escape in insert mode
+inoremap jj <Esc>
+inoremap jk <Esc>
+
+" Make the cursor a block
+let &t_ti.="\e[1 q"
+let &t_SI.="\e[5 q"
+let &t_EI.="\e[1 q"
+let &t_te.="\e[0 q"
+
+" Show the current time if you press F2
+:map <F2> :echo 'Current time is ' . strftime('%c')<CR>
+
+if !empty("USE_SPACES")
+    " Adjust tabs to 4 spaces
+    set tabstop=4
+    set shiftwidth=4
+    set softtabstop=4
+    set expandtab " make tabs spaces
+endif
+
+" Fix for NERDTree directory rendering issue
+let g:NERDTreeDirArrowExpandable="+"
+let g:NERDTreeDirArrowCollapsible="~"
+
+" Set NERDTree window size
+let g:NERDTreeWinSize=55
+
+" map CtrlP to ctrl+p
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
+" Map switching between tabs to H and L
+noremap  <C-h>      gT
+inoremap <C-h> <Esc>gT
+vnoremap <C-h> <Esc>gT
+noremap  <C-l>      gt
+inoremap <C-l> <Esc>gt
+vnoremap <C-l> <Esc>gt
+
+" Show the position of the cursor
+set ruler
+
+" Press Ctrl+K to duplicate the current buffer vertically
+noremap  <C-K>      :vert sb<Enter>
+inoremap <C-K> <Esc>:vert sb<Enter>
+vnoremap <C-K> <Esc>:vert sb<Enter>
+
+" Turn off search term highlighting
+set nohlsearch
+
+" Ctrl+a to comment
+noremap  <C-a>      :TComment<Enter>
+inoremap <C-a> <Esc>:TComment<Enter>
+vnoremap <C-a>      :TComment<Enter>
+
+" Press F1 or type :Time to insert the current time (helpful for logbooks)
+nmap <F1> i<C-R>=strftime("%H:%M")<CR> 
+imap <F1> <C-R>=strftime("%H:%M")<CR> 
+function! Time()
+    :call feedkeys("i". strftime("%H:%M "))
+endfunction
+cabbrev itime call Time()
+
+function! Todo()
+    :call feedkeys("i". "@TODO (jc): ")
+endfunction
+cabbrev todo call Todo()
+
+" Press F12 to insert an empty markdown bullet point
+nmap <F12> o- [ ] 
+imap <F12> <ESC>o- [ ] 
+
+" Type :xml to auto-format an xml document
+cabbrev xml %!xmllint --format -
+
+" Terminal mouse support
+set mouse=a
+
+" Toggle line numbers with Ctrl+\
+noremap  <C-\>      :set invnumber<Enter>
+inoremap <C-\> <Esc>:set invnumber<Enter>li
+
+" (MacOS only) Copy the entire buffer to the system clipboard
+cabbrev pbcopy %w !pbcopy <Enter>
+
+" Run goimports on save of go files
+let g:go_fmt_command = "goimports"

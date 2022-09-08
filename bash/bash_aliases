@@ -1,0 +1,111 @@
+#!/usr/bin/env bash
+
+#
+# Vim
+#
+export EDITOR="vim"
+alias vi="vim"
+alias v="vim"
+alias vba="vim ~/.bash_aliases"
+alias vbg="vim ~/.bash_go"
+alias vbw="vim ~/.bash_work"
+alias vbp="vim ~/.bashrc"
+alias vbs="vim ~/.bash_secrets"
+alias vbh="vim ~/.bash_history"
+alias vrc="vim ~/.vimrc"
+alias vrp="vim ~/.vim_plugins"
+alias vkc="vim ~/.kube/config"
+alias vtm="vim ~/.tmux.conf"
+alias vt="vim .travis.yml"
+
+#
+# Git
+#
+alias s="git status"
+alias b="git branch"
+alias gpr="git pull -r"
+alias gc="git checkout"
+alias gcb="git checkout -B"
+alias gc-="git checkout --"
+alias undo="git reset HEAD^"
+alias d="git diff"
+alias gl="git log"
+alias gs="git stash"
+alias am="git add -A; git commit -S -m"
+alias gcm="git commit -S -m"
+alias amend="git commit --amend -m"
+alias clean="git clean -fd"
+alias update="am 'update' && gp"
+
+function gp {
+    git branch --no-color | grep '*' | cut -f 2 -d " " | xargs -L1 git push -u origin
+}
+
+function gpsu {
+    git branch --no-color | grep '*' | awk '{print $2}' | xargs -L1 git push -u origin
+}
+
+#
+# ls/exa
+#
+which exa &> /dev/null
+if [ "$?" -eq "0" ]; then
+    alias ls="exa -l"
+else
+    alias ls="ls -lh --color"
+fi
+
+alias l="ls"
+
+#
+# tmux
+#
+alias tmux="tmux -2"
+alias t="tmux"
+alias tm="tmux"
+alias tl="tmux ls"
+alias tml="tmux l"
+alias ta="tmux a"
+alias tma="tmux a"
+alias a="tmux a"
+
+#
+# Grep/ripgrep
+#
+alias r="rg"
+
+#
+# Docker/docker-compose/kubernetes
+#
+alias dps="docker ps"
+alias dl="docker logs"
+alias di="docker images"
+alias dc="docker-compose"
+alias dcd="docker-compose down --volumes"
+alias dcu="docker-compose up -d"
+alias dbl="dc logs -f db"
+alias db=". db/shell.sh"
+alias k="kubectl"
+alias kx="kubectx"
+alias kn="kubens"
+alias pods="kubectl get pods"
+alias sts="kubectl get sts -o wide"
+alias deploy="kubectl get deploy -o wide"
+alias token="cat ~/.kube/config | grep token"
+
+function klogs {
+    kubectl get pods | rg $1 | head -n 1 | cut -f 1 -d " " | xargs kubectl logs -f
+}
+
+#
+# Misc
+#
+alias e="./unix.sh -run"
+alias m="make"
+alias rmr="rm -r"
+alias c="cargo"
+alias alogs="tail -f /tmp/air.log"
+
+function mac_netstat {
+    lsof -nP -i4TCP | grep -i listen
+}

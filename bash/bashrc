@@ -1,0 +1,279 @@
+#!/usr/bin/env bash
+
+function run_if_exists {
+    if [ -f $1 ]; then
+        source $1
+    fi
+}
+
+run_if_exists ~/.git-completion.bash
+
+#
+# Path
+#
+export PATH="$PATH:$HOME/.bin"
+export PATH="$PATH:$HOME/.bin/bin"
+export PATH="$PATH:$HOME/.bin/zig"
+export PATH="$PATH:$HOME/.bin/nodejs/bin"
+export PATH="$PATH:$HOME/.bin/go/bin"
+export PATH="$PATH:$HOME/.cargo/bin"
+export PATH="$PATH:$HOME/misc/4coder"
+export PATH="$PATH:$HOME/misc/nand2tetris/tools"
+export PATH="$PATH:/opt/homebrew/bin"
+export PATH="$PATH:/opt/homebrew/opt/llvm/bin"
+
+if [ -x "$(command -v brew)" ]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
+function bp {
+    pushd $HOME > /dev/null
+    source .bash_profile
+    popd > /dev/null
+}
+
+function prompt {
+  local BLACK="\[\033[0;30m\]"
+  local BLACKBOLD="\[\033[1;30m\]"
+  local RED="\[\033[0;31m\]"
+  local REDBOLD="\[\033[1;31m\]"
+  local GREEN="\[\033[0;32m\]"
+  local GREENBOLD="\[\033[1;32m\]"
+  local YELLOW="\[\033[0;33m\]"
+  local YELLOWBOLD="\[\033[1;33m\]"
+  local BLUE="\[\033[0;34m\]"
+  local BLUEBOLD="\[\033[1;34m\]"
+  local PURPLE="\[\033[0;35m\]"
+  local PURPLEBOLD="\[\033[1;35m\]"
+  local CYAN="\[\033[0;36m\]"
+  local CYANBOLD="\[\033[1;36m\]"
+  local WHITE="\[\033[0;37m\]"
+  local WHITEBOLD="\[\033[1;37m\]"
+  local RESETCOLOR="\[\e[00m\]"
+
+  export PS1="\n$CYANBOLD\h $RED\u $BLUEBOLD\D{%F %T} $CYANBOLD\w $RESETCOLOR$GREENBOLD\n$BLUEBOLD$ $RESETCOLOR"
+  export PS2=" | → $RESETCOLOR"
+}
+
+prompt
+
+#
+# Make bash_history record much longer (default is 500)
+#
+export HISTFILESIZE=10000000
+
+#
+# Overrides some default keybindings so vim controls work
+#
+stty -ixon
+
+#
+# Iterm2 color scheme
+#
+export CLICOLOR=1
+
+#
+# rabbitmq is installed to /usr/local/sbin over homebrew
+#
+export PATH="$PATH:/usr/local/sbin"
+
+#
+# Set Arch keybindings
+#
+xmodmap ~/.xmodmap &> /dev/null
+xset r rate 275 50 &> /dev/null
+
+#
+# Save dotfiles in the $HOME directory to source control
+#
+function save_dotfiles {
+    echo -n "Are you sure (y/N)? "
+    read answer
+    if [ "$answer" != "${answer#[Yy]}" ] ;then
+        echo "Saving"
+    else
+        echo "Exiting"
+        return
+    fi
+
+    pushd "$HOME/misc/dotfiles" > /dev/null
+    git add -A
+    git commit -S -m "updating dotfiles"
+    git push > /dev/null 2>&1
+    popd > /dev/null
+
+    echo "Done"
+}
+
+#
+# Use brew's python over local system python
+#
+export PATH="usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.local/bin:$HOME/bin:$PATH"
+
+#
+# On centos, check for modern versions of gcc first
+#
+export PATH="/opt/rh/devtoolset-10/root/bin:$PATH"
+
+#
+# Logbook
+#
+export LOGBOOK="$HOME/misc/logbook"
+
+function lb() {
+    pushd $LOGBOOK > /dev/null
+    P="$(date '+%Y-%m')"
+    mkdir -p $P
+    F="$P/$(date '+%m-%d-%Y').md"
+    cp -n template.md $F
+    vim $F
+    popd > /dev/null
+}
+
+#
+# Save logs
+#
+function clog {
+    pushd $LOGBOOK > /dev/null
+    git add -A
+    git commit -S -m "todays logs $(date '+%m-%d-%Y %H:%M:%S')"
+    git push
+    popd > /dev/null
+}
+
+#
+# Pull latest logs
+#
+function pl {
+    pushd $LOGBOOK > /dev/null
+    git pull -r
+    popd > /dev/null
+}
+
+#
+# Open yesterday's logs
+#
+function logbook {
+    TARGET_DATE=$1
+    if [ -z "$TARGET_DATE" ]; then
+        # default to yesterday's date
+        TARGET_DATE=$(date -d "yesterday" '+%m-%d-%Y')
+    fi
+
+    YEAR=$(echo $TARGET_DATE | cut -d '-' -f 3)
+    MONTH=$(echo $TARGET_DATE | cut -d '-' -f 1)
+    DIRECTORY="$YEAR-$MONTH"
+
+    curl "https://$GITHUB_TOKEN@raw.githubusercontent.com/jcalabro/logbook/main/$DIRECTORY/$TARGET_DATE.md"
+}
+
+
+#
+# Initialize pyenv if it is installed
+#
+which pyenv &> /dev/null
+if [ "$?" -eq "0" ]; then
+    eval "$(pyenv init -)"
+    eval "$(pyenv virtualenv-init -)"
+    export PYTHONPATH=".:$PYTHONPATH"
+    export PYENV_ROOT=$HOME/.pyenv
+    export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+    export PATH=$PYENV_ROOT/bin:${PATH}
+fi
+
+#
+# SSH keys
+#
+which ssh-agent &> /dev/null
+if [ "$?" -eq "0" ]; then
+    eval `ssh-agent` > /dev/null
+    ssh-add -A > /dev/null 2>&1
+
+    eval `ssh-add $HOME/.ssh/jim_public.pem > /dev/null 2>&1`
+    eval `ssh-add $HOME/.ssh/jcalabro.pem > /dev/null 2>&1`
+fi
+
+#
+# Resets the local DNS cache in macOS 10.12+
+#
+function flush_dns {
+    sudo killall -HUP mDNSResponder
+}
+
+#
+# Filter dupes function returns the set of unique rows
+# for the given input
+#
+function filter_dupes {
+    awk '!a[$0]++'
+}
+
+#
+# Quick base64 decode
+#
+function decode64 {
+    if [ $(uname -s) != "Linux" ]; then
+        echo "$1" | base64 -D
+    else
+        echo "$1" | base64 -d
+    fi
+}
+
+#
+# Find/Replace function
+#
+function replace {
+    grep -rl "$1" . | xargs sed -i "" "s/$1/$2/g"
+}
+
+function delpod {
+    if [ ! -z "$1" ]; then
+        kubectl get pods | grep $1 | cut -f 1 -d " " | xargs -L 1 kubectl delete pod
+    else
+        echo "No query specified, doing nothing"
+    fi
+}
+
+#
+# Clone the given directory in the gopath
+#
+function clone {
+    CLONE_PATH="$GOPATH/src/github.com/$1"
+    mkdir -p $CLONE_PATH
+    cd $CLONE_PATH
+    git clone "git@github.com:$1/$2" "$2"
+    cd "$CLONE_PATH/$2"
+}
+
+#
+# Initialize a public github repo with email and signing key
+#
+function init_public_repo {
+    git config --local user.email jamesrcalabro@gmail.com
+    git config --local user.signingkey "$HOME_SIGN_KEY"
+}
+
+function whatsmyip {
+    curl https://ipinfo.io
+}
+
+function restart_logtech {
+    ps aux | grep -i logi | grep -v login | awk '{print $2}' | xargs -L1 sudo kill -9
+}
+
+#
+# Run other files
+#
+run_if_exists ~/.bash_secrets
+run_if_exists ~/.bash_aliases
+run_if_exists ~/.bash_work
+run_if_exists ~/.bash_go
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export GIT_DISCOVERY_ACROSS_FILESYSTEM=true
+
+#
+# Go tooling takes priority
+#
+export PATH="$HOME/go/bin:$PATH"
+. "$HOME/.cargo/env"

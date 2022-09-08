@@ -1,0 +1,38 @@
+# Vim
+*.*.sw*
+
+# .vscode/
+debug.test
+
+.python-version
+
+*.DS_Store
+
+# IntelliJ products
+.idea/
+
+# Global bounce scripts
+bounce.sh
+
+# Tremor Tokens
+token.txt
+
+# codecov
+coverage.txt
+
+# Delve
+__debug_bin
+
+# R
+.RData
+.Rhistory
+
+# R testthat
+testthat-problems.rds
+
+# RSPM specific things
+src/rspm/main
+
+# pipenv
+Pipfile.lock
+Pipfile
