@@ -23,15 +23,12 @@
         },
         "apiVersion": 2,
         "showGlobalVariables": false,
-        "debugAdapter": "legacy",
         "substitutePath": []
     },
     "go.coverOnSingleTest": true,
     
     "security.workspace.trust.untrustedFiles": "open",
     "security.workspace.trust.enabled": false,
-
-    "terminal.external.osxExec": "iTerm.App",
 
     "workbench.editor.enablePreview": false,
     "workbench.sideBar.location": "right",
