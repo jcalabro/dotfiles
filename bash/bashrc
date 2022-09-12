@@ -126,8 +126,9 @@ function lb() {
     mkdir -p $P
     F="$P/$(date '+%m-%d-%Y').md"
     cp -n template.md $F
+    FULL_PATH=$(pwd)/$F
     popd > /dev/null
-    vim $F
+    vim $FULL_PATH
 }
 
 #
