@@ -34,7 +34,7 @@
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "none",
 
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 2,
     "explorer.confirmDelete": false,
     "remote.SSH.remoteServerListenOnSocket": true,
     "remote.SSH.remotePlatform": {
