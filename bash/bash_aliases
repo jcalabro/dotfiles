@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
 
 #
+# SSH
+#
+alias j="ssh jlinux"
+alias jimvm="ssh jimvm"
+
+#
 # Vim
 #
 export EDITOR="vim"
