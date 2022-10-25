@@ -61,6 +61,7 @@ prompt
 # Make bash_history record much longer (default is 500)
 #
 export HISTFILESIZE=10000000
+export HISTSIZE=10000000
 
 #
 # Overrides some default keybindings so vim controls work
