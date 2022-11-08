@@ -17,6 +17,7 @@ function install_dotfiles {
     ln -sf $DOTFILE_BASE/bash/bashrc       $HOME/.bashrc
     ln -sf $DOTFILE_BASE/bash/bash_aliases $HOME/.bash_aliases
     ln -sf $DOTFILE_BASE/bash/bash_go      $HOME/.bash_go
+    ln -sf $DOTFILE_BASE/bash/bash_work    $HOME/.bash_work
 
     #
     # Git

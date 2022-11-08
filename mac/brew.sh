@@ -28,6 +28,7 @@ FORMULAE=(
     kubernetes-cli
     kubectx
     mariadb
+    postgresql
     protobuf
     protoc-gen-go
     pyenv
