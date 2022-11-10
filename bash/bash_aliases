@@ -112,6 +112,7 @@ alias rmr="rm -r"
 alias c="cargo"
 alias fail="tail -f"
 alias cdt="gh jcalabro/trunk"
+alias mw="make wasm"
 
 function mac_netstat {
     lsof -nP -i4TCP | grep -i listen
