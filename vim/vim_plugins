@@ -21,7 +21,7 @@ Plug 'rust-lang/rust.vim'
 Plug 'cespare/vim-toml'
 Plug 'ziglang/zig.vim'
 Plug 'jansedivy/jai.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'master', 'commit': '2ad659d8b1a3d7bef7dca7d33c6ab9363a729100', 'do': 'yarn install --frozen-lockfile'} " https://github.com/neoclide/coc.nvim/issues/3290#issuecomment-927218962
+Plug 'neoclide/coc.nvim', {'branch': 'master', 'commit': '2ad659d8b1a3d7bef7dca7d33c6ab9363a729100', 'do': 'npm i && yarn install --frozen-lockfile'} " https://github.com/neoclide/coc.nvim/issues/3290#issuecomment-927218962
 
 call plug#end()
 

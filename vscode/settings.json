@@ -42,4 +42,7 @@
         "jlinux": "linux"
     },
     "extensions.ignoreRecommendations": true,
+    "files.associations": {
+        "*.jai": "cpp"
+    },
 }
