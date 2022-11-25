@@ -45,5 +45,5 @@
     "window.zoomLevel": 2,
     "files.associations": {
         "*.jai": "cpp"
-    },
+    }
 }
