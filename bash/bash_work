@@ -2,4 +2,4 @@
 
 alias gocore="gh DuetDisplay gocore"
 
-export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/home/jcalabro/go/src/github.com/DuetDisplay/gocore/lib/linux_amd64/ffmpeg2.8"
+# export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/home/jcalabro/go/src/github.com/DuetDisplay/gocore/lib/linux_amd64/ffmpeg2.8"
