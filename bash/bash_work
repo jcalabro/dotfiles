@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
 alias gocore="gh DuetDisplay gocore"
+alias gw="gh DuetDisplay DuetDisplayWindowsUI"
 
 # export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/home/jcalabro/go/src/github.com/DuetDisplay/gocore/lib/linux_amd64/ffmpeg2.8"
