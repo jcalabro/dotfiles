@@ -7,12 +7,9 @@ export PATH="$PATH:$GOPATH/bin"
 #
 # Golang aliases
 #
-alias gg="go build"
-alias g="go run main.go"
-alias i="go install"
+alias g='go run -ldflags="compressdwarf=false" main.go'
 alias gt="go test ./... -race -covermode=atomic -v -count=1"
 alias gtq="go test ./... -race -covermode=atomic -count=1"
-alias gloc="cloc cmd pkg internal"
 
 #
 # Cloning in to the GOPATH
@@ -96,10 +93,10 @@ function run {
     N=$(ls -l cmd | wc -l)
     if [ "$N" -eq "1" ]; then
         FIRST=$(ls -l cmd | awk '{print $7}')
-        go run "cmd/$FIRST/main.go" "$@"
+        go run -ldflags="compressdwarf=false" "cmd/$FIRST/main.go" "$@"
     else
         # specify your own command
-        go run "cmd/$1/main.go" "${@:2}"
+        go run -ldflags="compressdwarf=false" "cmd/$1/main.go" "${@:2}"
     fi
 }
 
