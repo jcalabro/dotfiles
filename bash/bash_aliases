@@ -116,6 +116,7 @@ alias mw="make wasm"
 alias jai="jai-linux"
 alias z="zig"
 alias zb="zig build"
+alias zbr="zig build run"
 
 function mac_netstat {
     lsof -nP -i4TCP | grep -i listen
