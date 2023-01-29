@@ -10,7 +10,7 @@ cabbrev vt e .travis.yml
 
 " CtrlP ignore settings
 set wildignore+=*/gen/*,*.so,*.swp,*.zip,*/node_modules/*,*.swp,*.zip,*.jpeg,
-set wildignore+=*.o,*/www/*,*.out,*/bin/*,*.pyc,*/client/dist/*,
+set wildignore+=*.o,*/www/*,*.out,*/bin/*,*.pyc,*/client/dist/*,main,
 set wildignore+=*/branches/*,*.obj,*.pdb,*/vendor/*,*/target/*,Cargo.lock,
 set wildignore+=**/*.rs.bk,*/assets/fontawesome/*,*/zig-cache/*,*/zig-out/*
 
