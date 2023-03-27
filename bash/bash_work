@@ -6,5 +6,6 @@ alias dd="gh DuetDisplay"
 
 alias tsu="sudo tailscale up"
 alias tsd="sudo tailscale down"
+alias tss="tailscale status"
 
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/home/jcalabro/go/src/github.com/DuetDisplay/gocore/lib/linux_amd64/ffmpeg2.8"
