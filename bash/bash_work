@@ -2,7 +2,7 @@
 
 alias gocore="gh DuetDisplay gocore"
 alias gw="gh DuetDisplay DuetDisplayWindowsUI"
-alias dd="gh DuetDisplay"
+alias duet="gh DuetDisplay"
 
 alias tsu="sudo tailscale up"
 alias tsd="sudo tailscale down"
