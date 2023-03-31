@@ -195,6 +195,7 @@ if [ "$?" -eq "0" ]; then
     eval `ssh-add $HOME/.ssh/jim_public.pem > /dev/null 2>&1`
     eval `ssh-add $HOME/.ssh/jcalabro_duet.pem > /dev/null 2>&1`
     eval `ssh-add $HOME/.ssh/jcalabro.pem > /dev/null 2>&1`
+    eval `ssh-add $HOME/.ssh/duet.pem > /dev/null 2>&1`
 fi
 
 #
