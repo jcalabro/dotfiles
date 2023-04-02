@@ -57,6 +57,12 @@ function install_dotfiles {
         ln -sf $DOTFILE_BASE/vscode/keybindings.json "$HOME/Library/Application Support/Code/User"
     fi
 
+    #
+    # Alacritty
+    #
+    mkdir -p $HOME/.config/alacritty
+    ln -sf $DOTFILE_BASE/alacritty/alacritty.yml $HOME/.config/alacritty/alacritty.yml
+
     popd > /dev/null
 
     pushd $HOME > /dev/null

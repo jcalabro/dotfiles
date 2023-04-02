@@ -9,7 +9,8 @@ alias jimvm="ssh jimvm"
 #
 # Vim
 #
-export EDITOR="vim"
+export EDITOR="nvim"
+alias vim="nvim"
 alias vi="vim"
 alias v="vim"
 alias vba="vim ~/.bash_aliases"
@@ -22,7 +23,7 @@ alias vrc="vim ~/.vimrc"
 alias vrp="vim ~/.vim_plugins"
 alias vkc="vim ~/.kube/config"
 alias vtm="vim ~/.tmux.conf"
-alias vt="vim .travis.yml"
+alias va="vim ~/.config/alacritty/alacritty.yml"
 
 #
 # Git
@@ -116,8 +117,8 @@ alias mw="make wasm"
 alias jai="jai-linux"
 alias z="zig"
 alias zb="zig build"
-alias zbr="zig build run"
-alias zbt="zig build test"
+alias zr="zig build run"
+alias zt="zig build test"
 
 function mac_netstat {
     lsof -nP -i4TCP | grep -i listen
