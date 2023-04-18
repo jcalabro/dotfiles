@@ -159,7 +159,7 @@ endfunction
 cabbrev itime call Time()
 
 function! Todo()
-    :call feedkeys("i". "@TODO (jc): ")
+    :call feedkeys("i". "@TODO (jrc): ")
 endfunction
 cabbrev todo call Todo()
 
