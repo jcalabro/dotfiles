@@ -1,0 +1,19 @@
+{
+    "enable_snippets": true,
+    "enable_ast_check_diagnostics": true,
+    "enable_autofix": false,
+    "enable_import_embedfile_argument_completions": false,
+    "warn_style": true,
+    "semantic_tokens": "none",
+    "enable_inlay_hints": false,
+    "inlay_hints_show_builtin": false,
+    "inlay_hints_exclude_single_argument": true,
+    "inlay_hints_hide_redundant_param_names": true,
+    "inlay_hints_hide_redundant_param_names_last_token": true,
+    "operator_completions": true,
+    "include_at_in_builtins": false,
+    "max_detail_length": 1048576,
+    "skip_std_references": true,
+    "highlight_global_var_declarations": true,
+    "use_comptime_interpreter": false
+}

@@ -28,5 +28,10 @@
         }
     },
     "suggest.enablePreselect": true,
-    "suggest.noselect": false
+    "suggest.noselect": false,
+    "zig.enabled": true,
+    "zig.startUpMessage": true,
+    "zig.path": "/home/jcalabro/.bin/zls",
+    "zig.debugLog": false,
+    "zig.zls.path": "/home/jcalabro/.config/coc/extensions/coc-zls-data/zls_install/zls"
 }
