@@ -37,6 +37,7 @@ function install_dotfiles {
 
     mkdir -p $HOME/.config/nvim
     ln -sf $DOTFILE_BASE/vim/init.vim $HOME/.config/nvim/init.vim
+    ln -sf $DOTFILE_BASE/vim/config.lua $HOME/.config/nvim/lua/config.lua
 
     #
     # tmux
