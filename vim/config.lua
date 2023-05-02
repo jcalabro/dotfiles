@@ -1,5 +1,3 @@
-print("Hello world!")
-
 local actions = require("telescope.actions")
 require("telescope").setup{
   defaults = {
