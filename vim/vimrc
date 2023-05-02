@@ -3,16 +3,9 @@ set encoding=utf-8
 " fix colorscheme in tmux
 set t_Co=256
 
-cabbrev vbl e $HOME/.bash_local
 cabbrev vbs e $HOME/.bash_secrets
 cabbrev vrc e $HOME/.vimrc
-cabbrev vt e .travis.yml
-
-" CtrlP ignore settings
-set wildignore+=*/gen/*,*.so,*.swp,*.zip,*/node_modules/*,*.swp,*.zip,*.jpeg,
-set wildignore+=*.o,*/www/*,*.out,*/bin/*,*.pyc,*/client/dist/*,main,
-set wildignore+=*/branches/*,*.obj,*.pdb,*/vendor/*,*/target/*,Cargo.lock,
-set wildignore+=**/*.rs.bk,*/assets/fontawesome/*,*/zig-cache/*,*/zig-out/*,*.av1
+cabbrev vrp e $HOME/.vim_plugins
 
 " Include plugins
 source $HOME/.vim_plugins
@@ -105,7 +98,7 @@ let &t_EI.="\e[1 q"
 let &t_te.="\e[0 q"
 
 " Show the current time if you press F2
-:map <F2> :echo 'Current time is ' . strftime('%c')<CR>
+:map <F2> :echo strftime('%c')<CR>
 
 if !empty("USE_SPACES")
     " Adjust tabs to 4 spaces
@@ -122,9 +115,9 @@ let g:NERDTreeDirArrowCollapsible="~"
 " Set NERDTree window size
 let g:NERDTreeWinSize=55
 
-" map CtrlP to ctrl+p
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
+" Map Ctrl+P to Telescope's file search
+noremap  <C-p>      :Telescope git_files<Enter>
+inoremap <C-p> <Esc>:Telescope git_files<Enter>
 
 " Map switching between tabs to H and L
 noremap  <C-h>      gT
@@ -159,7 +152,7 @@ endfunction
 cabbrev itime call Time()
 
 function! Todo()
-    :call feedkeys("i". "@TODO (jc): ")
+    :call feedkeys("i". "@TODO (jrc): ")
 endfunction
 cabbrev todo call Todo()
 
