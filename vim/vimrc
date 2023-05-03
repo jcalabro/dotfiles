@@ -170,10 +170,6 @@ set mouse=a
 noremap  <C-\>      :set invnumber<Enter>
 inoremap <C-\> <Esc>:set invnumber<Enter>li
 
-" Turn line numbers on by default, and set it to relative mode
-set nu
-set relativenumber
-
 " Disable extra gutter space
 set signcolumn=no
 
