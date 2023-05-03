@@ -116,8 +116,8 @@ let g:NERDTreeDirArrowCollapsible="~"
 let g:NERDTreeWinSize=55
 
 " Map ff to Telescope's file search
-noremap  ff      :Telescope git_files<Enter>
-inoremap ff <Esc>:Telescope git_files<Enter>
+noremap  <C-p>      :Telescope git_files<Enter>
+inoremap <C-p> <Esc>:Telescope git_files<Enter>
 
 " Map switching between tabs to H and L
 noremap  <C-h>      gT
