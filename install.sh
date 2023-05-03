@@ -61,10 +61,10 @@ function install_dotfiles {
     fi
 
     #
-    # Alacritty
+    # Alacritty (make a local copy)
     #
     mkdir -p $HOME/.config/alacritty
-    ln -sf $DOTFILE_BASE/alacritty/alacritty.yml $HOME/.config/alacritty/alacritty.yml
+    cp $DOTFILE_BASE/alacritty/alacritty.yml $HOME/.config/alacritty/alacritty.yml
 
     popd > /dev/null
 
