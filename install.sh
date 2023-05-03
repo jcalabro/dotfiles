@@ -35,7 +35,7 @@ function install_dotfiles {
     mkdir -p $HOME/.vim
     ln -sf $DOTFILE_BASE/vim/coc-settings.json $HOME/.vim/coc-settings.json
 
-    mkdir -p $HOME/.config/nvim
+    mkdir -p $HOME/.config/nvim/lua
     ln -sf $DOTFILE_BASE/vim/init.vim $HOME/.config/nvim/init.vim
     ln -sf $DOTFILE_BASE/vim/config.lua $HOME/.config/nvim/lua/config.lua
     ln -sf $DOTFILE_BASE/vim/coc-settings.json $HOME/.config/nvim/coc-settings.json
