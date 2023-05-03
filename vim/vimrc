@@ -54,6 +54,9 @@ set incsearch
 " Faster redrawing
 set ttyfast
 
+" Scroll before reaching the end of the screen
+set scrolloff=5
+
 " Map Ctrl+S to save
 noremap  <silent> <C-S>      :update<CR>
 vnoremap <silent> <C-S> <C-C>:update<CR>
