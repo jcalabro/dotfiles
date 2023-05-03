@@ -115,9 +115,9 @@ let g:NERDTreeDirArrowCollapsible="~"
 " Set NERDTree window size
 let g:NERDTreeWinSize=55
 
-" Map Ctrl+P to Telescope's file search
-noremap  <C-p>      :Telescope git_files<Enter>
-inoremap <C-p> <Esc>:Telescope git_files<Enter>
+" Map ff to Telescope's file search
+noremap  ff      :Telescope git_files<Enter>
+inoremap ff <Esc>:Telescope git_files<Enter>
 
 " Map switching between tabs to H and L
 noremap  <C-h>      gT
@@ -169,6 +169,10 @@ set mouse=a
 " Toggle line numbers with Ctrl+\
 noremap  <C-\>      :set invnumber<Enter>
 inoremap <C-\> <Esc>:set invnumber<Enter>li
+
+" Turn line numbers on by default, and set it to relative mode
+set nu
+set relativenumber
 
 " (MacOS only) Copy the entire buffer to the system clipboard
 cabbrev pbcopy %w !pbcopy <Enter>
