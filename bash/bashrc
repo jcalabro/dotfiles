@@ -120,7 +120,7 @@ export PATH="/opt/rh/devtoolset-10/root/bin:$PATH"
 #
 # Logbook
 #
-export LOGBOOK="$HOME/misc/logbook"
+export LOGBOOK="$HOME/misc/jcalabro/logbook"
 
 function lb() {
     pushd $LOGBOOK > /dev/null
