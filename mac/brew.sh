@@ -34,6 +34,7 @@ FORMULAE=(
     pyenv
     pyenv-virtualenv
     ripgrep
+    tracy
     tmux
     watch
     wget
