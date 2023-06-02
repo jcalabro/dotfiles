@@ -40,6 +40,9 @@ function install_dotfiles {
     ln -sf $DOTFILE_BASE/vim/config.lua $HOME/.config/nvim/lua/config.lua
     ln -sf $DOTFILE_BASE/vim/coc-settings.json $HOME/.config/nvim/coc-settings.json
     ln -sf $DOTFILE_BASE/vim/zls.json $HOME/.config/zls.json
+    if [ "$(uname)" == "Darwin" ]; then
+        ln -sf $DOTFILE_BASE/vim/zls.json "$HOME/Library/Application Support/zls.json"
+    fi
 
     #
     # tmux
