@@ -126,7 +126,7 @@ function lb() {
     pushd $LOGBOOK > /dev/null
     P="$(date '+%Y-%m')"
     mkdir -p $P
-    F="$P/$(date '+%m-%d-%Y').md"
+    F="$P/$(date '+%d').md"
     cp -n template.md $F
     FULL_PATH=$(pwd)/$F
     popd > /dev/null
@@ -139,7 +139,7 @@ function lb() {
 function clog {
     pushd $LOGBOOK > /dev/null
     git add -A
-    git commit -S -m "todays logs $(date '+%m-%d-%Y %H:%M:%S')"
+    git commit -S -m "todays logs $(date '+%Y-%m-%d %H:%M:%S')"
     git push
     popd > /dev/null
 }
