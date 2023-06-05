@@ -23,6 +23,8 @@ export PATH="$PATH:$HOME/misc/nand2tetris/tools"
 export PATH="$PATH:/opt/homebrew/bin"
 export PATH="$PATH:/opt/homebrew/opt/llvm/bin"
 
+export HOMEBREW_NO_AUTO_UPDATE=1
+
 if [ -x "$(command -v brew)" ]; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
