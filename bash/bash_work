@@ -1,11 +1,2 @@
 #!/usr/bin/env bash
 
-alias gocore="gh DuetDisplay gocore"
-alias gw="gh DuetDisplay DuetDisplayWindowsUI"
-alias duet="gh DuetDisplay"
-
-alias tsu="sudo tailscale up"
-alias tsd="sudo tailscale down"
-alias tss="tailscale status"
-
-export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/home/jcalabro/go/src/github.com/DuetDisplay/gocore/lib/linux_amd64/ffmpeg2.8"
