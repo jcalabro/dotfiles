@@ -40,7 +40,7 @@ alias gl="git log"
 alias gs="git stash"
 alias am="git add -A; git commit -S -m"
 alias gcm="git commit -S -m"
-alias amend="git commit --amend -m"
+alias amend="git commit --amend -S -m"
 alias clean="git clean -fd"
 alias update="am 'update' && gp"
 

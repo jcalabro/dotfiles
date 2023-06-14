@@ -42,9 +42,12 @@
         "jlinux": "linux"
     },
     "extensions.ignoreRecommendations": true,
-    "window.zoomLevel": 2,
+    "window.zoomLevel": 1,
     "files.associations": {
         "*.jai": "cpp"
     },
-    "zig.zls.path": "/Users/jcalabro/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls"
+    "zig.zls.path": "/Users/jcalabro/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
+    "zig.zigPath": "/Users/jcalabro/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zig_install/zig",
+    "zig.zigVersion": "nightly-0.11.0-dev.3395+1e7dcaa3a",
+    "editor.inlayHints.enabled": "off"
 }
