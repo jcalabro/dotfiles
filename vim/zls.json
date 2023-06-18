@@ -5,7 +5,7 @@
     "enable_import_embedfile_argument_completions": false,
     "warn_style": true,
     "semantic_tokens": "none",
-    "enable_inlay_hints": false,
+    "enable_inlay_hints": true,
     "inlay_hints_show_builtin": false,
     "inlay_hints_exclude_single_argument": true,
     "inlay_hints_hide_redundant_param_names": true,

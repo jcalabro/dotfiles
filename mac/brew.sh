@@ -2,6 +2,7 @@
 
 defaults write -g ApplePressAndHoldEnabled -bool false
 
+brew tap homebrew/core
 brew update
 
 FORMULAE=(
@@ -10,6 +11,7 @@ FORMULAE=(
     docker-compose
     doctl
     exa
+    emscripten
     findutils
     gawk
     gdb
@@ -28,12 +30,14 @@ FORMULAE=(
     kubernetes-cli
     kubectx
     mariadb
+    neovim
     postgresql
     protobuf
     protoc-gen-go
     pyenv
     pyenv-virtualenv
     ripgrep
+    tmux
     tracy
     tmux
     watch
@@ -43,14 +47,14 @@ FORMULAE=(
 brew install ${FORMULAE[@]}
 
 CASKS=(
+    alacritty
     audacity
     docker
     flux
     iterm2
     kdiff3
-    ngrok
+    obsidian
     spotify
-    steam
     sublime-text
     visual-studio-code
     wireshark

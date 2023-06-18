@@ -22,6 +22,7 @@ export PATH="$PATH:$HOME/misc/4coder"
 export PATH="$PATH:$HOME/misc/nand2tetris/tools"
 export PATH="$PATH:/opt/homebrew/bin"
 export PATH="$PATH:/opt/homebrew/opt/llvm/bin"
+run_if_exists "/opt/homebrew/share/google-cloud-sdk/path.bash.inc"
 
 export HOMEBREW_NO_AUTO_UPDATE=1
 
@@ -195,9 +196,8 @@ if [ "$?" -eq "0" ]; then
     ssh-add -A > /dev/null 2>&1
 
     eval `ssh-add $HOME/.ssh/jim_public.pem > /dev/null 2>&1`
-    eval `ssh-add $HOME/.ssh/jcalabro_duet.pem > /dev/null 2>&1`
+    eval `ssh-add $HOME/.ssh/jcalabro_chess.pem > /dev/null 2>&1`
     eval `ssh-add $HOME/.ssh/jcalabro.pem > /dev/null 2>&1`
-    eval `ssh-add $HOME/.ssh/duet.pem > /dev/null 2>&1`
 fi
 
 #
