@@ -22,6 +22,7 @@ FORMULAE=(
     gnu-indent
     gnu-getopt
     go
+    google-cloud-sdk
     gpg
     graphviz
     grep
