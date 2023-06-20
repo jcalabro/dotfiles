@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-alias ch="gh chesscom"
+alias ch="gh ChessCom"
 
 alias start_docker="limactl start --name=docker"
 
