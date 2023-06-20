@@ -1,2 +1,10 @@
 #!/usr/bin/env bash
 
+alias ch="gh chesscom"
+
+alias start_docker="limactl start --name=docker"
+
+export EMSDK="$HOME/go/src/github.com/emscripten-core/emsdk"
+export PATH="$EMSDK/upstream/emscripten:$PATH"
+export PATH="$EMSDK/upstream/bin:$PATH"
+export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
