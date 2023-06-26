@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+export CGH="$GOPATH/src/github.com/ChessCom"
+
 alias ch="gh ChessCom"
 
 alias start_docker="limactl start --name=docker"
@@ -9,6 +11,16 @@ export PATH="$EMSDK/upstream/emscripten:$PATH"
 export PATH="$EMSDK/node/15.14.0_64bit/bin:$PATH"
 export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
 
+#
+# ceac-cluster-proxy
+#
+
 export targetPrimaryAddress="http://localhost:8080"
-export targetSecondaryAddress="http://localhost:8080"
-export readinessAddress="http://localhost:8080/check"
+export targetSecondaryAddress="http://localhost:8081"
+export readinessAddress="http://localhost:8080/check-best-move"
+
+#
+# engine-services
+#
+
+export analysisEnginePath="$HOME/.bin/stockfish"
