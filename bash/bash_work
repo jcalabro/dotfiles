@@ -24,3 +24,4 @@ export readinessAddress="http://localhost:8080/check-best-move"
 #
 
 export analysisEnginePath="$HOME/.bin/stockfish"
+export useLocalEngines="true"
