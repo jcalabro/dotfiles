@@ -2,14 +2,18 @@
 
 export CGH="$GOPATH/src/github.com/ChessCom"
 
-alias ch="gh ChessCom"
-
-alias start_docker="limactl start --name=docker"
-
 export EMSDK="$HOME/go/src/github.com/emscripten-core/emsdk"
 export PATH="$EMSDK/upstream/emscripten:$PATH"
-export PATH="$EMSDK/node/15.14.0_64bit/bin:$PATH"
+# export PATH="$EMSDK/node/15.14.0_64bit/bin:$PATH"
 export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
+
+alias ch="gh ChessCom"
+alias start_docker="limactl start --name=docker"
+
+function npm_init {
+    npm config set @chesscom:registry https://npm.pkg.github.com
+    npm config set '//npm.pkg.github.com/:_authToken' $CEAC_AUTH_TOKEN_DEV
+}
 
 #
 # ceac-cluster-proxy
@@ -25,3 +29,9 @@ export readinessAddress="http://localhost:8080/check-best-move"
 
 export analysisEnginePath="$HOME/.bin/stockfish"
 export useLocalEngines="true"
+
+#
+# CEE-microservice
+#
+
+export CEE_BIN="$CGH/explanation-engine/build/explanation-engine"

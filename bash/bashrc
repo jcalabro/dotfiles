@@ -277,7 +277,6 @@ run_if_exists ~/.bash_aliases
 run_if_exists ~/.bash_work
 run_if_exists ~/.bash_go
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export GIT_DISCOVERY_ACROSS_FILESYSTEM=true
 
 #
