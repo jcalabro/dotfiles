@@ -12,7 +12,7 @@ alias start_docker="limactl start --name=docker"
 
 function npm_init {
     npm config set @chesscom:registry https://npm.pkg.github.com
-    npm config set '//npm.pkg.github.com/:_authToken' $CEAC_AUTH_TOKEN_DEV
+    npm config set '//npm.pkg.github.com/:_authToken' $CHESSCOM_PAT
 }
 
 #
@@ -35,3 +35,9 @@ export useLocalEngines="true"
 #
 
 export CEE_BIN="$CGH/explanation-engine/build/explanation-engine"
+
+#
+# PGNGen
+#
+
+export PGNGEN_SOCKET_PATH="8888" # port number
