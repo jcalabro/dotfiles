@@ -2,6 +2,8 @@
 
 export CGH="$GOPATH/src/github.com/ChessCom"
 
+export PATH="$PATH:$HOME/.bin/clc"
+
 export EMSDK="$HOME/go/src/github.com/emscripten-core/emsdk"
 export PATH="$EMSDK/upstream/emscripten:$PATH"
 # export PATH="$EMSDK/node/15.14.0_64bit/bin:$PATH"
@@ -29,6 +31,19 @@ export readinessAddress="http://localhost:8080/check-best-move"
 
 export analysisEnginePath="$HOME/.bin/stockfish"
 export useLocalEngines="true"
+export BESTMOVE_BIND_ADDR="localhost"
+
+function hz_offer_bestmove {
+    clc queue offer --name best-move-message-queue "$(cat resources/bestmove_request_1.txt)"
+}
+function hz_offer_bestmove_loop {
+    while true; do
+        hz_offer_bestmove
+    done
+}
+function hz_clear_bestmove {
+    clc queue clear --name best-move-message-queue --yes
+}
 
 #
 # CEE-microservice
