@@ -33,6 +33,9 @@ export analysisEnginePath="$HOME/.bin/stockfish"
 export useLocalEngines="true"
 export BESTMOVE_BIND_ADDR="localhost"
 
+# hazelcast mc home directory
+export MC_HOME="$HOME/.hazelcast/hazelcast-mc"
+
 function hz_offer_bestmove {
     clc queue offer --name best-move-message-queue "$(cat resources/bestmove_request_1.txt)"
 }
