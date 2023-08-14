@@ -10,7 +10,7 @@ export PATH="$EMSDK/upstream/emscripten:$PATH"
 export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
 
 alias ch="gh ChessCom"
-alias start_docker="limactl start --name=docker"
+alias plat="ch platform && cd workloads"
 
 function npm_init {
     npm config set @chesscom:registry https://npm.pkg.github.com
