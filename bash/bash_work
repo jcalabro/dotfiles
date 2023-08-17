@@ -10,7 +10,10 @@ export PATH="$EMSDK/upstream/emscripten:$PATH"
 export PATH="/opt/homebrew/opt/gnu-sed/libexec/gnubin:$PATH"
 
 alias ch="gh ChessCom"
+
 alias plat="ch platform && cd workloads"
+alias plat-col="plat && cd chesscom-prod-col-rancher/ceac"
+alias plat-gcp="plat && cd chesscom-prod/ceac"
 
 function npm_init {
     npm config set @chesscom:registry https://npm.pkg.github.com
