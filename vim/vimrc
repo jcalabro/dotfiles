@@ -7,6 +7,12 @@ cabbrev vbs e $HOME/.bash_secrets
 cabbrev vrc e $HOME/.vimrc
 cabbrev vrp e $HOME/.vim_plugins
 
+" CtrlP ignore settings
+set wildignore+=*/gen/*,*.so,*.swp,*.zip,*/node_modules/*,*.swp,*.zip,*.jpeg,
+set wildignore+=*.o,*/www/*,*.out,*/bin/*,*.pyc,*/client/dist/*,
+set wildignore+=*/branches/*,*.obj,*.pdb,*/vendor/*,*/target/*,Cargo.lock,
+set wildignore+=**/*.rs.bk,*/assets/fontawesome/*
+
 " Include plugins
 source $HOME/.vim_plugins
 
@@ -178,3 +184,6 @@ cabbrev pbcopy %w !pbcopy <Enter>
 
 " Run goimports on save of go files
 let g:go_fmt_command = "goimports"
+
+" Indent typescript with 2 spaces
+autocmd Filetype typescript setlocal ts=2 sw=2 sts=0 expandtab
