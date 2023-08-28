@@ -21,7 +21,8 @@ Plug 'cespare/vim-toml'
 Plug 'ziglang/zig.vim'
 Plug 'jansedivy/jai.vim'
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
+" Plug 'nvim-telescope/telescope.nvim'
+Plug 'kien/ctrlp.vim'
 
 " LSP Support
 Plug 'neovim/nvim-lspconfig'
