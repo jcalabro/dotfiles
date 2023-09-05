@@ -34,6 +34,7 @@ export readinessAddress="http://localhost:8080/check-best-move"
 
 export analysisEnginePath="$HOME/.bin/stockfish"
 export useLocalEngines="true"
+export numberOfRoutines="12"
 export BESTMOVE_BIND_ADDR="localhost"
 
 # hazelcast mc home directory
