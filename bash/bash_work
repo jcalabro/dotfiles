@@ -14,6 +14,8 @@ alias ch="gh ChessCom"
 alias plat="ch platform && cd workloads"
 alias plat-col="plat && cd chesscom-prod-col-rancher/ceac"
 alias plat-gcp="plat && cd chesscom-prod/ceac"
+alias plat-staging="plat && cd chesscom-staging/ceac"
+alias plat-sandbox="plat && cd chesscom-sandbox/ceac"
 
 function npm_init {
     npm config set @chesscom:registry https://npm.pkg.github.com
