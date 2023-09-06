@@ -11,7 +11,8 @@ cabbrev vrp e $HOME/.vim_plugins
 set wildignore+=*/gen/*,*.so,*.swp,*.zip,*/node_modules/*,*.swp,*.zip,*.jpeg,
 set wildignore+=*.o,*/www/*,*.out,*/bin/*,*.pyc,*/client/dist/*,
 set wildignore+=*/branches/*,*.obj,*.pdb,*/vendor/*,*/target/*,Cargo.lock,
-set wildignore+=**/*.rs.bk,*/assets/fontawesome/*,*/build/*,*/coverage/*
+set wildignore+=**/*.rs.bk,*/assets/fontawesome/*,*/build/*,*/coverage/*,
+set wildignore+=*/zig-out/*,*/zig-cache/*
 
 " Include plugins
 source $HOME/.vim_plugins
