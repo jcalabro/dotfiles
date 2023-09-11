@@ -56,6 +56,12 @@ function hz_clear_bestmove {
 }
 
 #
+# CEE
+#
+
+export DYLD_LIBRARY_PATH="/opt/homebrew/opt/cairo/lib"
+
+#
 # CEE-microservice
 #
 
