@@ -69,6 +69,12 @@ function install_dotfiles {
     mkdir -p $HOME/.config/alacritty
     cp $DOTFILE_BASE/alacritty/alacritty.yml $HOME/.config/alacritty/alacritty.yml
 
+    #
+    # Ghostty (make a local copy)
+    #
+    mkdir -p $HOME/.config/ghostty
+    cp $DOTFILE_BASE/ghostty/config $HOME/.config/ghostty/config
+
     popd > /dev/null
 
     pushd $HOME > /dev/null

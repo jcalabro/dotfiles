@@ -24,6 +24,7 @@ alias vrp="vim ~/.vim_plugins"
 alias vkc="vim ~/.kube/config"
 alias vtm="vim ~/.tmux.conf"
 alias va="vim ~/.config/alacritty/alacritty.yml"
+alias vg="vim ~/.config/ghostty/config"
 
 #
 # Git
