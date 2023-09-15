@@ -272,6 +272,30 @@ function restart_logtech {
     ps aux | grep -i logi | grep -v login | awk '{print $2}' | xargs -L1 sudo kill -9
 }
 
+function install_ghostty_fedora {
+    echo -n "Are you sure (y/N)? "
+    read answer
+    if [ "$answer" != "${answer#[Yy]}" ] ;then
+        echo "Installing"
+    else
+        echo "Exiting"
+        return
+    fi
+
+    # run from within the ghostty repo directory
+    zig build -Doptimize=ReleaseFast
+    pushd zig-out > /dev/null
+
+    sudo cp bin/ghostty /usr/bin
+
+    sudo mkdir -p /usr/share/Ghostty
+    sudo cp share/icons/hicolor/512x512/apps/com.mitchellh.ghostty.png /usr/share/Ghostty
+    sed -i 's/Icon=com.mitchellh.ghostty/Icon=\/usr\/share\/Ghostty\/com.mitchellh.ghostty/g' share/applications/com.mitchellh.ghostty.desktop
+    sudo cp share/applications/com.mitchellh.ghostty.desktop /usr/share/applications
+
+    popd > /dev/null
+}
+
 #
 # Run other files
 #
