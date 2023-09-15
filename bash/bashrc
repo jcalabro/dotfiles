@@ -290,7 +290,7 @@ function install_ghostty_fedora {
 
     sudo mkdir -p /usr/share/Ghostty
     sudo cp share/icons/hicolor/512x512/apps/com.mitchellh.ghostty.png /usr/share/Ghostty
-    sed -i 's/Icon=com.mitchellh.ghostty/Icon=\/usr\/share\/Ghostty\/com.mitchellh.ghostty/g' share/applications/com.mitchellh.ghostty.desktop
+    sed -i 's/Icon=com.mitchellh.ghostty/Icon=\/usr\/share\/Ghostty\/com.mitchellh.ghostty.png/g' share/applications/com.mitchellh.ghostty.desktop
     sudo cp share/applications/com.mitchellh.ghostty.desktop /usr/share/applications
 
     popd > /dev/null
