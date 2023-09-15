@@ -1,4 +1,5 @@
 font-family = Monaco
 font-size = 14
+mouse-hide-while-type = true
 
 macos-non-native-fullscreen = visible-menu
