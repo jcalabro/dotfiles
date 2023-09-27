@@ -2,7 +2,7 @@
 
 export CGH="$GOPATH/src/github.com/ChessCom"
 
-export PATH="$PATH:$HOME/.bin/clc"
+export PATH="$PATH:$HOME/local/bin/clc"
 
 export EMSDK="$HOME/go/src/github.com/emscripten-core/emsdk"
 export PATH="$EMSDK/upstream/emscripten:$PATH"
@@ -35,7 +35,7 @@ export readinessAddress="http://localhost:8080/check-best-move"
 # engine-services
 #
 
-export analysisEnginePath="$HOME/.bin/stockfish"
+export analysisEnginePath="$HOME/local/bin/stockfish"
 export useLocalEngines="true"
 export numberOfRoutines="12"
 export BESTMOVE_BIND_ADDR="localhost"
