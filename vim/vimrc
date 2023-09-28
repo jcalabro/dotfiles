@@ -19,6 +19,9 @@ source $HOME/.vim_plugins
 
 colorscheme nighted
 
+" Use relative line numbers
+
+
 if has("win32")
     " fix copy paste
     nmap <C-V> "+gP
@@ -173,9 +176,11 @@ cabbrev xml %!xmllint --format -
 " Terminal mouse support
 set mouse=a
 
-" Toggle line numbers with Ctrl+\
-noremap  <C-\>      :set invnumber<Enter>
-inoremap <C-\> <Esc>:set invnumber<Enter>li
+" Toggle line numbers with Ctrl+\ and turn them on by default
+noremap  <C-\>      :set invnumber<Enter>:set rnu!<Enter>
+inoremap <C-\> <Esc>:set invnumber<Enter>:set rnu!<Enter>a
+set invnumber
+set rnu
 
 " Disable extra gutter space
 set signcolumn=no
