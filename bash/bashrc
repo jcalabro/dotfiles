@@ -11,7 +11,7 @@ run_if_exists ~/.git-completion.bash
 #
 # Path
 #
-export BIN_DIR="/home/jcalabro/local/bin"
+export BIN_DIR="$HOME/local/bin"
 export PATH="$PATH:$BIN_DIR"
 export PATH="$PATH:$BIN_DIR/bin"
 export PATH="$PATH:$BIN_DIR/zig"
