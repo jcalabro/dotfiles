@@ -1,8 +1,9 @@
-font-family = Monaco
+# font-family = Monaco
 font-size = 11
-
 font-feature = -calt
 font-feature = -dlig
 font-feature = -liga
+
+mouse-hide-while-typing = true
 
 macos-non-native-fullscreen = visible-menu
