@@ -61,6 +61,10 @@ function hz_clear_bestmove {
 
 export DYLD_LIBRARY_PATH="/opt/homebrew/opt/cairo/lib"
 
+function uci_integration_test {
+    cat $1 | jq .uci | rg '"' | sed 's/"//g' | sed 's/,//g'
+}
+
 #
 # CEE-microservice
 #
