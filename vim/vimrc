@@ -176,11 +176,11 @@ cabbrev xml %!xmllint --format -
 " Terminal mouse support
 set mouse=a
 
-" Toggle line numbers with Ctrl+\ and turn them on by default
+" Toggle line numbers with Ctrl+\
 noremap  <C-\>      :set invnumber<Enter>:set rnu!<Enter>
 inoremap <C-\> <Esc>:set invnumber<Enter>:set rnu!<Enter>a
-set invnumber
-set rnu
+" set invnumber
+" set rnu
 
 " Disable extra gutter space
 set signcolumn=no
