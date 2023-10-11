@@ -177,8 +177,8 @@ cabbrev xml %!xmllint --format -
 set mouse=a
 
 " Toggle line numbers with Ctrl+\
-noremap  <C-\>      :set invnumber<Enter>:set rnu!<Enter>
-inoremap <C-\> <Esc>:set invnumber<Enter>:set rnu!<Enter>a
+noremap  <C-\>      :set invnumber<Enter>
+inoremap <C-\> <Esc>:set invnumber<Enter>a
 " set invnumber
 " set rnu
 
