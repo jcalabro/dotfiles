@@ -114,7 +114,6 @@ alias rmr="rm -r"
 alias fail="tail -f"
 alias cdt="gh jcalabro/trunk"
 alias jai="jai-linux"
-alias zig="./.bin/zig/zig"
 alias z="zig"
 alias zb="zig build -freference-trace"
 alias zr="zig build run -freference-trace"
@@ -122,6 +121,14 @@ alias zt="zig build test --summary all -freference-trace"
 alias tsu="sudo tailscale up"
 alias tsd="sudo tailscale down"
 alias tss="tailscale status"
+
+function zig {
+    if [ -f '.bin/zig/zig' ]; then
+        .bin/zig/zig "$@"
+    else
+        $LOCAL_BIN_DIR/zig/zig "$@"
+    fi
+}
 
 function mac_netstat {
     lsof -nP -i4TCP | grep -i listen
