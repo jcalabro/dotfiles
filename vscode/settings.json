@@ -49,5 +49,6 @@
     "zig.zls.path": "/Users/jcalabro/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
     "zig.zigPath": "/Users/jcalabro/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zig_install/zig",
     "zig.zigVersion": "nightly-0.11.0-dev.3395+1e7dcaa3a",
-    "editor.inlayHints.enabled": "off"
+    "editor.inlayHints.enabled": "off",
+    "zig.zls.enabled": false
 }
