@@ -118,6 +118,9 @@ if !empty("USE_SPACES")
     set expandtab " make tabs spaces
 endif
 
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=0 expandtab
+autocmd FileType typescript setlocal shiftwidth=2 tabstop=2 softtabstop=0 expandtab
+
 " Fix for NERDTree directory rendering issue
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="~"

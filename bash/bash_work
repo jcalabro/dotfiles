@@ -77,4 +77,4 @@ export CEE_BIN="$CGH/explanation-engine/build/explanation-engine"
 # PGNGen
 #
 
-export PGNGEN_SOCKET_PATH="localhost:8888"
+export PGNGEN_SOCKET_PATH="8080"
