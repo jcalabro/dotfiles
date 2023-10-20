@@ -126,7 +126,7 @@ function zig {
     if [ -f '.bin/zig/zig' ]; then
         .bin/zig/zig "$@"
     else
-        $LOCAL_BIN_DIR/zig/zig "$@"
+        zig "$@"
     fi
 }
 
