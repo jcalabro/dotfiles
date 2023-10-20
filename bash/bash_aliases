@@ -133,3 +133,7 @@ function zig {
 function mac_netstat {
     lsof -nP -i4TCP | grep -i listen
 }
+
+function adump {
+    dwarfdump ./assets/$1/out | less
+}
