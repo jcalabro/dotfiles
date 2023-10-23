@@ -42,7 +42,6 @@
         "jlinux": "linux"
     },
     "extensions.ignoreRecommendations": true,
-    "window.zoomLevel": 1,
     "files.associations": {
         "*.jai": "cpp"
     },

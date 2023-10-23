@@ -61,7 +61,7 @@ function hz_clear_bestmove {
 
 export PATH="$PATH:$HOME/local/bin/clang14/bin"
 # export C_INCLUDE_PATH="$C_INCLUDE_PATH:$HOME/local/bin/clang14/include"
-export DYLD_LIBRARY_PATH="/opt/homebrew/opt/cairo/lib"
+export DYLD_LIBRARY_PATH="/opt/homebrew/opt/cairo/lib:$DYLD_LIBRARY_PATH"
 
 function uci_integration_test {
     cat $1 | jq .uci | rg '"' | sed 's/"//g' | sed 's/,//g' | cut -c 3- | awk '{print}END {print "fetch analysis"}'
