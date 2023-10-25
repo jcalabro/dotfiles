@@ -23,6 +23,7 @@ alias vrc="vim ~/.vimrc"
 alias vrp="vim ~/.vim_plugins"
 alias vkc="vim ~/.kube/config"
 alias vtm="vim ~/.tmux.conf"
+alias vhx="vim ~/.config/helix/config.toml"
 alias va="vim ~/.config/alacritty/alacritty.yml"
 alias vg="vim ~/.config/ghostty/config"
 

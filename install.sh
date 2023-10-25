@@ -50,6 +50,12 @@ function install_dotfiles {
     ln -sf $DOTFILE_BASE/tmux/tmux.conf $HOME/.tmux.conf
 
     #
+    # helix
+    #
+    ln -sf $DOTFILE_BASE/helix/config.toml $HOME/.config/helix/config.toml
+    ln -sf $DOTFILE_BASE/helix/languages.toml $HOME/.config/helix/languages.toml
+
+    #
     # Go
     #
     mkdir -p $HOME/.dlv
