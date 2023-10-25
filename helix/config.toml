@@ -10,6 +10,8 @@ C-j = ":buffer-close"
 C-k = "vsplit"
 C-n = "rotate_view"
 C-x = "hsplit"
+C-e = "scroll_down"
+C-y = "scroll_up"
 
 C-s = ":w"
 C-q = ":q"
