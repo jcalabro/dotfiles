@@ -18,6 +18,8 @@ C-q = ":q"
 
 F1 = [":insert-output date +'%H:%M'", "insert_at_line_end"]
 
+D = ["ensure_selections_forward", "extend_to_line_end", "delete_selection"]
+
 [keys.insert]
 j = { j = "normal_mode", k = "normal_mode" }
 k = { j = "normal_mode" }
