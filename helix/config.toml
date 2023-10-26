@@ -1,4 +1,4 @@
-theme = "nord"
+ theme = "jim_nord_night"
 
 [editor.cursor-shape]
 insert = "bar"
