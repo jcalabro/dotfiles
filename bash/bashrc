@@ -140,7 +140,7 @@ function lb() {
     cp -n template.md $F
     FULL_PATH=$(pwd)/$F
     popd > /dev/null
-    vim $FULL_PATH
+    hx $FULL_PATH
 }
 
 #

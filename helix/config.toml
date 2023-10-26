@@ -19,3 +19,4 @@ C-q = ":q"
 [keys.insert]
 j = { j = "normal_mode", k = "normal_mode" }
 k = { j = "normal_mode" }
+C-s = ":w"
