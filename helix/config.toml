@@ -8,8 +8,9 @@ select = "underline"
 [keys.normal]
 C-j = ":buffer-close"
 C-k = "vsplit"
-C-n = "rotate_view"
 C-x = "hsplit"
+C-n = "rotate_view"
+
 C-e = "scroll_down"
 C-y = "scroll_up"
 
@@ -18,10 +19,10 @@ C-q = ":q"
 
 F1 = [":insert-output date +'%H:%M'", "insert_at_line_end"]
 
-D = ["ensure_selections_forward", "extend_to_line_end", "delete_selection"]
-
 [keys.insert]
 j = { j = "normal_mode", k = "normal_mode" }
 k = { j = "normal_mode" }
+
 C-s = ":w"
+
 F1 = [":insert-output date +'%H:%M'", "insert_at_line_end"]
