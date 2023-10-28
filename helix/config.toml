@@ -5,6 +5,10 @@ insert = "bar"
 normal = "block"
 select = "underline"
 
+[editor.soft-wrap]
+enable = true
+max-indent-retain = 0
+
 [keys.normal]
 C-j = ":buffer-close"
 C-k = "vsplit"
