@@ -1,5 +1,7 @@
 {
     "enable_snippets": true,
+    "enable_argument_placeholders": false,
+    "enable_build_on_save": true,
     "enable_ast_check_diagnostics": true,
     "enable_autofix": true,
     "enable_import_embedfile_argument_completions": false,
