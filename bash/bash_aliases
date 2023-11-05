@@ -138,3 +138,6 @@ function mac_netstat {
 function adump {
     dwarfdump ./assets/$1/out | less
 }
+function odump {
+    objdump -Sd ./assets/$1/out | less
+}
