@@ -7,25 +7,25 @@ alias j="ssh jlinux"
 alias jimvm="ssh jimvm"
 
 #
-# Vim
+# Editor
 #
-export EDITOR="nvim"
+export EDITOR="hx"
 alias vim="nvim"
 alias vi="vim"
 alias v="vim"
-alias vba="vim ~/.bash_aliases"
-alias vbg="vim ~/.bash_go"
-alias vbw="vim ~/.bash_work"
-alias vbp="vim ~/.bashrc"
-alias vbs="vim ~/.bash_secrets"
-alias vbh="vim ~/.bash_history"
-alias vrc="vim ~/.vimrc"
-alias vrp="vim ~/.vim_plugins"
-alias vkc="vim ~/.kube/config"
-alias vtm="vim ~/.tmux.conf"
-alias vhx="vim ~/.config/helix/config.toml"
-alias va="vim ~/.config/alacritty/alacritty.yml"
-alias vg="vim ~/.config/ghostty/config"
+alias vba="$EDITOR ~/.bash_aliases"
+alias vbg="$EDITOR ~/.bash_go"
+alias vbw="$EDITOR ~/.bash_work"
+alias vbp="$EDITOR ~/.bashrc"
+alias vbs="$EDITOR ~/.bash_secrets"
+alias vbh="$EDITOR ~/.bash_history"
+alias vrc="$EDITOR ~/.vimrc"
+alias vrp="$EDITOR ~/.vim_plugins"
+alias vkc="$EDITOR ~/.kube/config"
+alias vtm="$EDITOR ~/.tmux.conf"
+alias vhx="$EDITOR ~/.config/helix/config.toml"
+alias va="$EDITOR ~/.config/alacritty/alacritty.yml"
+alias vg="$EDITOR ~/.config/ghostty/config"
 
 #
 # Git
