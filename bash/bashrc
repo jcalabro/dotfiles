@@ -286,7 +286,6 @@ function install_ghostty_fedora {
         return
     fi
 
-    zig build -Doptimize=ReleaseFast
     zig build -Doptimize=ReleaseFast -Dapp-runtime=gtk -p $HOME/.local
 }
 export GHOSTTY_RESOURCES_DIR="$HOME/go/src/github.com/mitchellh/ghostty/zig-out/share"
