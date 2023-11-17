@@ -10,6 +10,7 @@ alias jimvm="ssh jimvm"
 # Editor
 #
 export EDITOR="hx"
+alias h="hx"
 alias vim="nvim"
 alias vi="vim"
 alias v="vim"
