@@ -15,6 +15,8 @@ C-k = "vsplit"
 C-x = "hsplit"
 C-n = "rotate_view"
 
+C-h = "repeat_last_motion"
+
 C-e = "scroll_down"
 C-y = "scroll_up"
 
