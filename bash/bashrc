@@ -111,7 +111,7 @@ function save_dotfiles {
 
     pushd "$HOME/misc/dotfiles" > /dev/null
     git add -A
-    git commit -S -m "updating dotfiles"
+    git commit --no-verify -S -m "updating dotfiles"
     git push > /dev/null 2>&1
     popd > /dev/null
 

@@ -26,6 +26,10 @@ function install_dotfiles {
     ln -sf $DOTFILE_BASE/git/git-completion.bash $HOME/.git-completion.bash
     git config --global core.excludesfile $HOME/.gitignore
 
+    mkdir -p $HOME/.git/hooks
+    ln -sf $DOTFILE_BASE/git/pre-commit $HOME/.git/hooks/pre-commit
+    git config --global core.hooksPath $HOME/.git/hooks
+
     #
     # Vim
     #
