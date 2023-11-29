@@ -72,7 +72,7 @@ function uci_integration_test {
 # CEE-microservice
 #
 
-export CEE_BIN="$CGH/explanation-engine/build/explanation-engine"
+export CEE_BIN="$HOME/local/bin/explanation-engine"
 
 #
 # PGNGen
