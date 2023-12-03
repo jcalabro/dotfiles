@@ -300,6 +300,8 @@ run_if_exists ~/.bash_go
 
 export GIT_DISCOVERY_ACROSS_FILESYSTEM=true
 
+export PATH="$GOPATH/src/github.com/jcalabro/panacea/zig-out/bin:$PATH"
+
 #
 # Go tooling takes priority
 #
