@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+export GOPRIVATE=github.com/ChessCom/*
+
 export CGH="$GOPATH/src/github.com/ChessCom"
 
 export PATH="$PATH:$HOME/local/bin/clc"
