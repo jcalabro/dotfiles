@@ -23,6 +23,8 @@ C-y = "scroll_up"
 C-s = ":w"
 C-q = ":q"
 
+C-r = ":reload"
+
 F1 = [":insert-output date +'%H:%M'", "insert_at_line_end"]
 
 [keys.insert]
