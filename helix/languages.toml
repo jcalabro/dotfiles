@@ -11,5 +11,5 @@ auto-format = true
 name = "gdbinit"
 scope = "text.gdbinit"
 roots = ["text.gdbinit"]
-file-types = [".gdbinit"]
+file-types = [".gdbinit", ".lldbinit"]
 comment-token = "#"
