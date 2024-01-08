@@ -307,3 +307,6 @@ export PATH="$HOME/go/bin:$PATH"
 if [ -x "$(command -v cargo)" ]; then
     . "$HOME/.cargo/env"
 fi
+
+
+export HELIX_RUNTIME=$GOPATH/src/github.com//helix-editor/helix/runtime
