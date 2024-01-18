@@ -13,13 +13,3 @@ scope = "text.gdbinit"
 roots = ["text.gdbinit"]
 file-types = [".gdbinit", ".lldbinit"]
 comment-token = "#"
-
-[[language]]
-name = "rust"
-
-[language.config]
-checkOnSave = { command = "clippy" }
-
-[[grammar]]
-name = "rust"
-source = { git = "https://github.com/tree-sitter/tree-sitter-rust", rev = "79456e6080f50fc1ca7c21845794308fa5d35a51" }
