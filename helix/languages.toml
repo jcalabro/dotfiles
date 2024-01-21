@@ -13,3 +13,9 @@ scope = "text.gdbinit"
 roots = ["text.gdbinit"]
 file-types = [".gdbinit", ".lldbinit"]
 comment-token = "#"
+
+[[language]]
+name = "rust"
+
+[language-server.rust-analyzer]
+config = { procMacro = { ignored = { leptos_macro = [ "component", "server" ] } } }
