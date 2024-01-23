@@ -310,3 +310,4 @@ fi
 
 
 export HELIX_RUNTIME=$GOPATH/src/github.com//helix-editor/helix/runtime
+export RUST_BACKTRACE=1
