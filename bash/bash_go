@@ -104,11 +104,11 @@ function run {
 # Runs the named test
 #
 function gotest {
-    go test -v ./... -race -run "^($1)$"
+    go test -v ./... -race -count=1 -run "^($1)$"
 }
 
 function gotesthere {
-    go test -v . -race -run "^($1)$"
+    go test -v . -race -count=1 -run "^($1)$"
 }
 
 function dlvtest {
