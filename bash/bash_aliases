@@ -133,6 +133,7 @@ alias zt="zig build test --summary all -freference-trace"
 alias tsu="sudo tailscale up"
 alias tsd="sudo tailscale down"
 alias tss="tailscale status"
+alias p="python3"
 
 function zig {
     if [ -f '.bin/zig/zig' ]; then
