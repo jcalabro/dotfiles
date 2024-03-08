@@ -69,6 +69,14 @@ fi
 alias l="ls"
 
 #
+# cat/bat
+#
+which bat &> /dev/null
+if [ "$?" -eq "0" ]; then
+    alias cat="bat"
+fi
+
+#
 # tmux
 #
 alias tmux="tmux -2"
