@@ -6,8 +6,10 @@ brew tap homebrew/core
 brew update
 
 FORMULAE=(
+    bat
     cloc
     coreutils
+    diff-so-fancy
     docker-compose
     doctl
     exa
