@@ -1,6 +1,7 @@
- theme = "jim_nord_night"
+theme = "jim_nord_night"
 
 [editor]
+gutters = []
 true-color = true
 
 [editor.cursor-shape]
@@ -17,22 +18,16 @@ C-j = ":buffer-close"
 C-k = "vsplit"
 C-x = "hsplit"
 C-n = "rotate_view"
-
 C-h = "repeat_last_motion"
-
 C-e = "scroll_down"
 C-y = "scroll_up"
-
 C-s = ":w"
 C-q = ":q"
-
 C-r = ":reload"
-
 F1 = [":insert-output date +'%H:%M'", "insert_at_line_end"]
+space = { l = ":set gutters.layout [\"line-numbers\",\"spacer\"]", L = ":set gutters.layout []" }
 
 [keys.insert]
 j = { j = "normal_mode", k = "normal_mode" }
-
 C-s = ":w"
-
 F1 = [":insert-output date +'%H:%M'", "insert_at_line_end"]
