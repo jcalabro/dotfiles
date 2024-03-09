@@ -28,6 +28,7 @@ FORMULAE=(
     gpg
     graphviz
     grep
+    helix
     htop
     jq
     kubernetes-cli
@@ -40,7 +41,6 @@ FORMULAE=(
     pyenv
     pyenv-virtualenv
     ripgrep
-    tmux
     tracy
     tmux
     watch

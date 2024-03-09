@@ -87,12 +87,16 @@ function install_dotfiles {
     mkdir -p $HOME/.config/ghostty
     cp $DOTFILE_BASE/ghostty/config $HOME/.config/ghostty/config
 
+    #
+    # TSan
+    #
+    ln -sf $DOTFILE_BASE/fedora/tsan-suppressions $HOME/.tsan_suppressions
+
     popd > /dev/null
 
     #
     # Set up diff-so-fancy
     #
-
     git config --global core.pager "diff-so-fancy | less --tabs=4 -RF"
     git config --global interactive.diffFilter "diff-so-fancy --patch"
     git config --bool --global diff-so-fancy.markEmptyLines false
