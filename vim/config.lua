@@ -35,6 +35,7 @@ lsp.setup()
 
 local tele_builtin = require('telescope.builtin')
 vim.keymap.set('n', '<Space>f', tele_builtin.find_files, {})
+vim.keymap.set('n', '<Space>\'', tele_builtin.resume, {})
 
 local actions = require("telescope.actions")
 require("telescope").setup{
