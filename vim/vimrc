@@ -1,7 +1,7 @@
 set encoding=utf-8
 
 " fix colorscheme in tmux
-"set t_Co=256
+set t_Co=256
 
 cabbrev vbs e $HOME/.bash_secrets
 cabbrev vrc e $HOME/.vimrc
