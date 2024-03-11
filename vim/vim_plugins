@@ -9,7 +9,7 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
-Plug 'rebelot/kanagawa.nvim'
+Plug 'nordtheme/vim'
 Plug 'jcalabro/tcomment_vim'
 Plug 'fatih/vim-go'
 Plug 'leafgarland/typescript-vim'
@@ -37,7 +37,17 @@ Plug 'VonHeikemen/lsp-zero.nvim', {'branch': 'v2.x'}
 
 call plug#end()
 
-colorscheme kanagawa-wave
+"
+" Colorscheme settings
+"
+
+set nocompatible
+if (has("termguicolors"))
+  set termguicolors
+endif
+
+syntax enable
+colorscheme nord
 
 "
 " Go settings
@@ -49,7 +59,6 @@ let g:go_info_mode='gopls'
 "
 " Rust settings
 "
-syntax enable
 filetype plugin indent on
 let g:rustfmt_autosave = 1
 
