@@ -83,10 +83,11 @@ vnoremap <silent> <C-Q> <C-O> :q<CR>
 " Map :Q to :qall
 :command! -bar -bang Q qall<bang>
 
-" Mappings to jump to the beginning and end of lines
+" Jump to the beginning and end of lines/buffers
 noremap gs ^
 noremap gh 0
 noremap gl $
+noremap ge G
 
 " Turn on syntax highlighting
 syntax on
