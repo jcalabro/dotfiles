@@ -151,9 +151,7 @@ vnoremap <C-l> <Esc>gt
 set ruler
 
 " Press Ctrl+K to duplicate the current buffer vertically
-noremap  <C-K>      :vert sb<Enter>
-inoremap <C-K> <Esc>:vert sb<Enter>
-vnoremap <C-K> <Esc>:vert sb<Enter>
+noremap  <C-K> :vert sb<Enter><C-w>w
 
 " Turn off search term highlighting
 set nohlsearch
