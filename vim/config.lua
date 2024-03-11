@@ -43,7 +43,6 @@ vim.keymap.set('n', '<Space>g', tele_builtin.live_grep, {})
 vim.keymap.set('n', '<Space>j', tele_builtin.jumplist, {})
 vim.keymap.set('n', '<Space>m', tele_builtin.man_pages, {})
 vim.keymap.set('n', '<Space>o', tele_builtin.oldfiles, {})
-vim.keymap.set('n', '<Space>r', tele_builtin.registers, {})
 vim.keymap.set('n', '<Space>\'', tele_builtin.resume, {})
 
 local actions = require("telescope.actions")
