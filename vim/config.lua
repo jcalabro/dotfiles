@@ -1,4 +1,7 @@
 require("mason").setup()
+require("inc_rename").setup()
+
+vim.keymap.set("n", "<Space>r", ":IncRename ")
 
 local lsp = require('lsp-zero')
 lsp.preset({})
