@@ -136,6 +136,9 @@ let g:NERDTreeWinSize=55
 noremap  <C-p>      :Telescope find_files<Enter>
 inoremap <C-p> <Esc>:Telescope find_files<Enter>
 
+" Duplicate the buffer in to a new tab
+noremap <C-t> :tab split<Enter>
+
 " Map switching between tabs to H and L
 noremap  <C-h>      gT
 inoremap <C-h> <Esc>gT
