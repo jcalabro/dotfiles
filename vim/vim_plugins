@@ -9,7 +9,7 @@
 call plug#begin('~/.vim/plugged')
 
 Plug 'scrooloose/nerdtree'
-Plug 'cocopon/iceberg.vim'
+Plug 'rebelot/kanagawa.nvim'
 Plug 'jcalabro/tcomment_vim'
 Plug 'fatih/vim-go'
 Plug 'leafgarland/typescript-vim'
@@ -37,7 +37,7 @@ Plug 'VonHeikemen/lsp-zero.nvim', {'branch': 'v2.x'}
 
 call plug#end()
 
-colorscheme iceberg
+colorscheme kanagawa-wave
 
 "
 " Go settings
