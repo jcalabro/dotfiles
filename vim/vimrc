@@ -157,9 +157,9 @@ noremap  <C-K> :vert sb<Enter><C-w>w
 set nohlsearch
 
 " Ctrl+a to comment
-noremap  <C-a>      :TComment<Enter>
-inoremap <C-a> <Esc>:TComment<Enter>
-vnoremap <C-a>      :TComment<Enter>
+noremap  <C-c>      :TComment<Enter>
+inoremap <C-c> <Esc>:TComment<Enter>
+vnoremap <C-c>      :TComment<Enter>
 
 " Press F1 or type :Time to insert the current time (helpful for logbooks)
 nmap <F1> i<C-R>=strftime("%H:%M")<CR> 
