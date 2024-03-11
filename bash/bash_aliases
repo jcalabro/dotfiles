@@ -9,7 +9,7 @@ alias jimvm="ssh jimvm"
 #
 # Editor
 #
-export EDITOR="hx"
+export EDITOR="vim"
 alias h="hx"
 alias x="hx"
 alias vim="nvim"
@@ -22,6 +22,7 @@ alias vbp="$EDITOR ~/.bashrc"
 alias vbs="$EDITOR ~/.bash_secrets"
 alias vbh="$EDITOR ~/.bash_history"
 alias vrc="$EDITOR ~/.vimrc"
+alias vlua="$EDITOR ~/.config/nvim/lua/config.lua"
 alias vrp="$EDITOR ~/.vim_plugins"
 alias vkc="$EDITOR ~/.kube/config"
 alias vtm="$EDITOR ~/.tmux.conf"

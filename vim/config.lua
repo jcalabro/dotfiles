@@ -32,3 +32,20 @@ lsp.on_attach(function(client, bufnr)
 end)
 
 lsp.setup()
+
+local tele_builtin = require('telescope.builtin')
+vim.keymap.set('n', '<Space>f', tele_builtin.find_files, {})
+
+local actions = require("telescope.actions")
+require("telescope").setup{
+  defaults = {
+    mappings = {
+      i = {
+        ["<esc>"] = actions.close,
+        ["<C-q>"] = actions.close,
+        ["<C-j>"] = actions.move_selection_next,
+        ["<C-k>"] = actions.move_selection_previous,
+      },
+    },
+  }
+}
