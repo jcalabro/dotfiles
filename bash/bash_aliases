@@ -142,6 +142,7 @@ alias tsu="sudo tailscale up"
 alias tsd="sudo tailscale down"
 alias tss="tailscale status"
 alias p="python3"
+alias lg="lazygit"
 
 function zig {
     if [ -f '.bin/zig/zig' ]; then
