@@ -22,3 +22,5 @@ PACKAGES=(
 )
 
 sudo dnf install -y ${PACKAGES[@]}
+
+go install honnef.co/go/gotraceui/cmd/gotraceui@latest

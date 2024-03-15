@@ -66,3 +66,5 @@ CASKS=(
 brew install --cask ${CASKS[@]}
 
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+
+go install honnef.co/go/gotraceui/cmd/gotraceui@latest
