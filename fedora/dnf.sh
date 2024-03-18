@@ -10,6 +10,7 @@ PACKAGES=(
     go
     helix
     htop
+    hyperfine
     jq
     mariadb
     neovim

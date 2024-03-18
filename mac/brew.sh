@@ -30,6 +30,7 @@ FORMULAE=(
     grep
     helix
     htop
+    hyperfine
     jq
     kubernetes-cli
     kubectx
