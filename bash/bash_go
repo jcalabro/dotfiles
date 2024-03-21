@@ -8,6 +8,7 @@ export PATH="$PATH:$GOPATH/bin"
 # Golang aliases
 #
 alias g='go run -race -ldflags="-compressdwarf=false" main.go'
+alias gr='go run -ldflags="-compressdwarf=false" main.go'
 alias gt="go test ./... -race -covermode=atomic -v -count=1"
 alias gtq="go test ./... -race -covermode=atomic -count=1"
 
