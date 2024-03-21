@@ -8,6 +8,8 @@ function run_if_exists {
 
 run_if_exists ~/.git-completion.bash
 
+export EDITOR="hx"
+
 export ZIG_BTRFS_WORKAROUND=1
 export TSAN_OPTIONS="suppressions=$HOME/.tsan_suppressions"
 
@@ -140,7 +142,7 @@ function lb() {
     cp -n template.md $F
     FULL_PATH=$(pwd)/$F
     popd > /dev/null
-    nvim $FULL_PATH
+    $EDITOR $FULL_PATH
 }
 
 #
