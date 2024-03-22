@@ -59,7 +59,7 @@ function install_dotfiles {
     ln -sf $DOTFILE_BASE/helix/config.toml $HOME/.config/helix/config.toml
     ln -sf $DOTFILE_BASE/helix/languages.toml $HOME/.config/helix/languages.toml
     mkdir -p $HOME/.config/helix/themes
-    ln -sf $DOTFILE_BASE/helix/jim_nord_night.toml $HOME/.config/helix/themes/jim_nord_night.toml
+    ln -sf $DOTFILE_BASE/helix/jim_nord.toml $HOME/.config/helix/themes/jim_nord.toml
 
     #
     # Go

@@ -1,4 +1,4 @@
-theme = "jim_nord_night"
+theme = "jim_nord"
 
 [editor]
 gutters = []
