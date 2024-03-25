@@ -9,7 +9,7 @@ FORMULAE=(
     bat
     cloc
     coreutils
-    diff-so-fancy
+    difftastic
     docker-compose
     doctl
     exa

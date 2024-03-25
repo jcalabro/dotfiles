@@ -4,7 +4,7 @@ PACKAGES=(
     bat
     cloc
     coreutils
-    diff-so-fancy
+    difftastic
     exa
     gnuplot
     go
