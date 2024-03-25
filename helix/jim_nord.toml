@@ -2,3 +2,6 @@ inherits = 'nord'
 
 # make comments less visible
 "comment" = { fg = "nord3_bright" }
+
+# use standard window styles
+"ui.window" = "nord1"
