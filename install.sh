@@ -43,7 +43,6 @@ function install_dotfiles {
     ln -sf $DOTFILE_BASE/vim/init.vim $HOME/.config/nvim/init.vim
     ln -sf $DOTFILE_BASE/vim/config.lua $HOME/.config/nvim/lua/config.lua
     ln -sf $DOTFILE_BASE/vim/coc-settings.json $HOME/.config/nvim/coc-settings.json
-    ln -sf $DOTFILE_BASE/vim/zls.json $HOME/.config/zls.json
     if [ "$(uname)" == "Darwin" ]; then
         ln -sf $DOTFILE_BASE/vim/zls.json "$HOME/Library/Application Support/zls.json"
     fi
@@ -66,6 +65,15 @@ function install_dotfiles {
     #
     mkdir -p $HOME/.dlv
     ln -sf $DOTFILE_BASE/go/dlv-config.yml $HOME/.dlv/config.yml
+
+    #
+    # Zig
+    #
+    if [ "$(uname)" == "Darwin" ]; then
+        ln -sf $DOTFILE_BASE/mac/zls.json $HOME/.config/zls.json
+    else
+        ln -sf $DOTFILE_BASE/fedora/zls.json $HOME/.config/zls.json
+    fi
 
     #
     # VS Code

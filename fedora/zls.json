@@ -1,0 +1,22 @@
+{
+    "enable_snippets": true,
+    "enable_argument_placeholders": false,
+    "enable_build_on_save": true,
+    "enable_ast_check_diagnostics": true,
+    "enable_autofix": true,
+    "enable_import_embedfile_argument_completions": false,
+    "warn_style": true,
+    "semantic_tokens": "none",
+    "enable_inlay_hints": true,
+    "inlay_hints_show_builtin": false,
+    "inlay_hints_exclude_single_argument": true,
+    "inlay_hints_hide_redundant_param_names": true,
+    "inlay_hints_hide_redundant_param_names_last_token": true,
+    "operator_completions": true,
+    "include_at_in_builtins": true,
+    "max_detail_length": 1048576,
+    "skip_std_references": false,
+    "highlight_global_var_declarations": false,
+    "use_comptime_interpreter": true,
+    "zig_exe_path": "/home/jcalabro/local/bin/zig/zig"
+}

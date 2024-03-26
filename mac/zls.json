@@ -17,5 +17,6 @@
     "max_detail_length": 1048576,
     "skip_std_references": false,
     "highlight_global_var_declarations": false,
-    "use_comptime_interpreter": true
+    "use_comptime_interpreter": true,
+    "zig_exe_path": "/Users/jcalabro/local/bin/zig/zig"
 }
