@@ -72,6 +72,12 @@ function uci_integration_test {
     cat $1 | jq .uci | rg '"' | sed 's/"//g' | sed 's/,//g' | cut -c 3- | awk '{print}END {print "fetch analysis"}'
 }
 
+function cee_go_link_path {
+    export LD_LIBRARY_PATH="$1"
+    export DYLD_LIBRARY_PATH="$1"
+    export CGO_LDFLAGS="-L$1"
+}
+
 #
 # CEE-microservice
 #
