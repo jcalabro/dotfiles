@@ -12,7 +12,7 @@ FORMULAE=(
     difftastic
     docker-compose
     doctl
-    exa
+    eza
     emscripten
     findutils
     gawk

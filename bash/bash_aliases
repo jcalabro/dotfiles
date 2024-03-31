@@ -57,11 +57,11 @@ function gpsu {
 }
 
 #
-# ls/exa
+# ls/eza
 #
-which exa &> /dev/null
+which eza &> /dev/null
 if [ "$?" -eq "0" ]; then
-    alias ls="exa -l"
+    alias ls="eza -l"
 else
     alias ls="ls -lh --color"
 fi

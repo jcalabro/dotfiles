@@ -5,7 +5,7 @@ PACKAGES=(
     cloc
     coreutils
     difftastic
-    exa
+    eza
     gnuplot
     go
     helix
