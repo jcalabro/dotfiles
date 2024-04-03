@@ -1,7 +1,6 @@
 theme = "jim_nord"
 
 [editor]
-gutters = []
 true-color = true
 
 [editor.cursor-shape]
