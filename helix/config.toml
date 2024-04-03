@@ -1,6 +1,7 @@
 theme = "jim_nord"
 
 [editor]
+gutters = ["line-numbers", "spacer"]
 true-color = true
 
 [editor.cursor-shape]
