@@ -34,6 +34,7 @@ FORMULAE=(
     jq
     kubernetes-cli
     kubectx
+    llvm
     mariadb
     neovim
     postgresql
