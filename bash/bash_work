@@ -65,7 +65,7 @@ function hz_clear_bestmove {
 # CEE
 #
 
-export CEE_ROOT="$HOME/github.com/ChessCom/explanation-engine"
+export CEE_ROOT="$HOME/go/src/github.com/ChessCom/explanation-engine"
 export PATH="$PATH:$HOME/local/bin/clang14/bin"
 export DYLD_LIBRARY_PATH="/opt/homebrew/opt/cairo/lib:$DYLD_LIBRARY_PATH"
 export DO_CEE_COMPILE_COMMANDS="true"
