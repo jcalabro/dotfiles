@@ -82,16 +82,20 @@ function cee_go_link_path {
 }
 
 function cee_go_link_path_debug {
-    cee_go_link_path /Users/jcalabro/go/src/github.com/ChessCom/explanation-engine/target/debug/
+    cee_go_link_path $HOME/go/src/github.com/ChessCom/explanation-engine/target/debug/
 }
 cee_go_link_path_debug
 
 function cee_go_link_path_release {
-    cee_go_link_path /Users/jcalabro/go/src/github.com/ChessCom/explanation-engine/target/release/
+    cee_go_link_path $HOME/go/src/github.com/ChessCom/explanation-engine/target/release/
 }
 
-function cee_go_link_path_master {
-    cee_go_link_path /Users/jcalabro/go/src/github.com/ChessCom/explanation-engine-master/target/debug/
+function cee_go_link_path_master_debug {
+    cee_go_link_path $HOME/go/src/github.com/ChessCom/explanation-engine-master/target/debug/
+}
+
+function cee_go_link_path_master_release {
+    cee_go_link_path $HOME/go/src/github.com/ChessCom/explanation-engine-master/target/release/
 }
 
 #
