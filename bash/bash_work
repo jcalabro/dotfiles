@@ -94,6 +94,7 @@ function cee_go_link_path_master {
 # CEE-microservice
 #
 
+alias ceem="ch CEE-microservice"
 export CEE_BIN="$HOME/local/bin/explanation-engine"
 export GAME_STATE_SERVICE_SAVES_PERCENT="1.00"
 
