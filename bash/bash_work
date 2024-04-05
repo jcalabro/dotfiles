@@ -84,6 +84,7 @@ function cee_go_link_path {
 function cee_go_link_path_dev {
     cee_go_link_path /Users/jcalabro/go/src/github.com/ChessCom/explanation-engine/target/debug/
 }
+cee_go_link_path_dev
 
 function cee_go_link_path_master {
     cee_go_link_path /Users/jcalabro/go/src/github.com/ChessCom/explanation-engine-master/target/debug/
