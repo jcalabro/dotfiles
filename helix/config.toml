@@ -14,7 +14,7 @@ enable = true
 max-indent-retain = 0
 
 [keys.normal]
-C-d = ":buffer-close"
+C-j = ":buffer-close"
 C-k = "vsplit"
 C-x = "hsplit"
 C-n = "rotate_view"
