@@ -31,6 +31,7 @@ FORMULAE=(
     helix
     htop
     hyperfine
+    just
     jq
     kubernetes-cli
     kubectx
