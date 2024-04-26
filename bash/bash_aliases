@@ -3,7 +3,6 @@
 #
 # SSH
 #
-alias j="ssh jlinux"
 alias jimvm="ssh jimvm"
 
 #
@@ -144,6 +143,7 @@ alias tsd="sudo tailscale down"
 alias tss="tailscale status"
 alias p="python3"
 alias lg="lazygit"
+alias j="just"
 
 function zig {
     if [ -f '.bin/zig/zig' ]; then
