@@ -11,6 +11,7 @@ PACKAGES=(
     helix
     htop
     hyperfine
+    just
     jq
     mariadb
     neovim
