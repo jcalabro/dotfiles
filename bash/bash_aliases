@@ -168,3 +168,6 @@ function adump {
 function odump {
     objdump -Sd ./assets/$1/out | less
 }
+function relf {
+    readelf --debug-dump=$1 ./assets/$2/out | less
+}
