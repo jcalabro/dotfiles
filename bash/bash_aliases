@@ -46,6 +46,7 @@ alias gcm="git commit -S -m"
 alias amend="git commit --amend -S -m"
 alias clean="git clean -fd"
 alias update="am 'update' && gp"
+alias prune="git remote prune origin"
 
 function gp {
     git branch --no-color | grep '*' | cut -f 2 -d " " | xargs -L1 git push -u origin
