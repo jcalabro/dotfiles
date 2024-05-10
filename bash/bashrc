@@ -313,3 +313,6 @@ fi
 export HELIX_RUNTIME=/usr/share/helix/runtime
 
 export RUST_BACKTRACE=1
+
+# Added by LM Studio CLI tool (lms)
+export PATH="$PATH:/Users/jcalabro/.cache/lm-studio/bin"

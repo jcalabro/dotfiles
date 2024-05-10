@@ -132,7 +132,6 @@ alias m="make"
 alias rmr="rm -r"
 alias fail="tail -f"
 alias cdt="gh jcalabro/trunk"
-alias jai="jai-linux"
 alias z="zig"
 alias zb="zig build --summary all -freference-trace"
 alias zr="zb run -freference-trace"
@@ -153,6 +152,10 @@ function zig {
         $LOCAL_BIN_DIR/zig/zig "$@"
     fi
 }
+
+if [ $(uname -s) == "Darwin" ]; then
+    alias jai="jai-macos"
+fi
 
 function zig_clear_cache {
     rm -rf zig-*
