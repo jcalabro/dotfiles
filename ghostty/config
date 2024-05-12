@@ -1,10 +1,8 @@
+background = 2e3440
 font-size = 14
 font-feature = -calt
 font-feature = -dlig
 font-feature = -liga
-
-mouse-hide-while-typing = true
-
 macos-non-native-fullscreen = visible-menu
-
-background = 2e3440
+mouse-hide-while-typing = true
+shell-integration = none
