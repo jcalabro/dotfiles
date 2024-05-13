@@ -145,6 +145,14 @@ alias p="python3"
 alias lg="lazygit"
 alias j="just"
 
+function jai {
+    if [ $(uname -s) == "Darwin" ]; then
+        alias jai="jai-macos" "$@"
+    else
+        alias jai="jai-linux" "$@"
+    fi
+}
+
 function zig {
     if [ -f '.bin/zig/zig' ]; then
         .bin/zig/zig "$@"
