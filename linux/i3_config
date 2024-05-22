@@ -133,6 +133,8 @@ bindsym $mod+0 workspace number $ws10
 bindsym $mod+m workspace back_and_forth
 bindsym $mod+n workspace next
 bindsym $mod+p workspace prev
+bindsym Control+Right workspace next
+bindsym Control+Left workspace prev
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
