@@ -37,6 +37,7 @@ FORMULAE=(
     kubectx
     llvm
     mariadb
+    neofetch
     neovim
     postgresql
     protobuf
