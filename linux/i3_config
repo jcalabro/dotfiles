@@ -60,12 +60,6 @@ bindsym $mod+k focus down
 bindsym $mod+l focus up
 bindsym $mod+semicolon focus right
 
-# alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
-
 # move focused window
 bindsym $mod+Shift+j move left
 bindsym $mod+Shift+k move down
@@ -133,6 +127,8 @@ bindsym $mod+0 workspace number $ws10
 bindsym $mod+m workspace back_and_forth
 bindsym $mod+n workspace next
 bindsym $mod+p workspace prev
+bindsym $mod+Right workspace next
+bindsym $mod+Left workspace prev
 bindsym Control+Right workspace next
 bindsym Control+Left workspace prev
 
