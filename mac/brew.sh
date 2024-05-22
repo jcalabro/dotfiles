@@ -33,6 +33,8 @@ FORMULAE=(
     hyperfine
     just
     jq
+    koekeishiya/formulae/skhd
+    koekeishiya/formulae/yabai
     kubernetes-cli
     kubectx
     llvm

@@ -26,6 +26,11 @@ function install_dotfiles {
     ln -sf $DOTFILE_BASE/linux/i3_config $HOME/.config/i3/config
 
     #
+    # Yabai
+    #
+    ln -sf $DOTFILE_BASE/macos/yabairc $HOME/.yabairc
+
+    #
     # Git
     #
     ln -sf $DOTFILE_BASE/git/gitignore           $HOME/.gitignore
