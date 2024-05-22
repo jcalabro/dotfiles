@@ -318,3 +318,14 @@ export RUST_BACKTRACE=1
 
 # Added by LM Studio CLI tool (lms)
 export PATH="$PATH:/Users/jcalabro/.cache/lm-studio/bin"
+
+#
+# Remap keys in i3
+#
+
+if pgrep -x "i3" > /dev/null; then
+    xmodmap -e "remove lock = Caps_Lock" > /dev/null 2>&1
+    xmodmap -e "keycode 66 = Control_L"  > /dev/null 2>&1
+    xmodmap -e "add control = Control_L" > /dev/null 2>&1
+fi
+

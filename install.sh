@@ -20,6 +20,12 @@ function install_dotfiles {
     ln -sf $DOTFILE_BASE/bash/bash_work    $HOME/.bash_work
 
     #
+    # i3
+    #
+    mkdir -p $HOME/.config/i3
+    ln -sf $DOTFILE_BASE/linux/i3_config $HOME/.config/i3/config
+
+    #
     # Git
     #
     ln -sf $DOTFILE_BASE/git/gitignore           $HOME/.gitignore
