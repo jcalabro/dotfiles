@@ -14,6 +14,10 @@ enable = true
 max-indent-retain = 0
 
 [keys.normal]
+j = "move_char_left"
+k = "move_visual_line_down"
+l = "move_visual_line_up"
+";" = "move_char_right"
 C-d = ":buffer-close"
 C-k = "vsplit"
 C-x = "hsplit"
@@ -24,6 +28,7 @@ C-y = "scroll_up"
 C-s = ":w"
 C-q = ":q"
 C-r = ":reload"
+g = { j = "goto_line_start", ";" = "goto_line_end" }
 F1 = [":insert-output date +'%H:%M'", "insert_at_line_end"]
 space = { l = ":set gutters.layout [\"line-numbers\",\"spacer\"]", L = ":set gutters.layout []", o = ":o .panacea/config.ini" }
 
