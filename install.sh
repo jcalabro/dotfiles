@@ -28,7 +28,9 @@ function install_dotfiles {
     #
     # Yabai
     #
-    ln -sf $DOTFILE_BASE/macos/yabairc $HOME/.yabairc
+    mkdir -p $HOME/.config/{yabai,skhd}
+    ln -sf $DOTFILE_BASE/macos/yabairc $HOME/.config/yabai
+    ln -sf $DOTFILE_BASE/macos/skhdrc $HOME/.config/skhd
 
     #
     # Git
