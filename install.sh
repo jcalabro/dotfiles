@@ -112,7 +112,7 @@ function install_dotfiles {
     # Ghostty (make a local copy)
     #
     mkdir -p $HOME/.config/ghostty
-    cp $DOTFILE_BASE/ghostty/config $HOME/.config/ghostty/config
+    cp -n $DOTFILE_BASE/ghostty/config $HOME/.config/ghostty/config
 
     #
     # TSan
