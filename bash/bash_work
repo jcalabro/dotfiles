@@ -98,6 +98,11 @@ function cee_go_link_path_master_release {
     cee_go_link_path $HOME/go/src/github.com/ChessCom/explanation-engine-master/target/release/
 }
 
+function clang_format_file {
+    clang-format $1 > a
+    mv a $1
+}
+
 #
 # CEE-microservice
 #
