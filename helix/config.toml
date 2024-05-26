@@ -28,9 +28,19 @@ C-y = "scroll_up"
 C-s = ":w"
 C-q = ":q"
 C-r = ":reload"
-g = { j = "goto_line_start", ";" = "goto_line_end" }
 F1 = [":insert-output date +'%H:%M'", "insert_at_line_end"]
-space = { l = ":set gutters.layout [\"line-numbers\",\"spacer\"]", L = ":set gutters.layout []", o = ":o .panacea/config.ini" }
+
+[keys.normal.g]
+j = "goto_line_start"
+";" = "goto_line_end"
+[keys.select.g]
+j = "goto_line_start"
+";" = "goto_line_end"
+
+[keys.normal.space]
+l = ":set gutters.layout [\"line-numbers\",\"spacer\"]"
+L = ":set gutters.layout []"
+o = ":o .panacea/config.ini"
 
 [keys.insert]
 j = { j = "normal_mode", k = "normal_mode" }
@@ -42,3 +52,13 @@ j = "extend_char_left"
 k = "extend_visual_line_down"
 l = "extend_visual_line_up"
 ";" = "extend_char_right"
+
+[keys.normal.C-w]
+j = "jump_view_left"
+k = "jump_view_down"
+l = "jump_view_up"
+";" = "jump_view_right"
+J = "swap_view_left"
+K = "swap_view_down"
+L = "swap_view_up"
+":" = "swap_view_right"
