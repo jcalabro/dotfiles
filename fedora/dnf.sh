@@ -15,6 +15,7 @@ PACKAGES=(
     jq
     mariadb
     neovim
+    playerctl
     postgresql
     protobuf
     protoc-gen-go
