@@ -20,6 +20,12 @@ function install_dotfiles {
     ln -sf $DOTFILE_BASE/bash/bash_work    $HOME/.bash_work
 
     #
+    # Nix
+    #
+    mkdir -p $HOME/.config/nix
+    ln -sf $DOTFILE_BASE/nix/nix.conf $HOME/.config/nix/nix.conf
+
+    #
     # i3
     #
     mkdir -p $HOME/.config/i3
