@@ -10,6 +10,7 @@ FORMULAE=(
     cloc
     coreutils
     difftastic
+    direnv
     docker-compose
     doctl
     eza

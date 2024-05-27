@@ -5,6 +5,7 @@ PACKAGES=(
     cloc
     coreutils
     difftastic
+    direnv
     eza
     gnuplot
     go
