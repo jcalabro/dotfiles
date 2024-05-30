@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-eval "$(direnv hook bash)"
-
 function run_if_exists {
     if [ -f $1 ]; then
         source $1
@@ -331,3 +329,4 @@ if pgrep -x "i3" > /dev/null; then
     xmodmap -e "add control = Control_L" > /dev/null 2>&1
 fi
 
+eval "$(direnv hook bash)"
