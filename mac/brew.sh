@@ -7,6 +7,7 @@ brew update
 
 FORMULAE=(
     bat
+    bash # be sure to change the shell by editing /etc/shells, then chsh. Confirm with echo $SHELL
     cloc
     coreutils
     difftastic
