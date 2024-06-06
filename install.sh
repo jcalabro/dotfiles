@@ -32,6 +32,12 @@ function install_dotfiles {
     ln -sf $DOTFILE_BASE/linux/i3_config $HOME/.config/i3/config
 
     #
+    # Aerospace
+    #
+    mkdir -p $HOME/.config/aerospace
+    ln -sf $DOTFILE_BASE/mac/aerospace.toml $HOME/.config/aerospace/aerospace.toml
+
+    #
     # Yabai
     #
     mkdir -p $HOME/.config/{yabai,skhd}
