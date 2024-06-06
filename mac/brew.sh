@@ -64,6 +64,7 @@ CASKS=(
     flux
     iterm2
     kdiff3
+    nikitabobko/tap/aerospace
     obsidian
     spotify
     sublime-text
