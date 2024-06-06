@@ -40,8 +40,6 @@ alt-n = 'workspace next'
 alt-p = 'workspace prev'
 alt-right = 'workspace next'
 alt-left = 'workspace prev'
-cmd-right = 'workspace next'
-cmd-left = 'workspace prev'
 
 alt-1 = 'workspace 1'
 alt-2 = 'workspace 2'
