@@ -149,7 +149,6 @@ alias tss="tailscale status"
 alias p="python3"
 alias lg="lazygit"
 alias j="just"
-alias jr="just run"
 
 function jai {
     if [ $(uname -s) == "Darwin" ]; then
