@@ -131,3 +131,7 @@ function gomodbypass {
     export GOPROXY=direct
     export GOSUMDB=off
 }
+
+function golatestdep {
+    go list -mod=mod -m -u $1
+}
