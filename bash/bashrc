@@ -121,6 +121,13 @@ function save_dotfiles {
 
     echo "Done"
 }
+function pd {
+    pushd "$HOME/misc/dotfiles" > /dev/null
+    git pull -r origin main
+    popd > /dev/null
+
+    echo "Done"
+}
 
 #
 # Use brew's python over local system python
