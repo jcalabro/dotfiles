@@ -150,6 +150,12 @@ alias p="python3"
 alias lg="lazygit"
 alias j="just"
 
+function build {
+    pushd assets/$1 > /dev/null
+    ./build.sh
+    popd > /dev/null
+}
+
 function jai {
     if [ $(uname -s) == "Darwin" ]; then
         alias jai="jai-macos" "$@"
