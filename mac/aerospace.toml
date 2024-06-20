@@ -16,8 +16,8 @@ alt-shift-k = 'move down'
 alt-shift-l = 'move up'
 alt-shift-semicolon = 'move right'
 
-# alt-h = 'split horizontal'
-# alt-v = 'split vertical'
+alt-h = 'split horizontal'
+alt-v = 'split vertical'
 
 alt-f = 'fullscreen'
 
@@ -35,8 +35,8 @@ alt-shift-space = 'layout floating tiling' # 'floating toggle' in i3
 # should be supported at all https://github.com/nikitabobko/AeroSpace/issues/5
 # alt-a = 'focus parent'
 
-alt-h = 'workspace prev'
-alt-quote = 'workspace next'
+alt-i = 'workspace prev'
+alt-o = 'workspace next'
 alt-left = 'workspace prev'
 alt-right = 'workspace next'
 
