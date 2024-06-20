@@ -42,6 +42,8 @@ if [ -x "$(command -v brew)" ]; then
     eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
+alias sus="systemctl suspend"
+
 function bp {
     pushd $HOME > /dev/null
     source .bash_profile
