@@ -6,6 +6,10 @@ name = "cpp"
 indent = { tab-width = 4, unit = "    " }
 
 [[language]]
+name = "html"
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
 name = "go"
 formatter = { command = "goimports" }
 
