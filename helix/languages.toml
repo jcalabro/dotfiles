@@ -8,15 +8,21 @@ indent = { tab-width = 4, unit = "    " }
 [[language]]
 name = "html"
 indent = { tab-width = 4, unit = "    " }
-
 [[language]]
-name = "go"
-formatter = { command = "goimports" }
+name = "css"
+indent = { tab-width = 4, unit = "    " }
+[[language]]
+name = "javascript"
+indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "typescript"
 formatter = { command = "eslint", args = ["--max-warnings=0", "--fix"] }
 auto-format = true
+
+[[language]]
+name = "go"
+formatter = { command = "goimports" }
 
 [[language]]
 name = "gdbinit"
