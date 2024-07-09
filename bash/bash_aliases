@@ -29,7 +29,7 @@ alias vi3="$EDITOR ~/.config/i3/config"
 alias vyab="$EDITOR ~/.config/yabai/yabairc"
 alias vskhd="$EDITOR ~/.config/skhd/skhdrc"
 alias vhx="$EDITOR ~/.config/helix/config.toml"
-alias val="$EDITOR ~/.config/alacritty/alacritty.yml"
+alias val="$EDITOR ~/.config/alacritty/alacritty.toml"
 alias vg="$EDITOR ~/.config/ghostty/config"
 alias va="$EDITOR ~/.config/aerospace/aerospace.toml"
 
