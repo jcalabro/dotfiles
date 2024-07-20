@@ -15,6 +15,7 @@ alias ch="gh ChessCom"
 alias ee="ch explanation-engine"
 alias eei="ch explanation-engine-interface"
 alias eem="ch explanation-engine-master"
+alias cs="ch ceac-services"
 
 alias plat="ch platform && cd workloads"
 alias plat-col="plat && cd chesscom-prod-col-rancher/ceac"
