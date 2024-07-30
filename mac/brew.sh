@@ -9,6 +9,7 @@ FORMULAE=(
     bat
     bash # be sure to change the shell by editing /etc/shells, then chsh. Confirm with echo $SHELL
     cloc
+    cocoapods
     coreutils
     difftastic
     direnv
@@ -61,6 +62,7 @@ CASKS=(
     alacritty
     audacity
     docker
+    flutter
     flux
     iterm2
     kdiff3
