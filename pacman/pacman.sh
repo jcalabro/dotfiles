@@ -7,6 +7,7 @@ PACKAGES=(
     cloc
     difftastic
     direnv
+    dmenu
     eza
     gnuplot
     go
