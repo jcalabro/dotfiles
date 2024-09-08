@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
 PACKAGES=(
+    base-devel
     bat
+    btop
     cloc
     difftastic
     direnv
