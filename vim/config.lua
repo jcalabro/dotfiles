@@ -9,7 +9,6 @@ lsp.preset({})
 lsp.ensure_installed({
     "clangd",
     "gopls",
-    "tsserver",
     "zls",
 })
 
