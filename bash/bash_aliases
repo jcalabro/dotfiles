@@ -4,6 +4,7 @@
 # SSH
 #
 alias jimvm="ssh jimvm"
+alias jl="ssh jlinux01"
 
 #
 # Editor
