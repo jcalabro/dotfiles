@@ -16,9 +16,11 @@ PACKAGES=(
     just
     jq
     mariadb
+    neofetch
     neovim
     protobuf
     ripgrep
+    strace
     tmux
     wget
 )

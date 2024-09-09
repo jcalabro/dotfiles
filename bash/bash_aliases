@@ -8,7 +8,6 @@ alias jimvm="ssh jimvm"
 #
 # Editor
 #
-alias hx="helix"
 alias h="hx"
 alias x="hx"
 alias vim="nvim"
