@@ -16,6 +16,7 @@ PACKAGES=(
     just
     jq
     mariadb
+    net-tools
     neofetch
     neovim
     protobuf
