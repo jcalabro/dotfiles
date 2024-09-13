@@ -39,7 +39,8 @@
         "jimvm.cogolo.cloud": "linux",
         "linux": "linux",
         "jimvm": "linux",
-        "jlinux": "linux"
+        "jlinux": "linux",
+        "jlinux01": "linux"
     },
     "extensions.ignoreRecommendations": true,
     "files.associations": {
