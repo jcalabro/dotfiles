@@ -166,14 +166,6 @@ function jai {
     fi
 }
 
-function zig {
-    if [ -f '.bin/zig/zig' ]; then
-        .bin/zig/zig "$@"
-    else
-        $LOCAL_BIN_DIR/zig/zig "$@"
-    fi
-}
-
 if [ $(uname -s) == "Darwin" ]; then
     alias jai="jai-macos"
 fi
