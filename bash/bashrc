@@ -174,7 +174,7 @@ function clog {
 #
 function pl {
     pushd $LOGBOOK > /dev/null
-    git pull -r
+    git pull -r origin main
     popd > /dev/null
 }
 
