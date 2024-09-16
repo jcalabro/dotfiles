@@ -19,6 +19,7 @@ PACKAGES=(
     net-tools
     neofetch
     neovim
+    playerctl
     protobuf
     ripgrep
     strace
