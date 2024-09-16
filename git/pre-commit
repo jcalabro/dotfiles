@@ -1,2 +1,2 @@
-echo "" && rg -i "nocheckin" && echo -e "\nFOUND @NOCHECKIN; NOT COMMITING" && exit 1
+echo "" && git diff --cached | rg -i "nocheckin" && echo -e "\nFOUND @NOCHECKIN; NOT COMMITING" && exit 1
 exit 0
