@@ -10,10 +10,12 @@ PACKAGES=(
     dmenu
     eza
     gdb
+    glib2-devel
     gnuplot
     go
     helix
     htop
+    iwd
     just
     jq
     mariadb

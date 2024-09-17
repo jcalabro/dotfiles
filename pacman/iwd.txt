@@ -1,0 +1,4 @@
+# install under /etc/iwd/main.conf to turn on the dhcp client
+
+[General]
+EnableNetworkConfiguration=true
