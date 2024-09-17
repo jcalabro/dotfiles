@@ -9,6 +9,7 @@ PACKAGES=(
     direnv
     dmenu
     eza
+    gdb
     gnuplot
     go
     helix
