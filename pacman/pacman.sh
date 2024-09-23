@@ -30,6 +30,7 @@ PACKAGES=(
     strace
     tmux
     wget
+    whois
 )
 
 sudo pacman -Sy --noconfirm ${PACKAGES[@]}
