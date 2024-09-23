@@ -8,6 +8,7 @@ PACKAGES=(
     difftastic
     direnv
     dmenu
+    dnsutils
     eza
     gdb
     glib2-devel
