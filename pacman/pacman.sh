@@ -14,6 +14,7 @@ PACKAGES=(
     glib2-devel
     gnuplot
     go
+    graphviz
     helix
     htop
     iwd
