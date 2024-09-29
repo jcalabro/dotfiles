@@ -148,8 +148,8 @@ inoremap <C-p> <Esc>:Telescope find_files<Enter>
 noremap <C-t> :tab split<Enter>
 
 " Map switching between tabs to Shift+j and Shift+;
-noremap  J      gT
-noremap  :      gt
+noremap K gT
+noremap L gt
 
 " Show the position of the cursor
 set ruler
