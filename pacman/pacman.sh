@@ -21,6 +21,7 @@ PACKAGES=(
     just
     jq
     mariadb
+    massif-visualizer
     net-tools
     neofetch
     neovim
