@@ -30,6 +30,7 @@ PACKAGES=(
     ripgrep
     strace
     tmux
+    valgrind
     wget
     whois
 )
