@@ -5,6 +5,7 @@ PACKAGES=(
     bat
     btop
     cloc
+    code
     difftastic
     direnv
     dmenu
