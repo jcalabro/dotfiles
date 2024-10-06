@@ -20,6 +20,7 @@ PACKAGES=(
     iwd
     just
     jq
+    lldb
     mariadb
     massif-visualizer
     net-tools
