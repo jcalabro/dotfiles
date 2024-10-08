@@ -270,6 +270,10 @@ function init_public_repo {
     git config --local user.email jamesrcalabro@gmail.com
     git config --local user.signingkey "$HOME_SIGN_KEY"
 }
+function init_work_repo {
+    git config --local user.email "$WORK_EMAIL"
+    git config --local user.signingkey "$WORK_SIGN_KEY"
+}
 
 function whatsmyip {
     curl https://ipinfo.io

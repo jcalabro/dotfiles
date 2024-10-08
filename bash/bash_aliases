@@ -149,6 +149,7 @@ alias tss="tailscale status"
 alias p="python3"
 alias j="just"
 alias pan="/home/jcalabro/go/src/github.com/jcalabro/panacea/zig-out/bin/panacea"
+alias gjp="gj panacea"
 
 function build {
     pushd assets/$1 > /dev/null
