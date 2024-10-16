@@ -22,6 +22,7 @@ alias plat-col="plat && cd chesscom-prod-col-rancher/ceac"
 alias plat-gcp="plat && cd chesscom-prod/ceac"
 alias plat-us-east5="plat && cd chesscom-prod-us-east5/ceac"
 alias plat-staging="plat && cd chesscom-staging/ceac"
+alias plat-staging-va="plat && cd chesscom-staging-va-rancher/ceac"
 alias plat-sandbox="plat && cd chesscom-sandbox/ceac"
 alias plat-va="plat && cd chesscom-prod-va-rancher/ceac"
 
