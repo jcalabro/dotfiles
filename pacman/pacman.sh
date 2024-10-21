@@ -10,6 +10,7 @@ PACKAGES=(
     direnv
     dmenu
     dnsutils
+    docker
     eza
     gdb
     glib2-devel
