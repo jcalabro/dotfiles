@@ -11,6 +11,7 @@ PACKAGES=(
     dmenu
     dnsutils
     docker
+    docker-compose
     eza
     gdb
     glib2-devel
