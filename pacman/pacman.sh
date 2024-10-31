@@ -24,6 +24,7 @@ PACKAGES=(
     just
     jq
     lldb
+    lldb-mi
     mariadb
     massif-visualizer
     net-tools
