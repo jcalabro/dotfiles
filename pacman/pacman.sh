@@ -5,6 +5,7 @@ PACKAGES=(
     bat
     btop
     cloc
+    cmake
     code
     difftastic
     direnv
