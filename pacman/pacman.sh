@@ -12,6 +12,7 @@ PACKAGES=(
     dmenu
     dnsutils
     docker
+    docker-buildx
     docker-compose
     eza
     gdb
