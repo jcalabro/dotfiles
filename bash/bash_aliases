@@ -9,8 +9,6 @@ alias jl="ssh jlinux01"
 #
 # Editor
 #
-alias h="hx"
-alias x="hx"
 alias vim="nvim"
 alias vi="vim"
 alias v="vim"
