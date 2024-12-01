@@ -29,6 +29,7 @@ PACKAGES=(
     lldb-mi
     mariadb
     massif-visualizer
+    netcat
     net-tools
     neofetch
     neovim
