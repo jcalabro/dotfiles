@@ -25,6 +25,7 @@ PACKAGES=(
     iwd
     just
     jq
+    kdiff3
     lldb
     lldb-mi
     mariadb
