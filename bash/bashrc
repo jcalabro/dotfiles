@@ -17,7 +17,12 @@ export GHOSTTY_SHELL_INTEGRATION_NO_CURSOR=1
 #
 # Path
 #
+
 export LOCAL_BIN_DIR="$HOME/local/bin"
+if [[ $(whoami) == "root" ]]; then
+    export LOCAL_BIN_DIR="/home/jcalabro/local/bin"
+fi
+
 export PATH="$PATH:/usr/share/bcc/tools"
 export PATH="$PATH:$LOCAL_BIN_DIR"
 export PATH="$PATH:$LOCAL_BIN_DIR/bin"
