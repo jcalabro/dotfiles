@@ -300,6 +300,18 @@ function install_ghostty_fedora {
     zig build -Doptimize=ReleaseFast -Dapp-runtime=gtk -p $HOME/.local
 }
 
+function kill_processes {
+    echo -n "Are you sure you want to kill everything matching $1 (y/N)? "
+    read answer
+    if [ "$answer" != "${answer#[Yy]}" ] ;then
+        echo "Killing $1"
+        ps aux | rg $1 | awk '{print $2}' | xargs kill
+    else
+        echo "Exiting"
+        return
+    fi
+}
+
 #
 # Run other files
 #
