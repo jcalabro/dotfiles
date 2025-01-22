@@ -40,7 +40,7 @@ j = "goto_line_start"
 [keys.normal.space]
 l = ":set gutters.layout [\"line-numbers\",\"spacer\"]"
 L = ":set gutters.layout []"
-o = ":o .panacea/config.ini"
+o = ":o .microscope/config.ini"
 
 [keys.insert]
 j = { j = "normal_mode", k = "normal_mode" }
