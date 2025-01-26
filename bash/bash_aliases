@@ -136,6 +136,7 @@ alias e="./unix.sh -run"
 alias m="make"
 alias fail="tail -f"
 alias cdt="gh jcalabro/trunk"
+alias gm="gh jcalabro/uscope"
 alias z="zig"
 alias zb="zig build -freference-trace"
 alias zr="zb run -freference-trace"
@@ -196,11 +197,11 @@ fi
 
 function dbg {
     tmux new-session -d -s dbg
-    tmux send-keys -t dbg "gj microscope && hx" Enter
+    tmux send-keys -t dbg "gm && hx" Enter
     sleep .2
     tmux new-window -t dbg -c "#{pane_current_path}"
     tmux split-window -v -t dbg -c "#{pane_current_path}"
-    tmux send-keys -t dbg "touch /tmp/microscope.log && clear && tail -f /tmp/microscope.log" Enter
+    tmux send-keys -t dbg "touch /tmp/uscope.log && clear && tail -f /tmp/uscope.log" Enter
     tmux last-pane -t dbg
     tmux last-window -t dbg
     tmux attach -t dbg
