@@ -149,6 +149,10 @@ alias tss="tailscale status"
 alias p="python3"
 alias j="just"
 
+function debugger {
+    /home/jcalabro/go/src/github.com/jcalabro/uscope/zig-out/bin/uscope "$@"
+}
+
 function build {
     pushd assets/$1 > /dev/null
     ./build.sh

@@ -208,7 +208,6 @@ function logbook {
 which pyenv &> /dev/null
 if [ "$?" -eq "0" ]; then
     eval "$(pyenv init -)"
-    eval "$(pyenv virtualenv-init -)"
     export PYTHONPATH=".:$PYTHONPATH"
     export PYENV_ROOT=$HOME/.pyenv
     export PYENV_VIRTUALENV_DISABLE_PROMPT=1
