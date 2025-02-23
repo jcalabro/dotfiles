@@ -298,7 +298,7 @@ function install_ghostty_fedora {
         return
     fi
 
-    zig build -Doptimize=ReleaseFast -Dapp-runtime=gtk -p $HOME/.local
+    zigup run 0.13.0 build -Doptimize=ReleaseFast -Dapp-runtime=gtk -p $HOME/.local
 }
 
 function kill_processes {
