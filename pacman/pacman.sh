@@ -28,7 +28,7 @@ PACKAGES=(
     kdiff3
     lldb
     lldb-mi
-    mariadb
+    mysql-clients
     massif-visualizer
     netcat
     net-tools
