@@ -36,13 +36,10 @@ FORMULAE=(
     hyperfine
     just
     jq
-    koekeishiya/formulae/skhd
-    koekeishiya/formulae/yabai
     kubernetes-cli
     kubectx
     llvm
-    mariadb
-    neofetch
+    mysql
     neovim
     postgresql
     protobuf
