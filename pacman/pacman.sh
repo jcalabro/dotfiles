@@ -26,6 +26,7 @@ PACKAGES=(
     just
     jq
     kdiff3
+    linux-tools
     lldb
     lldb-mi
     mysql-clients
