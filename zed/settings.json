@@ -1,0 +1,40 @@
+{
+  "auto_install_extensions": {
+    "dockerfile": true,
+    "docker-compose": true,
+    "html": true,
+    "sql": true,
+    "toml": true,
+    "xml": true,
+    "zig": true
+  },
+  "base_keymap": "VSCode",
+  "vim_mode": true,
+  "confirm_quit": true,
+  "ui_font_size": 14,
+  "buffer_font_size": 14,
+  "buffer_font_features": {
+    "calt": false
+  },
+  "git": {
+    "git_gutter": "hide",
+    "inline_blame": {
+      "enabled": false
+    }
+  },
+  "ssh_connections": [
+    {
+      "host": "jlinux01",
+      "username": "jcalabro",
+      "projects": [
+        {
+          "paths": [
+            "~/go/src/github.com/ChessCom/explanation-engine",
+            "~/go/src/github.com/ChessCom/explanation-engine-interface",
+            "~/go/src/github.com/ChessCom/ceac-services"
+          ]
+        }
+      ]
+    }
+  ]
+}

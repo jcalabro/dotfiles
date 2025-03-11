@@ -1,0 +1,22 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "cmd-shift-t": "workspace::NewCenterTerminal"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "g s": ["workspace::SendKeystrokes", "^"],
+      "g l": ["workspace::SendKeystrokes", "$"]
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "j j": ["workspace::SendKeystrokes", "escape"],
+      "j k": ["workspace::SendKeystrokes", "escape"]
+    }
+  }
+]

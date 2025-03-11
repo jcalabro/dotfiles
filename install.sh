@@ -107,6 +107,13 @@ function install_dotfiles {
     fi
 
     #
+    # Zed
+    #
+    mkdir -p $HOME/.config/zed
+    ln -sf $DOTFILE_BASE/zed/settings.json "$HOME/.config/zed/settings.json"
+    ln -sf $DOTFILE_BASE/zed/keymap.json "$HOME/.config/zed/keymap.json"
+
+    #
     # Alacritty (make a local copy)
     #
     mkdir -p $HOME/.config/alacritty
