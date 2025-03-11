@@ -132,11 +132,6 @@ function install_dotfiles {
 
     popd > /dev/null
 
-    #
-    # Set up difftastic
-    #
-    git config --global diff.external "difft"
-
     pushd $HOME > /dev/null
     source .bash_profile
     popd > /dev/null
