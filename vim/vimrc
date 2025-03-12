@@ -114,9 +114,6 @@ let &t_SI.="\e[5 q"
 let &t_EI.="\e[1 q"
 let &t_te.="\e[0 q"
 
-" Show the current time if you press F2
-:map <F2> :echo strftime('%c')<CR>
-
 if !empty("USE_SPACES")
     " Adjust tabs to 4 spaces
     set tabstop=4
@@ -163,6 +160,8 @@ vnoremap <C-c>      :TComment<Enter>
 " Press F1 or type :Time to insert the current time (helpful for logbooks)
 nmap <F1> i<C-R>=strftime("%H:%M")<CR> 
 imap <F1> <C-R>=strftime("%H:%M")<CR> 
+nmap <F2> i<C-R>=strftime("%H:%M")<CR> 
+imap <F2> <C-R>=strftime("%H:%M")<CR> 
 function! Time()
     :call feedkeys("i". strftime("%H:%M "))
 endfunction

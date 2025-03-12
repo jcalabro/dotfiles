@@ -8,13 +8,6 @@
     }
   },
   {
-    "context": "Terminal",
-    "bindings": {
-      "ctrl-p": ["workspace::SendKeystrokes", "up"],
-      "ctrl-n": ["workspace::SendKeystrokes", "down"]
-    }
-  },
-  {
     "context": "Editor",
     "bindings": {
       "ctrl-c": ["workspace::SendKeystrokes", "alt-cmd-down"],
