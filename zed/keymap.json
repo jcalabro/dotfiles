@@ -2,7 +2,9 @@
   {
     "context": "Workspace",
     "bindings": {
-      "cmd-shift-t": "workspace::NewCenterTerminal"
+      "cmd-shift-t": "workspace::NewCenterTerminal",
+      "ctrl-h": "panel::PreviousPanelTab",
+      "ctrl-l": "panel::NextPanelTab"
     }
   },
   {
@@ -17,6 +19,12 @@
       "ctrl-x": "pane::SplitHorizontal",
       "g s": ["workspace::SendKeystrokes", "^"],
       "g l": ["workspace::SendKeystrokes", "$"]
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "ctrl-j": ["workspace::SendKeystrokes", "cmd-i"]
     }
   },
   {
