@@ -15,7 +15,7 @@
       "ctrl-a": "editor::ToggleComments",
       "ctrl-s": "workspace::Save",
       "ctrl-d": "pane::CloseActiveItem",
-      "ctrl-k": "pane::SplitVertical",
+      "ctrl-k": "pane::SplitRight",
       "ctrl-x": "pane::SplitHorizontal",
       "g e": ["workspace::SendKeystrokes", "shift-g"],
       "g s": ["workspace::SendKeystrokes", "^"],
