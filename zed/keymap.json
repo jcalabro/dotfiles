@@ -10,7 +10,6 @@
   {
     "context": "Editor",
     "bindings": {
-      "ctrl-n": ["workspace::SendKeystrokes", "ctrl-w w"],
       "ctrl-c": ["workspace::SendKeystrokes", "alt-cmd-down"],
       "ctrl-q": ["workspace::SendKeystrokes", "cmd-w"],
       "ctrl-s": "workspace::Save",
@@ -24,14 +23,22 @@
   {
     "context": "Editor && vim_mode == normal",
     "bindings": {
+      "ctrl-n": ["workspace::SendKeystrokes", "ctrl-w w"],
       "ctrl-j": ["workspace::SendKeystrokes", "cmd-i"]
     }
   },
   {
     "context": "Editor && vim_mode == insert",
     "bindings": {
+      "ctrl-n": ["workspace::SendKeystrokes", "escape ctrl-w w i"],
       "j j": ["workspace::SendKeystrokes", "escape"],
       "j k": ["workspace::SendKeystrokes", "escape"]
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual",
+    "bindings": {
+      "ctrl-n": ["workspace::SendKeystrokes", "escape ctrl-w w"]
     }
   }
 ]
