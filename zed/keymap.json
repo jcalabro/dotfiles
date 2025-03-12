@@ -12,6 +12,7 @@
     "bindings": {
       "ctrl-c": ["workspace::SendKeystrokes", "alt-cmd-down"],
       "ctrl-q": ["workspace::SendKeystrokes", "cmd-w"],
+      "ctrl-a": "editor::ToggleComments",
       "ctrl-s": "workspace::Save",
       "ctrl-d": "pane::CloseActiveItem",
       "ctrl-k": "pane::SplitVertical",
