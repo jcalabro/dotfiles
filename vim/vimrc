@@ -85,7 +85,7 @@ vnoremap <silent> <C-Q> <C-O> :q<CR>
 
 " Jump to the beginning and end of lines/buffers
 noremap gs ^
-noremap g 0
+noremap gh 0
 noremap gl $
 noremap ge G
 
