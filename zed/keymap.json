@@ -6,8 +6,15 @@
     }
   },
   {
-    "context": "Editor && vim_mode == normal",
+    "context": "Editor",
     "bindings": {
+      "ctrl-n": ["workspace::SendKeystrokes", "ctrl-w w"],
+      "ctrl-c": ["workspace::SendKeystrokes", "alt-cmd-down"],
+      "ctrl-q": ["workspace::SendKeystrokes", "cmd-w"],
+      "ctrl-s": "workspace::Save",
+      "ctrl-d": "pane::CloseActiveItem",
+      "ctrl-k": "pane::SplitVertical",
+      "ctrl-x": "pane::SplitHorizontal",
       "g s": ["workspace::SendKeystrokes", "^"],
       "g l": ["workspace::SendKeystrokes", "$"]
     }

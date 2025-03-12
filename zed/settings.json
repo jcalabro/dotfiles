@@ -3,6 +3,7 @@
     "dockerfile": true,
     "docker-compose": true,
     "html": true,
+    "justfile": true,
     "sql": true,
     "toml": true,
     "xml": true,
