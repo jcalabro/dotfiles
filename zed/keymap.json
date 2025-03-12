@@ -16,17 +16,17 @@
       "ctrl-s": "workspace::Save",
       "ctrl-d": "pane::CloseActiveItem",
       "ctrl-k": "pane::SplitRight",
-      "ctrl-x": "pane::SplitHorizontal",
-      "g e": ["workspace::SendKeystrokes", "shift-g"],
-      "g s": ["workspace::SendKeystrokes", "^"],
-      "g l": ["workspace::SendKeystrokes", "$"]
+      "ctrl-x": "pane::SplitHorizontal"
     }
   },
   {
     "context": "Editor && vim_mode == normal",
     "bindings": {
       "ctrl-n": ["workspace::SendKeystrokes", "ctrl-w w"],
-      "ctrl-j": ["workspace::SendKeystrokes", "cmd-i"]
+      "ctrl-j": ["workspace::SendKeystrokes", "cmd-i"],
+      "g e": ["workspace::SendKeystrokes", "shift-g"],
+      "g s": ["workspace::SendKeystrokes", "^"],
+      "g l": ["workspace::SendKeystrokes", "$"]
     }
   },
   {

@@ -98,9 +98,6 @@ hi clear Todo
 " Cycle between windows with Ctrl+N
 nmap <silent> <C-N> <C-w>w
 
-" Rotate windows with Ctrl+r
-nmap <silent> <C-r> <C-w>r
-
 " Support multi-line paste in insert mode with Ctrl+h
 imap <C-H> <C-R>*
 
