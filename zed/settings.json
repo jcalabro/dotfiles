@@ -1,4 +1,5 @@
 {
+  "theme": "Nord",
   "assistant": {
     "default_model": {
       "provider": "zed.dev",
@@ -11,6 +12,7 @@
     "docker-compose": true,
     "html": true,
     "justfile": true,
+    "nord": true,
     "sql": true,
     "toml": true,
     "xml": true,
@@ -28,6 +30,11 @@
     "git_gutter": "hide",
     "inline_blame": {
       "enabled": false
+    }
+  },
+  "languages": {
+    "C++": {
+      "format_on_save": "off"
     }
   },
   "ssh_connections": [
