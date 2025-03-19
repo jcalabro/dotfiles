@@ -25,6 +25,7 @@
       "ctrl-n": ["workspace::SendKeystrokes", "ctrl-w w"],
       "ctrl-j": ["workspace::SendKeystrokes", "cmd-i"],
       "g e": ["workspace::SendKeystrokes", "shift-g"],
+      "g h": ["workspace::SendKeystrokes", "0"],
       "g s": ["workspace::SendKeystrokes", "^"],
       "g l": ["workspace::SendKeystrokes", "$"]
     }
@@ -40,7 +41,11 @@
   {
     "context": "Editor && vim_mode == visual",
     "bindings": {
-      "ctrl-n": ["workspace::SendKeystrokes", "escape ctrl-w w"]
+      "ctrl-n": ["workspace::SendKeystrokes", "escape ctrl-w w"],
+      "g e": ["workspace::SendKeystrokes", "shift-g"],
+      "g h": ["workspace::SendKeystrokes", "0"],
+      "g s": ["workspace::SendKeystrokes", "^"],
+      "g l": ["workspace::SendKeystrokes", "$"]
     }
   }
 ]
