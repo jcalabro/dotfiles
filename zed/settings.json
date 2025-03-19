@@ -1,4 +1,7 @@
 {
+  "features": {
+    "edit_prediction_provider": "none"
+  },
   "theme": "Nord",
   "assistant": {
     "default_model": {
@@ -10,7 +13,7 @@
   "auto_install_extensions": {
     "dockerfile": true,
     "docker-compose": true,
-    "html": true,
+    "html": false,
     "justfile": true,
     "nord": true,
     "sql": true,
@@ -20,6 +23,9 @@
   },
   "base_keymap": "VSCode",
   "vim_mode": true,
+  "vim": {
+    "use_system_clipboard": "never"
+  },
   "confirm_quit": true,
   "ui_font_size": 16,
   "buffer_font_size": 14,
@@ -30,11 +36,6 @@
     "git_gutter": "hide",
     "inline_blame": {
       "enabled": false
-    }
-  },
-  "languages": {
-    "C++": {
-      "format_on_save": "off"
     }
   },
   "ssh_connections": [
@@ -48,6 +49,12 @@
             "~/go/src/github.com/ChessCom/explanation-engine-interface",
             "~/go/src/github.com/ChessCom/ceac-services"
           ]
+        },
+        {
+          "paths": ["~/go/src/github.com/jcalabro/airbus"]
+        },
+        {
+          "paths": ["~/go/src/github.com/jcalabro/reflex"]
         }
       ]
     }
