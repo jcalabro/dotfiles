@@ -10,9 +10,8 @@
   {
     "context": "Editor",
     "bindings": {
-      "ctrl-c": ["workspace::SendKeystrokes", "alt-cmd-down"],
       "ctrl-q": "pane::CloseActiveItem",
-      "ctrl-a": "editor::ToggleComments",
+      "ctrl-c": "editor::ToggleComments",
       "ctrl-s": "workspace::Save",
       "ctrl-d": "pane::CloseActiveItem",
       "ctrl-k": "pane::SplitRight",
@@ -22,6 +21,7 @@
   {
     "context": "Editor && vim_mode == normal",
     "bindings": {
+      "ctrl-c": ["workspace::SendKeystrokes", "alt-cmd-down"],
       "ctrl-n": ["workspace::SendKeystrokes", "ctrl-w w"],
       "ctrl-j": ["workspace::SendKeystrokes", "cmd-i"],
       "g e": ["workspace::SendKeystrokes", "shift-g"],
