@@ -15,7 +15,9 @@
       "ctrl-s": "workspace::Save",
       "ctrl-d": "pane::CloseActiveItem",
       "ctrl-k": "pane::SplitRight",
-      "ctrl-x": "pane::SplitHorizontal"
+      "ctrl-x": "pane::SplitHorizontal",
+      "ctrl-shift-c": "editor::Copy",
+      "ctrl-shift-v": "editor::Paste"
     }
   },
   {
