@@ -21,7 +21,7 @@
   {
     "context": "Editor && vim_mode == normal",
     "bindings": {
-      "ctrl-c": ["workspace::SendKeystrokes", "alt-cmd-down"],
+      "shift-s": "editor::AddSelectionBelow",
       "ctrl-n": ["workspace::SendKeystrokes", "ctrl-w w"],
       "ctrl-j": ["workspace::SendKeystrokes", "cmd-i"],
       "g e": ["workspace::SendKeystrokes", "shift-g"],
