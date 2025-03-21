@@ -45,16 +45,25 @@
       "projects": [
         {
           "paths": [
+            "~/go/src/github.com/ChessCom/ceac-services"
+          ]
+        },
+        {
+          "paths": [
             "~/go/src/github.com/ChessCom/explanation-engine",
             "~/go/src/github.com/ChessCom/explanation-engine-interface",
             "~/go/src/github.com/ChessCom/ceac-services"
           ]
         },
         {
-          "paths": ["~/go/src/github.com/jcalabro/airbus"]
+          "paths": [
+            "~/go/src/github.com/jcalabro/airbus"
+          ]
         },
         {
-          "paths": ["~/go/src/github.com/jcalabro/reflex"]
+          "paths": [
+            "~/go/src/github.com/jcalabro/reflex"
+          ]
         }
       ]
     }
