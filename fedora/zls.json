@@ -17,5 +17,5 @@
     "skip_std_references": false,
     "highlight_global_var_declarations": false,
     "use_comptime_interpreter": true,
-    "zig_exe_path": "/home/jcalabro/local/bin/zig/zig"
+    "zig_exe_path": "/home/jcalabro/local/bin/zig"
 }
