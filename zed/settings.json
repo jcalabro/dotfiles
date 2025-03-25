@@ -62,7 +62,17 @@
         },
         {
           "paths": [
+            "~/go/src/github.com/jcalabro/durin"
+          ]
+        },
+        {
+          "paths": [
             "~/go/src/github.com/jcalabro/reflex"
+          ]
+        },
+        {
+          "paths": [
+            "~/go/src/github.com/jcalabro/zoo"
           ]
         }
       ]
