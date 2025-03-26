@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
 PACKAGES=(
+    bandwhich
     base-devel
     bat
+    bore
     btop
     cloc
     cmake
@@ -14,7 +16,9 @@ PACKAGES=(
     docker
     docker-buildx
     docker-compose
+    dust
     eza
+    fd
     gdb
     glib2-devel
     gnuplot
@@ -44,6 +48,7 @@ PACKAGES=(
     valgrind
     wget
     whois
+    xh
 )
 
 sudo pacman -Sy --noconfirm ${PACKAGES[@]}
