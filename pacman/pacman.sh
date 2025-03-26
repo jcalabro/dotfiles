@@ -43,6 +43,7 @@ PACKAGES=(
     playerctl
     protobuf
     ripgrep
+    samply
     strace
     tmux
     valgrind
