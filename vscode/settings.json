@@ -54,7 +54,6 @@
     "git.openRepositoryInParentFolders": "never",
     "window.zoomLevel": 1,
     "zig.path": "zig",
-    "zig.initialSetupDone": true,
     "go.testEnvVars": {
         "DYLD_LIBRARY_PATH": "/Users/jcalabro/go/src/github.com/ChessCom/explanation-engine/target/debug/",
         "CGO_LDFLAGS": "-L/Users/jcalabro/go/src/github.com/ChessCom/explanation-engine/target/debug/"
