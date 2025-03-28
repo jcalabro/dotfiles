@@ -88,6 +88,7 @@ noremap gs ^
 noremap gh 0
 noremap gl $
 noremap ge G
+noremap gn :bn<CR>
 
 " Turn on syntax highlighting
 syntax on
