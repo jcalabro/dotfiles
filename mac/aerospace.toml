@@ -3,7 +3,7 @@
 enable-normalization-flatten-containers = false
 enable-normalization-opposite-orientation-for-nested-containers = false
 
-# [mode.main.binding]
+[mode.main.binding]
 # alt-enter = 'exec-and-forget open -n /Applications/Ghostty.app'
 
 alt-h = 'focus left'
