@@ -65,6 +65,7 @@ CASKS=(
     kdiff3
     nikitabobko/tap/aerospace
     obsidian
+    postman
     spotify
     sublime-text
     visual-studio-code
