@@ -76,4 +76,6 @@ brew install --cask ${CASKS[@]}
 
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
-go install honnef.co/go/gotraceui/cmd/gotraceui@latest
+go install github.com/lasorda/protobuf-language-server@latest
+go install github.com/shivakar/quickserve@latest
+go install github.com/presbrey/cmd/ss@latest

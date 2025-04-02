@@ -223,7 +223,7 @@ if [ "$?" -eq "0" ]; then
     ssh-add -A > /dev/null 2>&1
 
     eval `ssh-add $HOME/.ssh/jim_public.pem > /dev/null 2>&1`
-    eval `ssh-add $HOME/.ssh/jcalabro_chess.pem > /dev/null 2>&1`
+    eval `ssh-add $HOME/.ssh/jim_bsky.pem > /dev/null 2>&1`
     eval `ssh-add $HOME/.ssh/jcalabro.pem > /dev/null 2>&1`
 fi
 
