@@ -318,7 +318,7 @@ function kill_processes {
 #
 run_if_exists ~/.bash_secrets
 run_if_exists ~/.bash_aliases
-run_if_exists ~/.bash_work
+run_if_exists ~/.bash_w
 run_if_exists ~/.bash_go
 
 export GIT_DISCOVERY_ACROSS_FILESYSTEM=true
