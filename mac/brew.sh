@@ -30,6 +30,7 @@ FORMULAE=(
     google-cloud-sdk
     gpg
     graphviz
+    grpcurl
     grep
     helix
     htop
