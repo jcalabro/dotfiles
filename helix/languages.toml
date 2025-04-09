@@ -22,7 +22,6 @@ auto-format = true
 
 [[language]]
 name = "go"
-formatter = { command = "goimports" }
 
 [[language]]
 name = "gdbinit"
