@@ -124,6 +124,7 @@ function install_dotfiles {
     #
     mkdir -p $HOME/.config/ghostty
     cp -n $DOTFILE_BASE/ghostty/config $HOME/.config/ghostty/config
+    cp $DOTFILE_BASE/ghostty/ghostty-launcher.sh $HOME/local/bin
 
     #
     # TSan
