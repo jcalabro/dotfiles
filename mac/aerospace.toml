@@ -4,7 +4,8 @@ enable-normalization-flatten-containers = false
 enable-normalization-opposite-orientation-for-nested-containers = false
 
 [mode.main.binding]
-# alt-enter = 'exec-and-forget open -n /Applications/Ghostty.app'
+alt-d = "exec-and-forget osascript -e 'tell application \"System Events\" to key code 49 using {command down}'"
+alt-enter = 'exec-and-forget $HOME/local/bin/ghostty-launcher.sh'
 
 alt-h = 'focus left'
 alt-j = 'focus down'
