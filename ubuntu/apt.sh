@@ -18,6 +18,7 @@ PACKAGES=(
     ssh
     tmux
     wget
+    whois
 )
 
 sudo apt install -y ${PACKAGES[@]}
