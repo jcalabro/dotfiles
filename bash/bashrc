@@ -24,6 +24,7 @@ if [[ $(whoami) == "root" ]]; then
 fi
 
 export PATH="$PATH:/usr/share/bcc/tools"
+export PATH="$PATH:/home/jcalabro/.nix-profile/bin"
 export PATH="$PATH:$LOCAL_BIN_DIR"
 export PATH="$PATH:$LOCAL_BIN_DIR/bin"
 export PATH="$PATH:$LOCAL_BIN_DIR/helix"

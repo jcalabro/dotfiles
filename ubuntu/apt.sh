@@ -4,6 +4,7 @@ PACKAGES=(
     bat
     btop
     cloc
+    curl
     direnv
     eza
     git
@@ -13,8 +14,6 @@ PACKAGES=(
     jq
     net-tools
     neovim
-    protobuf
-    protoc-gen-go
     ripgrep
     ssh
     tmux
@@ -24,3 +23,6 @@ PACKAGES=(
 sudo apt install -y ${PACKAGES[@]}
 
 sudo ufw allow 22
+
+# curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+# curl -L https://github.com/marler8997/zigup/releases/latest/download/zigup-x86_64-linux.tar.gz | tar xz
