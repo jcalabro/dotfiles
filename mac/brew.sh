@@ -8,6 +8,8 @@ brew update
 FORMULAE=(
     bat
     bash # be sure to change the shell by editing /etc/shells, then chsh. Confirm with echo $SHELL
+    bandwhich
+    btop
     cloc
     cocoapods
     coreutils
@@ -15,8 +17,10 @@ FORMULAE=(
     direnv
     docker-compose
     doctl
+    dust
     eza
     emscripten
+    fd
     findutils
     gawk
     gdb
@@ -52,6 +56,7 @@ FORMULAE=(
     tmux
     watch
     wget
+    xh
 )
 
 brew install ${FORMULAE[@]}

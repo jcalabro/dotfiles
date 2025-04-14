@@ -61,24 +61,37 @@ function gpsu {
     git branch --no-color | grep '*' | awk '{print $2}' | xargs -L1 git push -u origin
 }
 
-#
 # ls/eza
-#
 which eza &> /dev/null
 if [ "$?" -eq "0" ]; then
     alias ls="eza -l"
 else
     alias ls="ls -lh --color"
 fi
-
 alias l="ls"
 
-#
 # cat/bat
-#
 which bat &> /dev/null
 if [ "$?" -eq "0" ]; then
     alias cat="bat"
+fi
+
+# du/dust
+which dust &> /dev/null
+if [ "$?" -eq "0" ]; then
+    alias du="dust"
+fi
+
+# find/fd
+which fd &> /dev/null
+if [ "$?" -eq "0" ]; then
+    alias find="fd"
+fi
+
+# curl/xh
+which xh &> /dev/null
+if [ "$?" -eq "0" ]; then
+    alias curl="xh"
 fi
 
 #
