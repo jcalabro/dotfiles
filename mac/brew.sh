@@ -76,6 +76,7 @@ CASKS=(
     sublime-text
     visual-studio-code
     wireshark
+    ykman
 )
 
 brew install --cask ${CASKS[@]}
