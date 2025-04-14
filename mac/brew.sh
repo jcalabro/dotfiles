@@ -52,20 +52,22 @@ FORMULAE=(
     pyenv
     pyenv-virtualenv
     ripgrep
+    tailscale
     tracy
     tmux
     watch
     wget
     xh
+    ykman
 )
 
 brew install ${FORMULAE[@]}
 
 CASKS=(
+    1password
     alacritty
     audacity
     docker
-    flutter
     flux
     iterm2
     kdiff3
@@ -76,7 +78,6 @@ CASKS=(
     sublime-text
     visual-studio-code
     wireshark
-    ykman
 )
 
 brew install --cask ${CASKS[@]}
