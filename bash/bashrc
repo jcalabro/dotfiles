@@ -159,7 +159,7 @@ function lb() {
     P="$(date '+%Y-%m')"
     mkdir -p $P
     F="$P/$(date '+%d').md"
-    cp -n template.md $F
+    cp --update=none template.md $F
     FULL_PATH=$(pwd)/$F
     popd > /dev/null
     $EDITOR $FULL_PATH
