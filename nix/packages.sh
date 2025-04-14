@@ -17,6 +17,7 @@ PACKAGES=(
     uv
     valgrind
     xh
+    yubikey-manager
 )
 
 for PKG in ${PACKAGES[@]}; do
