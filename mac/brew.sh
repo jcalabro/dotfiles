@@ -67,6 +67,7 @@ CASKS=(
     1password
     alacritty
     audacity
+    caffeine
     docker
     flux
     iterm2
