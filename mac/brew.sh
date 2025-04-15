@@ -52,6 +52,7 @@ FORMULAE=(
     pyenv
     pyenv-virtualenv
     ripgrep
+    scroll-reverser
     tailscale
     tracy
     tmux
