@@ -16,6 +16,7 @@ PACKAGES=(
     samply
     uv
     valgrind
+    websocat
     xh
     yubikey-manager
 )
