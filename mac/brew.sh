@@ -68,6 +68,7 @@ CASKS=(
     alacritty
     audacity
     caffeine
+    discord
     docker
     flux
     iterm2
@@ -75,6 +76,7 @@ CASKS=(
     nikitabobko/tap/aerospace
     obsidian
     postman
+    slack
     spotify
     sublime-text
     visual-studio-code
