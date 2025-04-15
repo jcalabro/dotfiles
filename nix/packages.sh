@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 PACKAGES=(
+    awscli2
     bat
     buf
     bore
@@ -18,7 +19,6 @@ PACKAGES=(
     valgrind
     websocat
     xh
-    yubikey-manager
 )
 
 for PKG in ${PACKAGES[@]}; do
