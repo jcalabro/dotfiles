@@ -68,6 +68,7 @@ CASKS=(
     alacritty
     audacity
     caffeine
+    chrome
     discord
     docker
     flux
