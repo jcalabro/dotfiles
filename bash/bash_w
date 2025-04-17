@@ -1,3 +1,9 @@
 #!/usr/bin/env bash
 
 alias bs="gh bluesky-social"
+
+#
+# Relay
+#
+
+export RELAY_ADMIN_PASSWORD=dummy
