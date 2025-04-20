@@ -12,6 +12,7 @@ PACKAGES=(
     htop
     just
     jq
+    ncal
     net-tools
     neovim
     ripgrep
