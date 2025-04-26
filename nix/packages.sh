@@ -3,7 +3,6 @@
 PACKAGES=(
     awscli2
     bat
-    buf
     bore
     clang
     dust
@@ -11,9 +10,8 @@ PACKAGES=(
     go
     just
     lldb
-    protoc-gen-go
-    protoc-gen-connect-go
     helix
+    postgresql_17
     samply
     uv
     valgrind
@@ -24,3 +22,5 @@ PACKAGES=(
 for PKG in ${PACKAGES[@]}; do
     nix-env -iA nixpkgs.$PKG
 done
+
+# to remove: `nix-env -e protoc-gen-go`
