@@ -12,6 +12,7 @@ PACKAGES=(
     lldb
     helix
     postgresql_17
+    protobuf
     samply
     uv
     valgrind
