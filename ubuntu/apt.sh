@@ -12,6 +12,7 @@ PACKAGES=(
     htop
     just
     jq
+    libssl-dev
     ncal
     net-tools
     neovim
