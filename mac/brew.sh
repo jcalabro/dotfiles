@@ -46,6 +46,7 @@ FORMULAE=(
     llvm
     mysql
     neovim
+    nmap
     postgresql
     protobuf
     protoc-gen-go
