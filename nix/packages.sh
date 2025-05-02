@@ -7,6 +7,7 @@ PACKAGES=(
     clang
     dust
     fd
+    fdbPackages.foundationdb73
     go
     just
     lldb
