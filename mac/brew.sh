@@ -50,6 +50,7 @@ FORMULAE=(
     postgresql
     protobuf
     protoc-gen-go
+    pulumi/tap/pulumi
     pyenv
     pyenv-virtualenv
     ripgrep
@@ -69,6 +70,7 @@ CASKS=(
     1password
     alacritty
     audacity
+    balenaetcher
     caffeine
     discord
     docker
