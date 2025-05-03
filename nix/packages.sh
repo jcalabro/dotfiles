@@ -7,7 +7,6 @@ PACKAGES=(
     clang
     dust
     fd
-    fdbPackages.foundationdb73
     go
     just
     lldb
@@ -25,4 +24,4 @@ for PKG in ${PACKAGES[@]}; do
     nix-env -iA nixpkgs.$PKG
 done
 
-# to remove: `nix-env -e protoc-gen-go`
+# to remove: `nix-env --query`, then `nix-env -e protoc-gen-go`
