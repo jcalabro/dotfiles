@@ -162,6 +162,11 @@ alias tss="tailscale status"
 alias p="python3"
 alias j="just"
 
+function clear_zig_caches {
+    rm -rf .zig
+    rm -rf $HOME/.cache/zig
+}
+
 function debugger {
     /home/jcalabro/go/src/github.com/jcalabro/uscope/zig-out/bin/uscope "$@"
 }
