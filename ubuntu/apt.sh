@@ -6,6 +6,7 @@ PACKAGES=(
     cloc
     curl
     direnv
+    dsniff
     etcd-client
     eza
     git
