@@ -6,6 +6,7 @@ PACKAGES=(
     cloc
     curl
     direnv
+    etcd-client
     eza
     git
     gnuplot
