@@ -3,7 +3,13 @@
 alias bs="gh bluesky-social"
 
 #
-# Relay
+# Indigo
 #
 
 export RELAY_ADMIN_PASSWORD=dummy
+
+#
+# Tango
+#
+
+export VORTEX_RELAY_URL=wss://narelay.pop2.bsky.network
