@@ -27,7 +27,7 @@ export VORTEX_LISTEN_ADDRESS=0.0.0.0:6101
 export VORTEX_METRICS_LISTEN_ADDRESS=0.0.0.0:9601
 export VORTEX_RELAY_URL=wss://narelay.pop2.bsky.network
 
-# Vortex
+# Inferno
 export INFERNO_DEBUG=true
 export INFERNO_LOG_LEVEL=info
 export INFERNO_LISTEN_ADDRESS=0.0.0.0:6102
