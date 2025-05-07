@@ -20,6 +20,7 @@ PACKAGES=(
     valgrind
     websocat
     xh
+    yarn
 )
 
 for PKG in ${PACKAGES[@]}; do
