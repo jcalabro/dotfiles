@@ -4,6 +4,7 @@ PACKAGES=(
     bat
     btop
     cloc
+    cmake
     curl
     direnv
     dsniff
