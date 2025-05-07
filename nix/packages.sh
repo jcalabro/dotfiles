@@ -8,6 +8,7 @@ PACKAGES=(
     clang
     dust
     fd
+    flyctl
     go
     just
     lldb

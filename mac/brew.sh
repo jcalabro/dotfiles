@@ -22,6 +22,7 @@ FORMULAE=(
     emscripten
     fd
     findutils
+    flyctl
     gawk
     gdb
     gnuplot
