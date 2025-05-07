@@ -4,6 +4,7 @@ PACKAGES=(
     awscli2
     bat
     bore
+    c3c
     clang
     dust
     fd
@@ -11,6 +12,7 @@ PACKAGES=(
     just
     lldb
     helix
+    odin
     postgresql_17
     protobuf
     samply
