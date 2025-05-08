@@ -20,6 +20,7 @@ export ATLANTIS_EXTERNAL_ADDRESS=https://0.0.0.0:6100
 export ATLANTIS_TOTAL_QUEUES=1
 export ATLANTIS_ACTOR_INFO_CACHE_TTL=0
 export ATLANTIS_FOUNDATION_CLUSTER_FILE=atlantis/docker.cluster
+export OTEL_SDK_DISABLED=true
 
 # Vortex
 export VORTEX_DEBUG=true
