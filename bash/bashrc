@@ -352,3 +352,6 @@ eval "$(direnv hook bash)"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# add Pulumi to the PATH
+export PATH=$PATH:/home/jcalabro/.pulumi/bin

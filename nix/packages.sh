@@ -16,7 +16,6 @@ PACKAGES=(
     odin
     postgresql_17
     protobuf
-    pulumi
     samply
     uv
     valgrind
