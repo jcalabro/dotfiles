@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 PACKAGES=(
+    ansible-core
     bat
     btop
     cloc
@@ -19,6 +20,7 @@ PACKAGES=(
     ncal
     net-tools
     neovim
+    pipenv
     ripgrep
     ssh
     tmux
