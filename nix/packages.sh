@@ -7,6 +7,7 @@ PACKAGES=(
     c3c
     clang
     dust
+    dysk
     fd
     flyctl
     go

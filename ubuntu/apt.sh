@@ -11,6 +11,7 @@ PACKAGES=(
     dsniff
     etcd-client
     eza
+    fzf
     git
     gnuplot
     htop
