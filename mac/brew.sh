@@ -55,6 +55,7 @@ FORMULAE=(
     pyenv
     pyenv-virtualenv
     ripgrep
+    siderolabs/tap/talosctl
     scroll-reverser
     tailscale
     tracy
