@@ -10,3 +10,8 @@ source ~/.orbstack/shell/init.bash 2>/dev/null || :
 
 # Added by LM Studio CLI tool (lms)
 export PATH="$PATH:/Users/jcalabro/.cache/lm-studio/bin"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/jcalabro/.lmstudio/bin"
+# End of LM Studio CLI section
+

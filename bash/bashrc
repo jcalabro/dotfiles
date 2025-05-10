@@ -355,3 +355,8 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # add Pulumi to the PATH
 export PATH=$PATH:/home/jcalabro/.pulumi/bin
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/jcalabro/.lmstudio/bin"
+# End of LM Studio CLI section
+
