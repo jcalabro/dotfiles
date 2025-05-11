@@ -155,11 +155,16 @@ export PATH="/opt/rh/devtoolset-10/root/bin:$PATH"
 export LOGBOOK="$HOME/misc/logbook"
 
 function lb() {
+    CP=cp
+    if [ $(uname -s) == "Darwin" ]; then
+        CP=gcp # gnu cp
+    fi
+
     pushd $LOGBOOK > /dev/null
     P="$(date '+%Y-%m')"
     mkdir -p $P
     F="$P/$(date '+%d').md"
-    cp --update=none template.md $F
+    $CP --update=none template.md $F
     FULL_PATH=$(pwd)/$F
     popd > /dev/null
     $EDITOR $FULL_PATH
