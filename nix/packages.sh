@@ -12,12 +12,16 @@ PACKAGES=(
     flyctl
     go
     just
+    kubectl
+    kubectx
+    kubernetes-helm
     lldb
     helix
     odin
     postgresql_17
     protobuf
     samply
+    talosctl
     uv
     valgrind
     websocat

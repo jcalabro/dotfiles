@@ -2,6 +2,7 @@
 
 PACKAGES=(
     ansible-core
+    arping
     bat
     btop
     cloc
