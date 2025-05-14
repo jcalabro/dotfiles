@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
 alias bs="gh bluesky-social"
+function bsh {
+  ssh root@$1.internal.$2.$BSKY_DOMAIN
+}
 
 #
 # Indigo
