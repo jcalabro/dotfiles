@@ -151,6 +151,7 @@ alias ct="cargo test"
 #
 # Misc
 #
+alias rsh="ssh -l root"
 alias e="./unix.sh -run"
 alias m="make"
 alias fail="tail -f"
