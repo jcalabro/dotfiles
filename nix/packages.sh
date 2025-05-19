@@ -24,6 +24,7 @@ PACKAGES=(
     talosctl
     uv
     valgrind
+    vultr-cli
     websocat
     xh
     yarn
