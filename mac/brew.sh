@@ -80,6 +80,7 @@ CASKS=(
     google-chrome
     iterm2
     kdiff3
+    keymapp
     nikitabobko/tap/aerospace
     obsidian
     postman
