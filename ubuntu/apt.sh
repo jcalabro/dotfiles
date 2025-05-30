@@ -10,6 +10,7 @@ PACKAGES=(
     curl
     direnv
     dsniff
+    dwarfdump
     etcd-client
     eza
     fzf
