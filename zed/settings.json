@@ -1,9 +1,13 @@
 {
+  "telemetry": {
+    "metrics": false
+  },
   "features": {
     "edit_prediction_provider": "none"
   },
   "theme": "Nord",
-  "assistant": {
+  "agent": {
+    "always_allow_tool_actions": true,
     "default_model": {
       "provider": "zed.dev",
       "model": "claude-3-7-sonnet-latest"
@@ -24,7 +28,8 @@
   "base_keymap": "VSCode",
   "vim_mode": true,
   "vim": {
-    "use_system_clipboard": "never"
+    "use_system_clipboard": "never",
+    "default_mode": "helix_normal"
   },
   "show_wrap_guides": false,
   "soft_wrap": "none",
@@ -46,29 +51,7 @@
       "username": "jcalabro",
       "projects": [
         {
-          "paths": ["~/go/src/github.com/ChessCom/ceac"]
-        },
-        {
-          "paths": ["~/go/src/github.com/ChessCom/ceac-services"]
-        },
-        {
-          "paths": [
-            "~/go/src/github.com/ChessCom/explanation-engine",
-            "~/go/src/github.com/ChessCom/explanation-engine-interface",
-            "~/go/src/github.com/ChessCom/ceac-services"
-          ]
-        },
-        {
-          "paths": ["~/go/src/github.com/jcalabro/airbus"]
-        },
-        {
-          "paths": ["~/go/src/github.com/jcalabro/durin"]
-        },
-        {
-          "paths": ["~/go/src/github.com/jcalabro/reflex"]
-        },
-        {
-          "paths": ["~/go/src/github.com/jcalabro/zoo"]
+          "paths": ["/home/jcalabro/go/src/github.com/bluesky-social/tango"]
         }
       ]
     }
