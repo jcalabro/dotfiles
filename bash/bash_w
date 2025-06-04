@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 alias bs="gh bluesky-social"
+alias bi="bs bsky-infra"
 function bsh {
   ssh -A root@$1.internal.$2.$BSKY_DOMAIN
 }
@@ -10,33 +11,3 @@ function bsh {
 #
 
 export RELAY_ADMIN_PASSWORD=dummy
-
-#
-# Tango
-#
-
-# Atlantis
-export ATLANTIS_DEBUG=true
-export ATLANTIS_LOG_LEVEL=info
-export ETCD_ADDRS=localhost:2379
-export ATLANTIS_EXTERNAL_ADDRESS=https://0.0.0.0:6100
-export ATLANTIS_TOTAL_QUEUES=1
-export ATLANTIS_ACTOR_INFO_CACHE_TTL=0
-export ATLANTIS_FOUNDATION_CLUSTER_FILE=atlantis/docker.cluster
-export OTEL_SDK_DISABLED=true
-
-# Vortex
-export VORTEX_DEBUG=true
-export VORTEX_LOG_LEVEL=info
-export VORTEX_LISTEN_ADDRESS=0.0.0.0:6101
-export VORTEX_METRICS_LISTEN_ADDRESS=0.0.0.0:9601
-export VORTEX_RELAY_URL=wss://narelay.pop2.bsky.network
-
-# Inferno
-export INFERNO_DEBUG=true
-export INFERNO_LOG_LEVEL=info
-export INFERNO_LISTEN_ADDRESS=0.0.0.0:6102
-export INFERNO_METRICS_LISTEN_ADDRESS=0.0.0.0:9602
-export INFERNO_SHARDS=0
-export INFERNO_TOTAL_QUEUES=1
-export INFERNO_DATA_DIR=./data/inferno
