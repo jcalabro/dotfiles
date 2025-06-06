@@ -64,6 +64,7 @@ FORMULAE=(
     wget
     xh
     ykman
+    zigup
 )
 
 brew install ${FORMULAE[@]}
