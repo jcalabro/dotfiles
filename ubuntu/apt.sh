@@ -20,6 +20,8 @@ PACKAGES=(
     just
     jq
     libssl-dev
+    musl-dev
+    musl-tools
     ncal
     net-tools
     neovim
