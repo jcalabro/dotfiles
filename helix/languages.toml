@@ -17,8 +17,7 @@ indent = { tab-width = 4, unit = "    " }
 
 [[language]]
 name = "typescript"
-formatter = { command = "eslint", args = ["--max-warnings=0", "--fix"] }
-auto-format = true
+language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] } ]
 
 [[language]]
 name = "go"
