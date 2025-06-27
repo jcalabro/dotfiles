@@ -24,7 +24,6 @@ PACKAGES=(
     musl-tools
     ncal
     net-tools
-    neovim
     pipenv
     ripgrep
     ssh

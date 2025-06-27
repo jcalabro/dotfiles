@@ -17,6 +17,7 @@ PACKAGES=(
     kubernetes-helm
     lldb
     helix
+    neovim
     odin
     postgresql_17
     protobuf
