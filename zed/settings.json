@@ -10,7 +10,7 @@
     "always_allow_tool_actions": true,
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-3-7-sonnet-latest"
+      "model": "claude-sonnet-4"
     },
     "version": "2"
   },
@@ -50,7 +50,14 @@
       "username": "jcalabro",
       "projects": [
         {
-          "paths": ["/home/jcalabro/go/src/github.com/bluesky-social/tango"]
+          "paths": [
+            "/home/jcalabro/go/src/github.com/bluesky-social/bsky-infra"
+          ]
+        },
+        {
+          "paths": [
+            "/home/jcalabro/go/src/github.com/bluesky-social/tango"
+          ]
         }
       ]
     }
