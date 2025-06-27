@@ -27,7 +27,6 @@ PACKAGES=(
     pipenv
     ripgrep
     ssh
-    tmux
     wget
     whois
 )

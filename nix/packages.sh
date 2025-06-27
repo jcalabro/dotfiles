@@ -23,6 +23,7 @@ PACKAGES=(
     protobuf
     samply
     talosctl
+    tmux
     uv
     valgrind
     vultr-cli
