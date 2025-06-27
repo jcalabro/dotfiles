@@ -44,6 +44,9 @@
       "enabled": false
     }
   },
+  "languages": {
+    "YAML": { "prettier": { "allowed": false } }
+  },
   "ssh_connections": [
     {
       "host": "jlinux01",
@@ -55,9 +58,7 @@
           ]
         },
         {
-          "paths": [
-            "/home/jcalabro/go/src/github.com/bluesky-social/tango"
-          ]
+          "paths": ["/home/jcalabro/go/src/github.com/bluesky-social/tango"]
         }
       ]
     }
