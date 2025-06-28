@@ -32,8 +32,8 @@ alt-shift-space = 'layout floating tiling' # 'floating toggle' in i3
 # should be supported at all https://github.com/nikitabobko/AeroSpace/issues/5
 # alt-a = 'focus parent'
 
-alt-i = 'workspace prev'
-alt-o = 'workspace next'
+alt-u = 'workspace prev'
+alt-i = 'workspace next'
 alt-left = 'workspace prev'
 alt-right = 'workspace next'
 

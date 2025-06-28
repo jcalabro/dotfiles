@@ -124,8 +124,8 @@ bindsym $mod+0 workspace number $ws10
 
 # switch to next and previous workspace
 # bindsym $mod+m workspace back_and_forth
-bindsym $mod+i workspace prev
-bindsym $mod+o workspace next
+bindsym $mod+u workspace prev
+bindsym $mod+i workspace next
 bindsym $mod+Right workspace next
 bindsym $mod+Left workspace prev
 # bindsym Control+Right workspace next
