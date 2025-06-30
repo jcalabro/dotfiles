@@ -94,12 +94,6 @@ if [ "$?" -eq "0" ]; then
     alias find="fd"
 fi
 
-# curl/xh
-which xh &> /dev/null
-if [ "$?" -eq "0" ]; then
-    alias curl="xh"
-fi
-
 #
 # tmux
 #
