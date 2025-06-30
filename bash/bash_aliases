@@ -125,10 +125,6 @@ alias db=". db/shell.sh"
 alias k="kubectl"
 alias kx="kubectx"
 alias kn="kubens"
-alias pods="kubectl get pods"
-alias sts="kubectl get sts -o wide"
-alias deploy="kubectl get deploy -o wide"
-alias token="cat ~/.kube/config | grep token"
 
 function klogs {
     kubectl get pods | rg $1 | head -n 1 | cut -f 1 -d " " | xargs kubectl logs -f
