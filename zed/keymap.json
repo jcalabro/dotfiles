@@ -23,13 +23,17 @@
   {
     "context": "Editor && vim_mode == normal",
     "bindings": {
+      "j": "vim::Left",
+      "k": "vim::Down",
+      "l": "vim::Up",
+      ";": "vim::Right",
       "shift-s": "editor::AddSelectionBelow",
       "ctrl-n": ["workspace::SendKeystrokes", "ctrl-w w"],
       "ctrl-j": ["workspace::SendKeystrokes", "cmd-i"],
       "g e": ["workspace::SendKeystrokes", "shift-g"],
-      "g h": ["workspace::SendKeystrokes", "0"],
+      "g j": ["workspace::SendKeystrokes", "0"],
       "g s": ["workspace::SendKeystrokes", "^"],
-      "g l": ["workspace::SendKeystrokes", "$"]
+      "g ;": ["workspace::SendKeystrokes", "$"]
     }
   },
   {
@@ -42,11 +46,15 @@
   {
     "context": "Editor && vim_mode == visual",
     "bindings": {
+      "j": "vim::Left",
+      "k": "vim::Down",
+      "l": "vim::Up",
+      ";": "vim::Right",
       "ctrl-n": ["workspace::SendKeystrokes", "escape ctrl-w w"],
       "g e": ["workspace::SendKeystrokes", "shift-g"],
-      "g h": ["workspace::SendKeystrokes", "0"],
+      "g j": ["workspace::SendKeystrokes", "0"],
       "g s": ["workspace::SendKeystrokes", "^"],
-      "g l": ["workspace::SendKeystrokes", "$"]
+      "g ;": ["workspace::SendKeystrokes", "$"]
     }
   }
 ]

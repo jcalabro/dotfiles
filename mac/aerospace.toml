@@ -6,15 +6,15 @@ enable-normalization-opposite-orientation-for-nested-containers = false
 [mode.main.binding]
 # alt-enter = 'exec-and-forget open -n /Applications/Ghostty.app'
 
-alt-h = 'focus left'
-alt-j = 'focus down'
-alt-k = 'focus up'
-alt-l = 'focus right'
+alt-j = 'focus left'
+alt-k = 'focus down'
+alt-l = 'focus up'
+alt-semicolon = 'focus right'
 
-alt-shift-h = 'move left'
-alt-shift-j = 'move down'
-alt-shift-k = 'move up'
-alt-shift-l = 'move right'
+alt-shift-j = 'move left'
+alt-shift-k = 'move down'
+alt-shift-l = 'move up'
+alt-shift-semicolon = 'move right'
 
 alt-f = 'fullscreen'
 
@@ -32,8 +32,8 @@ alt-shift-space = 'layout floating tiling' # 'floating toggle' in i3
 # should be supported at all https://github.com/nikitabobko/AeroSpace/issues/5
 # alt-a = 'focus parent'
 
-alt-u = 'workspace prev'
-alt-i = 'workspace next'
+alt-i = 'workspace prev'
+alt-o = 'workspace next'
 alt-left = 'workspace prev'
 alt-right = 'workspace next'
 
@@ -62,10 +62,10 @@ alt-shift-c = 'reload-config'
 alt-r = 'mode resize'
 
 [mode.resize.binding]
-h = 'resize width -50'
-j = 'resize height +50'
-k = 'resize height -50'
-l = 'resize width +50'
+j = 'resize width -50'
+k = 'resize height +50'
+l = 'resize height -50'
+semicolon = 'resize width +50'
 enter = 'mode main'
 esc = 'mode main'
 r = 'mode main'

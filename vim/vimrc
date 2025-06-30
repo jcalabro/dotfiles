@@ -7,6 +7,11 @@ cabbrev vbs e $HOME/.bash_secrets
 cabbrev vrc e $HOME/.vimrc
 cabbrev vrp e $HOME/.vim_plugins
 
+noremap ; l
+noremap l k
+noremap k j
+noremap j h
+
 " CtrlP ignore settings
 set wildignore+=*/gen/*,*.so,*.swp,*.zip,*/node_modules/*,*.swp,*.zip,*.jpeg,
 set wildignore+=*.o,*/www/*,*.out,*/bin/*,*.pyc,*/client/dist/*,
@@ -85,8 +90,8 @@ vnoremap <silent> <C-Q> <C-O> :q<CR>
 
 " Jump to the beginning and end of lines/buffers
 noremap gs ^
-noremap gh 0
-noremap gl $
+noremap gj 0
+noremap g; $
 noremap ge G
 noremap gn :bn<CR>
 
@@ -137,7 +142,7 @@ inoremap <C-p> <Esc>:Telescope find_files<Enter>
 " Duplicate the buffer in to a new tab
 noremap <C-t> :tab split<Enter>
 
-" Map switching between tabs to Shift+K and Shift+L
+" Map switching between tabs to Shift+j and Shift+;
 noremap K gT
 noremap L gt
 
