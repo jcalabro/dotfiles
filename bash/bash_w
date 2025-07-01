@@ -10,6 +10,8 @@ function ush {
   ssh -A ubuntu@$1
 }
 
+alias ub="source <(yubi.sh)"
+
 #
 # Indigo
 #
