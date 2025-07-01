@@ -25,6 +25,14 @@
     "xml": true,
     "zig": true
   },
+  "languages": {
+    "YAML": {
+      "format_on_save": "off",
+      "prettier": {
+        "allowed": false
+      }
+    }
+  },
   "base_keymap": "VSCode",
   "vim_mode": true,
   "vim": {
@@ -44,9 +52,6 @@
       "enabled": false
     }
   },
-  "languages": {
-    "YAML": { "prettier": { "allowed": false } }
-  },
   "ssh_connections": [
     {
       "host": "jlinux01",
@@ -58,9 +63,7 @@
           ]
         },
         {
-          "paths": [
-            "/home/jcalabro/go/src/github.com/bluesky-social/tango"
-          ]
+          "paths": ["/home/jcalabro/go/src/github.com/bluesky-social/tango"]
         }
       ]
     }
