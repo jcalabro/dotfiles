@@ -26,4 +26,8 @@ alias gta="go test ./atlantis/bsky/server/... -race -covermode=atomic -v -count=
 # social-app
 #
 
-export ANDROID_HOME=/Users/jcalabro/Library/Android/sdk
+if [ $(uname -s) == "Darwin" ]; then
+  export ANDROID_HOME=$HOME/Library/Android/sdk
+  export JAVA_HOME="$(brew --prefix openjdk@17)/libexec/openjdk.jdk/Contents/Home"
+  export PATH="$JAVA_HOME/bin:$PATH"
+fi
