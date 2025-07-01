@@ -21,3 +21,9 @@ export RELAY_ADMIN_PASSWORD=dummy
 #
 
 alias gta="go test ./atlantis/bsky/server/... -race -covermode=atomic -v -count=1"
+
+#
+# social-app
+#
+
+export ANDROID_HOME=/Users/jcalabro/Library/Android/sdk
