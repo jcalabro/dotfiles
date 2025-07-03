@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+alias y="source <(yubi.sh)"
 alias bs="gh bluesky-social"
 alias bi="bs bsky-infra"
 function bsh {
