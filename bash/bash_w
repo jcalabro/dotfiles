@@ -34,3 +34,5 @@ if [ $(uname -s) == "Darwin" ]; then
   export JAVA_HOME="$(brew --prefix openjdk@17)/libexec/openjdk.jdk/Contents/Home"
   export PATH="$JAVA_HOME/bin:$PATH"
 fi
+
+alias mydid="echo did:plc:4uz2445cjiw7w4nobfgnu35f"

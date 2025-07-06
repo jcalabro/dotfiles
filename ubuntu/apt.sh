@@ -26,6 +26,7 @@ PACKAGES=(
     net-tools
     pipenv
     pipx
+    rbenv
     ripgrep
     ssh
     wget
