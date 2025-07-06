@@ -17,6 +17,7 @@ PACKAGES=(
     git
     gnuplot
     htop
+    ipmitool
     just
     jq
     libssl-dev
@@ -28,6 +29,7 @@ PACKAGES=(
     pipx
     rbenv
     ripgrep
+    sensors
     ssh
     wget
     whois
