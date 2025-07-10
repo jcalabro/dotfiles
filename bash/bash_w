@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
-alias y="source <(yubi.sh)"
 alias bs="gh bluesky-social"
 alias bi="bs bsky-infra"
+alias mydid="echo did:plc:4uz2445cjiw7w4nobfgnu35f"
+alias ub="source <(yubi.sh)"
+
 function bsh {
   ssh -A root@$1.internal.$2.$BSKY_DOMAIN
 }
@@ -10,8 +12,6 @@ function bsh {
 function ush {
   ssh -A ubuntu@$1
 }
-
-alias ub="source <(yubi.sh)"
 
 #
 # Indigo
@@ -34,5 +34,3 @@ if [ $(uname -s) == "Darwin" ]; then
   export JAVA_HOME="$(brew --prefix openjdk@17)/libexec/openjdk.jdk/Contents/Home"
   export PATH="$JAVA_HOME/bin:$PATH"
 fi
-
-alias mydid="echo did:plc:4uz2445cjiw7w4nobfgnu35f"
