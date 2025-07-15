@@ -18,7 +18,6 @@ PACKAGES=(
     gnuplot
     htop
     ipmitool
-    just
     jq
     libssl-dev
     musl-dev
