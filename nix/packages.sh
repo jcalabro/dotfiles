@@ -8,6 +8,7 @@ PACKAGES=(
     clang
     dust
     dysk
+    eksctl
     fd
     flyctl
     go
