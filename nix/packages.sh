@@ -13,6 +13,7 @@ PACKAGES=(
     flyctl
     go
     just
+    kafkactl
     kubectl
     kubectx
     kubernetes-helm
