@@ -4,6 +4,7 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 alias bs="gh bluesky-social"
 alias bi="bs bsky-infra"
+alias sm="gh seeemore"
 alias mydid="echo did:plc:4uz2445cjiw7w4nobfgnu35f"
 alias ub="source <(yubi.sh)"
 
