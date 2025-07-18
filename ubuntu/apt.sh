@@ -27,6 +27,7 @@ PACKAGES=(
     pipenv
     pipx
     rbenv
+    redis-tools
     ripgrep
     sensors
     ssh
