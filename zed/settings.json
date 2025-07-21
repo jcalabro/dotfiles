@@ -62,7 +62,14 @@
           ]
         },
         {
-          "paths": ["/home/jcalabro/go/src/github.com/bluesky-social/tango"]
+          "paths": [
+            "/home/jcalabro/go/src/github.com/bluesky-social/seeemore"
+          ]
+        },
+        {
+          "paths": [
+            "/home/jcalabro/go/src/github.com/bluesky-social/tango"
+          ]
         }
       ]
     }
