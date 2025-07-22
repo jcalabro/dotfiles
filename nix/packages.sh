@@ -11,6 +11,7 @@ PACKAGES=(
     eksctl
     fd
     flyctl
+    google-cloud-sdk
     go
     just
     kafkactl
