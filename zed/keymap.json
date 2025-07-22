@@ -11,7 +11,7 @@
     "context": "Editor",
     "bindings": {
       "ctrl-q": "pane::CloseActiveItem",
-      "ctrl-c": "editor::ToggleComments",
+      "ctrl-a": "editor::ToggleComments",
       "ctrl-s": "workspace::Save",
       "ctrl-d": "pane::CloseActiveItem",
       "ctrl-k": "pane::SplitRight",
@@ -23,7 +23,7 @@
   {
     "context": "Editor && vim_mode == normal",
     "bindings": {
-      "shift-s": "editor::AddSelectionBelow",
+      "ctrl-c": "editor::AddSelectionBelow",
       "ctrl-n": ["workspace::SendKeystrokes", "ctrl-w w"],
       "ctrl-j": ["workspace::SendKeystrokes", "cmd-i"]
     }
