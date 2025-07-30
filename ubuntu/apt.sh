@@ -11,6 +11,7 @@ PACKAGES=(
     direnv
     dsniff
     dwarfdump
+    elfutils
     etcd-client
     eza
     fzf
