@@ -40,6 +40,7 @@ FORMULAE=(
     helix
     htop
     hyperfine
+    iina
     just
     jq
     kubernetes-cli
