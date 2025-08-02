@@ -5,6 +5,7 @@ PACKAGES=(
     arping
     bat
     btop
+    clangd
     cloc
     cmake
     curl
