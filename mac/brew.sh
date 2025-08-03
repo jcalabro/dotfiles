@@ -59,6 +59,7 @@ FORMULAE=(
     siderolabs/tap/talosctl
     scroll-reverser
     tailscale
+    tio
     tracy
     tmux
     watch
