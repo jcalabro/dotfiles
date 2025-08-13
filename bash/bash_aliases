@@ -158,6 +158,7 @@ alias tsd="sudo tailscale down"
 alias tss="tailscale status"
 alias p="python3"
 alias j="just"
+alias ve="source .venv/bin/activate"
 
 function clear_zig_caches {
     rm -rf .zig
