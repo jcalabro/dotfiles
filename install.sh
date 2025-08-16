@@ -20,6 +20,15 @@ function install_dotfiles {
     ln -sf $DOTFILE_BASE/bash/bash_w    $HOME/.bash_w
 
     #
+    # Linux config
+    #
+    if [ "$(uname)" == "Linux" ]; then
+        sudo rm -f /etc/sudoers.d/ykman
+        sudo ln -sf $DOTFILE_BASE/linux/ykman /etc/sudoers.d/ykman
+        sudo chown root:root /etc/sudoers.d/ykman
+    fi
+
+    #
     # Nix
     #
     mkdir -p $HOME/.config/nix
@@ -123,7 +132,7 @@ function install_dotfiles {
     # Ghostty (make a local copy)
     #
     mkdir -p $HOME/.config/ghostty
-    cp -n $DOTFILE_BASE/ghostty/config $HOME/.config/ghostty/config
+    cp --update=none $DOTFILE_BASE/ghostty/config $HOME/.config/ghostty/config
     cp $DOTFILE_BASE/ghostty/ghostty-launcher.sh $HOME/local/bin
 
     #
