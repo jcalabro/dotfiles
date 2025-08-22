@@ -28,7 +28,7 @@ C-y = "scroll_up"
 C-s = ":w"
 C-q = ":q"
 C-r = ":reload"
-F1 = [":insert-output date +'%H:%M'", "insert_at_line_end"]
+F1 = [":insert-output date +'%%H:%%M '", "insert_at_line_end"]
 
 [keys.normal.g]
 j = "goto_line_start"
@@ -46,7 +46,7 @@ o = ":o .uscope/config.ini"
 [keys.insert]
 j = { j = "normal_mode", k = "normal_mode" }
 C-s = ":w"
-F1 = [":insert-output date +'%H:%M'", "insert_at_line_end"]
+F1 = [":insert-output date +'%%H:%%M '", "insert_at_line_end"]
 
 [keys.select]
 j = "extend_char_left"
