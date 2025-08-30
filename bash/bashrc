@@ -370,3 +370,12 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 eval "$(rbenv init - bash)"
+
+function install_zls {
+    mkdir -p $HOME/local/bin
+    mkdir -p $HOME/.local/share/nvim/mason/packages/zls/bin
+
+    zig build -Doptimize=ReleaseSafe
+    cp zig-out/bin/zls $HOME/local/bin
+    cp zig-out/bin/zls $HOME/.local/share/nvim/mason/packages/zls/bin
+}
