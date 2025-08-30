@@ -6,6 +6,7 @@ brew tap homebrew/core
 brew update
 
 FORMULAE=(
+    anyzig
     bat
     bash # be sure to change the shell by editing /etc/shells, then chsh. Confirm with echo $SHELL
     bandwhich
