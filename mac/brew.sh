@@ -3,7 +3,12 @@
 defaults write -g ApplePressAndHoldEnabled -bool false
 
 brew tap homebrew/core
+brew tap anyzig/tap
 brew update
+
+# setup LFS
+brew install git-lfs
+git lfs install
 
 FORMULAE=(
     anyzig
