@@ -33,3 +33,6 @@ __debug_bin
 # pipenv
 Pipfile.lock
 Pipfile
+
+# Claude
+.claude
