@@ -31,19 +31,22 @@ PACKAGES=(
     rbenv
     redis-tools
     ripgrep
-    sensors
     ssh
     wget
     whois
 )
 
+sudo apt update -y
 sudo apt install -y ${PACKAGES[@]}
 
 sudo ufw allow 22
+sudo ufw reload
 
 # Rust setup:
 # curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-# curl -L https://github.com/marler8997/zigup/releases/latest/download/zigup-x86_64-linux.tar.gz | tar xz
+
+# Zig setup:
+# curl -L https://github.com/marler8997/anyzig/releases/latest/download/anyzig-$(uname -m)-linux.tar.gz | tar xz && sudo mv zig /usr/local/bin
 
 # Python setup:
 # pipx install python-lsp-server
