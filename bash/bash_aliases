@@ -5,6 +5,7 @@
 #
 alias jimvm="ssh jimvm"
 alias jl="ssh jlinux01"
+alias jlocal="ssh jlinux-local"
 
 #
 # Editor
