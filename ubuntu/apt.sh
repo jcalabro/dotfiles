@@ -34,6 +34,8 @@ PACKAGES=(
     ssh
     wget
     whois
+    xfce4
+    xfce4-goodies
 )
 
 sudo apt update -y

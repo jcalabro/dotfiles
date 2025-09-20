@@ -92,7 +92,9 @@ export HISTSIZE=10000000
 #
 # Overrides some default keybindings so vim controls work
 #
-stty -ixon
+if [ -t 0 ] && [ -t 1 ]; then
+    stty -ixon
+fi
 
 #
 # Iterm2 color scheme
