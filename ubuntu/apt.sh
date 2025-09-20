@@ -9,6 +9,7 @@ PACKAGES=(
     cloc
     cmake
     curl
+    dmenu
     direnv
     dsniff
     dwarfdump
@@ -19,6 +20,9 @@ PACKAGES=(
     git
     gnuplot
     htop
+    i3
+    i3status
+    i3lock
     ipmitool
     jq
     libssl-dev

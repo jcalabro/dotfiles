@@ -17,7 +17,6 @@ PACKAGES=(
     flyctl
     google-cloud-sdk
     go
-    i3
     just
     kafkactl
     kubectl
