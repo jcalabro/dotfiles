@@ -9,7 +9,6 @@ PACKAGES=(
     cloc
     cmake
     curl
-    dmenu
     direnv
     dsniff
     dwarfdump
@@ -20,9 +19,6 @@ PACKAGES=(
     git
     gnuplot
     htop
-    i3
-    i3status
-    i3lock
     ipmitool
     jq
     libssl-dev
@@ -38,12 +34,32 @@ PACKAGES=(
     ssh
     wget
     whois
-    xfce4
-    xfce4-goodies
 )
 
 sudo apt update -y
 sudo apt install -y ${PACKAGES[@]}
+
+XFCE_I3_PACKAGES=(
+    dmenu
+    i3
+    i3status
+    i3lock
+    libxfce4ui-2-dev
+    libxfce4panel-2.0-dev
+    xfce4-dev-tools
+    libxfconf-0-dev
+    libxfce4util-dev
+    xfce4
+    xfce4-dev-tools
+    xfce4-goodies
+    xserver-xorg-dev
+    gobject-introspection
+    libjson-glib-dev
+    libglib2.0-dev
+)
+
+sudo apt update -y
+sudo apt install -y ${XFCE_I3_PACKAGES[@]}
 
 sudo ufw allow 22
 sudo ufw reload
