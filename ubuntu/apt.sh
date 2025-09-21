@@ -34,6 +34,7 @@ PACKAGES=(
     ssh
     wget
     whois
+    wireshark
 )
 
 sudo apt update -y
