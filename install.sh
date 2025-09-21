@@ -114,6 +114,11 @@ function install_dotfiles {
         ln -sf $DOTFILE_BASE/vscode/settings.json    "$HOME/Library/Application Support/Code/User"
         ln -sf $DOTFILE_BASE/vscode/keybindings.json "$HOME/Library/Application Support/Code/User"
     fi
+    if [ "$(uname)" == "Linux" ]; then
+        mkdir -p "$HOME/.config/Code/User"
+        ln -sf $DOTFILE_BASE/vscode/settings.json    "$HOME/.config/Code/User"
+        ln -sf $DOTFILE_BASE/vscode/keybindings.json "$HOME/.config/Code/User"
+    fi
 
     #
     # Zed
