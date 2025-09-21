@@ -14,6 +14,14 @@ export TSAN_OPTIONS="suppressions=$HOME/.tsan_suppressions"
 export GHOSTTY_SHELL_INTEGRATION_NO_CURSOR=1
 
 #
+# X options
+#
+
+if [ -x "$(command -v setxkbmap)" ]; then
+    setxkbmap -option caps:ctrl_modifier
+fi
+
+#
 # Path
 #
 
