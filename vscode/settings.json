@@ -59,5 +59,6 @@
         "CGO_LDFLAGS": "-L/Users/jcalabro/go/src/github.com/ChessCom/explanation-engine/target/debug/"
     },
     "editor.stickyScroll.enabled": false,
-    "testMate.cpp.discovery.loadOnStartup": true
+    "testMate.cpp.discovery.loadOnStartup": true,
+    "chat.agent.enabled": false
 }

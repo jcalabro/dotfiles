@@ -6,3 +6,4 @@ sudo snap install code --classic
 sudo snap install slack
 sudo snap install discord
 sudo snap install spotify
+sudo snap install chromium
