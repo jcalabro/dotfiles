@@ -57,6 +57,7 @@ XFCE_I3_PACKAGES=(
     gobject-introspection
     libjson-glib-dev
     libglib2.0-dev
+    gtk-doc-tools
 )
 
 sudo apt update -y
