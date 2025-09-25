@@ -5,5 +5,5 @@ for FILE in bashrc bash_w bash_aliases bash_go; do
   sudo ln -s /home/jcalabro/.$FILE /root/.$FILE
 done
 
-sudo rm -rf /root/.config/helix
-sudo ln -s /home/jcalabro/.config/helix /root/.config/helix
+sudo rm -rf /root/.config
+sudo ln -s /home/jcalabro/.config /root/.config
