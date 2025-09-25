@@ -148,6 +148,8 @@ function install_dotfiles {
     popd > /dev/null
 
     pushd $HOME > /dev/null
+    mkdir .cargo
+    touch .cargo/env
     source .bash_profile
     popd > /dev/null
 }
