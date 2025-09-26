@@ -63,15 +63,22 @@ XFCE_I3_PACKAGES=(
 sudo apt update -y
 sudo apt install -y ${XFCE_I3_PACKAGES[@]}
 
-sudo ufw allow 22
-sudo ufw reload
+#
+# Install Tailscale
+#
 
-# Rust setup:
-# curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/noble.noarmor.gpg | sudo tee /usr/share/keyrings/tailscale-archive-keyring.gpg >/dev/null
+curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/noble.tailscale-keyring.list | sudo tee /etc/apt/sources.list.d/tailscale.list
+
+sudo apt update -y
+sudo apt install -y tailscale
 
 # Zig setup:
-# curl -L https://github.com/marler8997/anyzig/releases/latest/download/anyzig-$(uname -m)-linux.tar.gz | tar xz && sudo mv zig /usr/local/bin
+curl -L https://github.com/marler8997/anyzig/releases/latest/download/anyzig-$(uname -m)-linux.tar.gz | tar xz && sudo mv zig /usr/local/bin
 
 # Python setup:
-# pipx install python-lsp-server
-# pipx inject python-lsp-server python-lsp-ruff python-lsp-black
+pipx install python-lsp-server
+pipx inject python-lsp-server python-lsp-ruff python-lsp-black
+
+# Rust setup:
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
