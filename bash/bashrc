@@ -304,19 +304,6 @@ function restart_logtech {
     ps aux | grep -i logi | grep -v login | awk '{print $2}' | xargs -L1 sudo kill -9
 }
 
-function install_ghostty_fedora {
-    echo -n "Are you sure (y/N)? "
-    read answer
-    if [ "$answer" != "${answer#[Yy]}" ] ;then
-        echo "Installing"
-    else
-        echo "Exiting"
-        return
-    fi
-
-    zigup run 0.13.0 build -Doptimize=ReleaseFast -Dapp-runtime=gtk -p $HOME/.local
-}
-
 function kill_processes {
     echo -n "Are you sure you want to kill everything matching $1 (y/N)? "
     read answer
