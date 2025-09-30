@@ -12,11 +12,11 @@ alias mydid="echo did:plc:4uz2445cjiw7w4nobfgnu35f"
 alias ub="source <(yubi.sh)"
 
 function bsh {
-  ssh -A root@$1.internal.$2.$BSKY_DOMAIN
+  ssh -A root@$1.internal.$2.$BSKY_DOMAIN "${@:3}"
 }
 
 function ush {
-  ssh -A ubuntu@$1
+  ssh -A ubuntu@$1 "${@:3}"
 }
 
 #
