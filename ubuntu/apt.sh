@@ -21,6 +21,7 @@ PACKAGES=(
     htop
     ipmitool
     jq
+    kdiff3
     libssl-dev
     musl-dev
     musl-tools
