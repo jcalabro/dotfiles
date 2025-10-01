@@ -7,6 +7,7 @@ PACKAGES=(
     gobject-introspection-devel
     gtk-doc
     json-glib-devel
+    i3
     libxfce4ui-devel
     libxfce4util-devel
     meson

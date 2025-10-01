@@ -4,6 +4,7 @@ PACKAGES=(
     awscli2
     bat
     bore
+    btop
     c3c
     clang
     difftastic
