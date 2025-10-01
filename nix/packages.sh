@@ -1,20 +1,20 @@
 #!/usr/bin/env bash
 
-# sh <(curl --proto '=https' --tlsv1.2 -L https://nixos.org/nix/install) --daemon
-# nix-channel --add https://nixos.org/channels/nixpkgs-unstable nixpkgs
-# nix-channel --update
-
 PACKAGES=(
     awscli2
     bat
     bore
     c3c
     clang
+    difftastic
+    direnv
     dust
     dysk
     eksctl
+    eza
     fd
     flyctl
+    gnuplot
     google-cloud-sdk
     go
     just
@@ -28,6 +28,8 @@ PACKAGES=(
     odin
     postgresql_17
     protobuf
+    rbenv
+    ripgrep
     samply
     talosctl
     tmux
@@ -36,6 +38,7 @@ PACKAGES=(
     vultr-cli
     websocat
     xh
+    xorg.xset
     yarn
 )
 

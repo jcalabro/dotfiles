@@ -152,6 +152,12 @@ function install_dotfiles {
     touch .cargo/env
     source .bash_profile
     popd > /dev/null
+
+    #
+    # Configure git
+
+    git config --global user.name jcalabro
+    git config --global user.email jamesrcalabro@gmail.com
 }
 
 echo -n "Are you sure (y/N)? "
