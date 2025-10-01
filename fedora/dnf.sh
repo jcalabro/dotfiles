@@ -21,6 +21,16 @@ PACKAGES=(
 
 sudo dnf install -y ${PACKAGES[@]}
 
+sudo dnf copr enable -y scottames/ghostty
+sudo dnf install -y ghostty
+
+sudo dnf -y install dnf-plugins-core
+sudo dnf-3 config-manager -y --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
+sudo dnf install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo systemctl enable --now docker
+sudo groupadd docker
+sudo usermod -aG docker $USER
+
 #
 # Install i3ipc-glib from source
 #
