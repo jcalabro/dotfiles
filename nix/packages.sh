@@ -39,6 +39,7 @@ PACKAGES=(
     vultr-cli
     websocat
     xh
+    xorg.xrandr
     xorg.xset
     yarn
 )
