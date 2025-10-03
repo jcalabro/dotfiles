@@ -2,6 +2,7 @@
 
 PACKAGES=(
     dh-autoreconf
+    dmidecode
     gcc
     glib2-devel
     gobject-introspection-devel
@@ -10,6 +11,7 @@ PACKAGES=(
     i3
     libxfce4ui-devel
     libxfce4util-devel
+    lshw
     meson
     ninja-build
     pkg-config
@@ -17,8 +19,6 @@ PACKAGES=(
     @xfce-desktop-environment
     xfce4-dev-tools
     xfce4-panel-devel
-    dmidecode
-    lshw
 )
 
 sudo dnf install -y ${PACKAGES[@]}
