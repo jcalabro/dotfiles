@@ -17,6 +17,8 @@ PACKAGES=(
     @xfce-desktop-environment
     xfce4-dev-tools
     xfce4-panel-devel
+    dmidecode
+    lshw
 )
 
 sudo dnf install -y ${PACKAGES[@]}
