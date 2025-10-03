@@ -1,6 +1,7 @@
 # #!/usr/bin/env bash
 
 PACKAGES=(
+    alacritty
     dh-autoreconf
     dmidecode
     gcc
