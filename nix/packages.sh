@@ -18,6 +18,7 @@ PACKAGES=(
     gnuplot
     google-cloud-sdk
     go
+    gopls
     just
     kafkactl
     kubectl
