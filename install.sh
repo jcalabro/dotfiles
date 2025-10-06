@@ -7,6 +7,8 @@
 function install_dotfiles {
     DOTFILE_BASE=$(pwd)
 
+    mkdir -p $HOME/local/bin
+
     echo Installing
     pushd $HOME/misc/dotfiles > /dev/null
 
