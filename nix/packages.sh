@@ -24,6 +24,7 @@ PACKAGES=(
     kubectl
     kubectx
     kubernetes-helm
+    less
     lldb
     helix
     neovim
