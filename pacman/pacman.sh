@@ -3,6 +3,7 @@
 PACKAGES=(
     ghostty
     keyd
+    sway
 )
 
 sudo pacman -Sy --noconfirm ${PACKAGES[@]}
