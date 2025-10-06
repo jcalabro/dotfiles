@@ -130,6 +130,12 @@ function install_dotfiles {
     ln -sf $DOTFILE_BASE/zed/keymap.json "$HOME/.config/zed/keymap.json"
 
     #
+    # keyd
+    #
+    mkdir -p $HOME/.config/zed
+    sudo ln -sf $DOTFILE_BASE/linux/keyd.conf "/etc/keyd/default.conf"
+
+    #
     # Alacritty (make a local copy)
     #
     mkdir -p $HOME/.config/alacritty
@@ -150,13 +156,14 @@ function install_dotfiles {
     popd > /dev/null
 
     pushd $HOME > /dev/null
-    mkdir .cargo
+    mkdir -p .cargo
     touch .cargo/env
     source .bash_profile
     popd > /dev/null
 
     #
     # Configure git
+    #
 
     git config --global user.name jcalabro
     git config --global user.email jamesrcalabro@gmail.com
