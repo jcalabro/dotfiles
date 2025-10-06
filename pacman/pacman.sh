@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
 PACKAGES=(
+    ghostty
     keyd
 )
 
 sudo pacman -Sy --noconfirm ${PACKAGES[@]}
 
-systemctl enable --now keyd
+sudo systemctl enable --now keyd

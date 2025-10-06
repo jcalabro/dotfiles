@@ -17,7 +17,7 @@ export GHOSTTY_SHELL_INTEGRATION_NO_CURSOR=1
 # X options
 #
 
-if [ -x "$(command -v setxkbmap)" ] && [ -n "$DISPLAY" ]; then
+if [ -x "$(command -v setxkbmap)" ] && [ -n "$DISPLAY" ] && [ "$XDG_SESSION_TYPE" == "x11" ]; then
     setxkbmap -option caps:ctrl_modifier
 fi
 
