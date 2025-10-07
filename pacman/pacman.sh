@@ -2,10 +2,16 @@
 
 PACKAGES=(
     blueman
+    brightnessctl
     ghostty
+    grim
     keyd
+    playerctl
     sway
+    swayidle
+    swaylock
     tailscale
+    wl-clipboard
     wmenu
 )
 
