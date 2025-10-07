@@ -27,6 +27,7 @@ PACKAGES=(
     less
     lldb
     helix
+    mtr
     neovim
     odin
     postgresql_17
