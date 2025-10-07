@@ -20,3 +20,5 @@ PACKAGES=(
 sudo pacman -Sy --noconfirm ${PACKAGES[@]}
 
 sudo systemctl enable --now keyd
+sudo systemctl enable --now docker
+sudo usermod -aG docker jcalabro

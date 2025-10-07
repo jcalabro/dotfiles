@@ -51,13 +51,6 @@ function install_dotfiles {
     ln -sf $DOTFILE_BASE/mac/aerospace.toml $HOME/.config/aerospace/aerospace.toml
 
     #
-    # Yabai
-    #
-    mkdir -p $HOME/.config/{yabai,skhd}
-    ln -sf $DOTFILE_BASE/mac/yabairc $HOME/.config/yabai
-    ln -sf $DOTFILE_BASE/mac/skhdrc $HOME/.config/skhd
-
-    #
     # Git
     #
     ln -sf $DOTFILE_BASE/git/gitignore           $HOME/.gitignore
@@ -108,7 +101,7 @@ function install_dotfiles {
         ln -sf $DOTFILE_BASE/mac/zls.json $HOME/.config/zls.json
         ln -sf $DOTFILE_BASE/mac/zls.json "$HOME/Library/Application Support/zls.json"
     else
-        ln -sf $DOTFILE_BASE/fedora/zls.json $HOME/.config/zls.json
+        ln -sf $DOTFILE_BASE/linux/zls.json $HOME/.config/zls.json
     fi
 
     #
@@ -153,7 +146,7 @@ function install_dotfiles {
     #
     # TSan
     #
-    ln -sf $DOTFILE_BASE/fedora/tsan-suppressions $HOME/.tsan_suppressions
+    ln -sf $DOTFILE_BASE/linux/tsan-suppressions $HOME/.tsan_suppressions
 
     popd > /dev/null
 
