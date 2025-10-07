@@ -4,6 +4,7 @@ PACKAGES=(
     ghostty
     keyd
     sway
+    tailscale
 )
 
 sudo pacman -Sy --noconfirm ${PACKAGES[@]}
