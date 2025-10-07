@@ -5,6 +5,7 @@ PACKAGES=(
     keyd
     sway
     tailscale
+    wmenu
 )
 
 sudo pacman -Sy --noconfirm ${PACKAGES[@]}
