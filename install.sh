@@ -127,7 +127,7 @@ function install_dotfiles {
     #
     # keyd
     #
-    mkdir -p $HOME/.config/zed
+    sudo mkdir -p /etc/keyd
     sudo ln -sf $DOTFILE_BASE/linux/keyd.conf "/etc/keyd/default.conf"
 
     #
