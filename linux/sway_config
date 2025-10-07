@@ -212,22 +212,27 @@ bindsym Print exec grim - | wl-copy
 #
 # Status Bar:
 #
-bar {
-    position top
-    status_command while date +'%Y-%m-%d %X'; do sleep 1; done
-    colors {
-        statusline #ffffff
-        background #1a1a1a
-        inactive_workspace #32323200 #32323200 #5c5c5c
 
-        # Manually set the colors for the workspace picker so it's
-        # not transparent and impacted by the desktop background
-        focused_workspace  #4c7899 #285577 #ffffff
-        active_workspace   #333333 #5f676a #ffffff
-        inactive_workspace #333333 #222222 #888888
-        urgent_workspace   #2f343a #900000 #ffffff
-        binding_mode       #2f343a #900000 #ffffff
-    }
+bar {
+    swaybar_command waybar
 }
+
+# bar {
+#     position top
+#     status_command while date +'%Y-%m-%d %X'; do sleep 1; done
+#     colors {
+#         statusline #ffffff
+#         background #1a1a1a
+#         inactive_workspace #32323200 #32323200 #5c5c5c
+
+#         # Manually set the colors for the workspace picker so it's
+#         # not transparent and impacted by the desktop background
+#         focused_workspace  #4c7899 #285577 #ffffff
+#         active_workspace   #333333 #5f676a #ffffff
+#         inactive_workspace #333333 #222222 #888888
+#         urgent_workspace   #2f343a #900000 #ffffff
+#         binding_mode       #2f343a #900000 #ffffff
+#     }
+# }
 
 include /etc/sway/config.d/*

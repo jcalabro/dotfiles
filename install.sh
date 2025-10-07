@@ -43,6 +43,8 @@ function install_dotfiles {
     ln -sf $DOTFILE_BASE/linux/i3_config $HOME/.config/i3/config
     mkdir -p $HOME/.config/sway
     ln -sf $DOTFILE_BASE/linux/sway_config $HOME/.config/sway/config
+    mkdir -p $HOME/.config/waybar
+    ln -sf $DOTFILE_BASE/linux/waybar_config $HOME/.config/waybar/config
 
     #
     # Aerospace

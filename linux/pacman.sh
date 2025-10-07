@@ -13,6 +13,7 @@ PACKAGES=(
     swayidle
     swaylock
     tailscale
+    waybar
     wl-clipboard
     wmenu
 )
