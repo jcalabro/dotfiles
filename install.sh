@@ -37,10 +37,12 @@ function install_dotfiles {
     ln -sf $DOTFILE_BASE/nix/nix.conf $HOME/.config/nix/nix.conf
 
     #
-    # i3
+    # i3/sway
     #
     mkdir -p $HOME/.config/i3
     ln -sf $DOTFILE_BASE/linux/i3_config $HOME/.config/i3/config
+    mkdir -p $HOME/.config/sway
+    ln -sf $DOTFILE_BASE/linux/sway_config $HOME/.config/sway/config
 
     #
     # Aerospace
