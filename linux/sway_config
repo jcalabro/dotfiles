@@ -23,7 +23,7 @@ set $resize_px 80px
 #
 
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg /home/jcalabro/local/backgrounds/moon.jpeg fill
 
 #
 # Idle configuration
@@ -217,8 +217,16 @@ bar {
     status_command while date +'%Y-%m-%d %X'; do sleep 1; done
     colors {
         statusline #ffffff
-        background #323232
+        background #1a1a1a
         inactive_workspace #32323200 #32323200 #5c5c5c
+
+        # Manually set the colors for the workspace picker so it's
+        # not transparent and impacted by the desktop background
+        focused_workspace  #4c7899 #285577 #ffffff
+        active_workspace   #333333 #5f676a #ffffff
+        inactive_workspace #333333 #222222 #888888
+        urgent_workspace   #2f343a #900000 #ffffff
+        binding_mode       #2f343a #900000 #ffffff
     }
 }
 

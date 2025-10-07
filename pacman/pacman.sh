@@ -3,11 +3,13 @@
 PACKAGES=(
     blueman
     brightnessctl
+    firefox
     ghostty
     grim
     keyd
     playerctl
     sway
+    swaybg
     swayidle
     swaylock
     tailscale
