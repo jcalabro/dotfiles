@@ -33,6 +33,7 @@ PACKAGES=(
     postgresql_17
     protobuf
     rbenv
+    redis
     ripgrep
     samply
     talosctl
