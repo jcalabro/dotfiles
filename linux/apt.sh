@@ -29,6 +29,7 @@ PACKAGES=(
     net-tools
     pipenv
     pipx
+    playerctl
     rbenv
     redis-tools
     ripgrep
