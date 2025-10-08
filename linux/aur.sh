@@ -20,4 +20,11 @@ for PACKAGE in ${PACKAGES[@]}; do
     popd > /dev/null
 done
 
+# pinned version of fdb clients
+git clone https://aur.archlinux.org/foundationdb-clients-bin.git
+pushd foundationdb-clients-bin > /dev/null
+git checkout acecd4c
+makepkg -si --skippgpcheck --noconfirm
+popd > /dev/null
+
 popd > /dev/null

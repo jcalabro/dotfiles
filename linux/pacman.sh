@@ -4,6 +4,8 @@ PACKAGES=(
     bind
     blueman
     brightnessctl
+    docker
+    docker-compose
     firefox
     ghostty
     grim
