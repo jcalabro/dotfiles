@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 PACKAGES=(
+    bind
     blueman
     brightnessctl
     firefox
