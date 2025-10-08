@@ -1,7 +1,35 @@
 {
-    "modules-right": ["battery", "clock"],
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "modules-left": ["sway/workspaces"],
+    "modules-right": ["network", "bluetooth", "battery", "clock"],
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": false,
+        "format": "{name}"
+    },
+    "network": {
+        "format-wifi": "  WiFi Connected",
+        "format-ethernet": "  Connected",
+        "format-disconnected": "  Disconnected",
+        "tooltip-format": "{essid}"
+    },
+    "bluetooth": {
+        "format": "Bluetooth {status}",
+        "format-connected": " {num_connections}",
+        "tooltip-format": "{controller_alias}\t{controller_address}",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
+    },
     "battery": {
         "format": "{capacity}% {icon}",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": ["", "", "", "", ""],
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% "
+    },
+    "clock": {
+        "format": "{:%I:%M %p}",
+        "tooltip-format": "{:%A, %B %d, %Y}"
     }
 }
