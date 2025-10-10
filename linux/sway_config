@@ -67,6 +67,9 @@ input type:keyboard {
 # Start a terminal
 bindsym $mod+Return exec $term
 
+# Start a terminal
+bindsym $mod+Shift+b exec blueman-manager
+
 # Kill focused window
 bindsym $mod+Shift+q kill
 
