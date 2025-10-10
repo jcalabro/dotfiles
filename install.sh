@@ -41,11 +41,16 @@ function install_dotfiles {
     #
     mkdir -p $HOME/.config/i3
     ln -sf $DOTFILE_BASE/linux/i3_config $HOME/.config/i3/config
+
     mkdir -p $HOME/.config/sway
     ln -sf $DOTFILE_BASE/linux/sway_config $HOME/.config/sway/config
+
     mkdir -p $HOME/.config/waybar
     ln -sf $DOTFILE_BASE/linux/waybar_config $HOME/.config/waybar/config
     ln -sf $DOTFILE_BASE/linux/waybar_style.css $HOME/.config/waybar/style.css
+
+    mkdir -p $HOME/.config/xdg-desktop-portals
+    ln -sf $DOTFILE_BASE/linux/xdg_desktop_portals.conf $HOME/.config/xdg-desktop-portals/portals.conf
 
     #
     # Aerospace

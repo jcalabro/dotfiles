@@ -10,6 +10,7 @@ PACKAGES=(
     https://aur.archlinux.org/slack-desktop
     https://aur.archlinux.org/spotify
     https://aur.archlinux.org/visual-studio-code-bin
+    https://aur.archlinux.org/zoom
 )
 
 for PACKAGE in ${PACKAGES[@]}; do

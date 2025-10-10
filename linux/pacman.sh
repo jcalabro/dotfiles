@@ -4,12 +4,14 @@ PACKAGES=(
     bind
     blueman
     brightnessctl
+    chromium
     docker
     docker-compose
     firefox
     ghostty
     grim
     keyd
+    pipewire
     playerctl
     sway
     swaybg
@@ -17,8 +19,11 @@ PACKAGES=(
     swaylock
     tailscale
     waybar
+    wireplumber
     wl-clipboard
     wmenu
+    xdg-desktop-portal
+    xdg-desktop-portal-wlr
 )
 
 sudo pacman -Sy --noconfirm ${PACKAGES[@]}
