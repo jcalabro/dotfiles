@@ -11,6 +11,7 @@ PACKAGES=(
     ghostty
     grim
     keyd
+    obsidian
     pipewire
     playerctl
     sway
