@@ -25,6 +25,7 @@ PACKAGES=(
     wmenu
     xdg-desktop-portal
     xdg-desktop-portal-wlr
+    yubikey-manager
 )
 
 sudo pacman -Sy --noconfirm ${PACKAGES[@]}
