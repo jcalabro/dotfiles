@@ -211,6 +211,10 @@ function relf {
     readelf --debug-dump=$1 ./assets/$2/out | less
 }
 
+function gen_password {
+    openssl rand -base64 $1 | tr -dc 'A-Za-z0-9' | head -c $1
+}
+
 if ! command -v pbcopy &> /dev/null
 then
     alias pbcopy="xclip -selection clipboard -i"
