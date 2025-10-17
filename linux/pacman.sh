@@ -11,6 +11,7 @@ PACKAGES=(
     ghostty
     grim
     keyd
+    nvm
     obsidian
     pipewire
     playerctl
