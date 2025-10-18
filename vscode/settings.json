@@ -60,5 +60,6 @@
     },
     "editor.stickyScroll.enabled": false,
     "testMate.cpp.discovery.loadOnStartup": true,
-    "chat.agent.enabled": false
+    "chat.agent.enabled": false,
+    "chat.disableAIFeatures": true
 }
