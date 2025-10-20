@@ -123,7 +123,7 @@ xset r rate 275 50 &> /dev/null
 #
 # Save dotfiles in the $HOME directory to source control
 #
-function save_dotfiles {
+function sd {
     echo -n "Are you sure (y/N)? "
     read answer
     if [ "$answer" != "${answer#[Yy]}" ] ;then
