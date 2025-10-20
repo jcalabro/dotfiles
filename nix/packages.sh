@@ -37,6 +37,7 @@ PACKAGES=(
     ripgrep
     samply
     talosctl
+    tio
     tmux
     uv
     valgrind
