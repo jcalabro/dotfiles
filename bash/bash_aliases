@@ -135,14 +135,6 @@ function klogs {
 }
 
 #
-# Rust
-#
-alias c="cargo"
-alias cb="cargo build"
-alias cr="cargo run"
-alias ct="cargo test"
-
-#
 # Misc
 #
 alias rsh="ssh -A -l root"
