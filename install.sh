@@ -33,6 +33,8 @@ function install_dotfiles {
         sudo rm -f /etc/sudoers.d/ykman
         sudo ln -sf $DOTFILE_BASE/linux/ykman /etc/sudoers.d/ykman
         sudo chown root:root /etc/sudoers.d/ykman
+
+        xdg-settings set default-web-browser firefox.desktop
     fi
 
     #
