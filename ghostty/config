@@ -1,6 +1,6 @@
 title = ghostty
 background = 2e3440
-font-size = 14
+font-size = 10
 font-feature = -calt
 font-feature = -dlig
 font-feature = -liga
