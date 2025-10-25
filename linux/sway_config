@@ -57,6 +57,17 @@ input type:keyboard {
 }
 
 #
+# Theme
+#
+
+set $gnome-schema org.gnome.desktop.interface
+
+exec_always {
+    gsettings set $gnome-schema gtk-theme 'Adwaita-dark'
+    gsettings set $gnome-schema color-scheme 'prefer-dark'
+}
+
+#
 # Key bindings
 #
 
