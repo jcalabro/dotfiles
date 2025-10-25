@@ -156,6 +156,8 @@ alias p="python3"
 alias j="just"
 alias jt="just t"
 alias ve="source .venv/bin/activate"
+alias sus="systemctl suspend -i"
+alias off="sudo systemctl poweroff"
 
 function clear_zig_caches {
     rm -rf .zig

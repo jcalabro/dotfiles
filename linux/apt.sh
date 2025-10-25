@@ -30,7 +30,6 @@ PACKAGES=(
     pipenv
     pipx
     playerctl
-    rbenv
     redis-tools
     ripgrep
     ssh

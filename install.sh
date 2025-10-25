@@ -3,6 +3,11 @@
 #
 # Install these configuration files on your machine
 #
+# Manual steps:
+#
+# 1. Add the nix bin to visudo:
+#     Defaults secure_path="/home/jcalabro/.nix-profile/bin:/usr/local/sbin:/usr/local/bin:/usr/bin"
+#
 
 function install_dotfiles {
     DOTFILE_BASE=$(pwd)
@@ -35,6 +40,7 @@ function install_dotfiles {
     #
     mkdir -p $HOME/.config/nix
     ln -sf $DOTFILE_BASE/nix/nix.conf $HOME/.config/nix/nix.conf
+    sudo ln -sf $DOTFILE_BASE/nix/profile.sh /etc/profile.d/nix.sh
 
     #
     # i3/sway
@@ -82,6 +88,8 @@ function install_dotfiles {
     ln -sf $DOTFILE_BASE/vim/init.vim $HOME/.config/nvim/init.vim
     ln -sf $DOTFILE_BASE/vim/config.lua $HOME/.config/nvim/lua/config.lua
     ln -sf $DOTFILE_BASE/vim/coc-settings.json $HOME/.config/nvim/coc-settings.json
+
+    curl -s -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
     #
     # tmux

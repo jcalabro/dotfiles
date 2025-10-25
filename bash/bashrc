@@ -1,70 +1,43 @@
 #!/usr/bin/env bash
 
-function run_if_exists {
-    if [ -f $1 ]; then
-        source $1
-    fi
-}
-
-run_if_exists ~/.git-completion.bash
-
-export EDITOR="hx"
-
-export TSAN_OPTIONS="suppressions=$HOME/.tsan_suppressions"
-export GHOSTTY_SHELL_INTEGRATION_NO_CURSOR=1
-
-#
-# X options
-#
-
-if [ -x "$(command -v setxkbmap)" ] && [ -n "$DISPLAY" ] && [ "$XDG_SESSION_TYPE" == "x11" ]; then
-    setxkbmap -option caps:ctrl_modifier
-fi
-
 #
 # Path
 #
 
-export LOCAL_BIN_DIR="$HOME/local/bin"
-if [[ $(whoami) == "root" ]]; then
-    export LOCAL_BIN_DIR="/home/jcalabro/local/bin"
-fi
+export HOME_BIN_DIR="$HOME/local/bin"
 
-export PATH="$PATH:/usr/share/bcc/tools"
-export PATH="$PATH:/home/jcalabro/.nix-profile/bin"
-export PATH="$PATH:$LOCAL_BIN_DIR"
-export PATH="$PATH:$LOCAL_BIN_DIR/bin"
-export PATH="$PATH:$LOCAL_BIN_DIR/helix"
-export PATH="$PATH:$LOCAL_BIN_DIR/odin"
-export PATH="$PATH:$LOCAL_BIN_DIR/jai/bin"
-export PATH="$PATH:$LOCAL_BIN_DIR/odin"
-export PATH="$PATH:$LOCAL_BIN_DIR/nodejs/bin"
-export PATH="$PATH:$LOCAL_BIN_DIR/google-cloud-sdk/bin"
-export PATH="$PATH:$LOCAL_BIN_DIR/go/bin"
-export PATH="$PATH:$LOCAL_BIN_DIR/4coder"
-export PATH="$PATH:$LOCAL_BIN_DIR/fred"
-export PATH="$PATH:$LOCAL_BIN_DIR/tc"
-export PATH="$PATH:$LOCAL_BIN_DIR/spall"
-export PATH="$PATH:$LOCAL_BIN_DIR/nand2tetris/tools"
+export PATH="$PATH:$HOME/.nix-profile/bin"
+export PATH="$PATH:$HOME/.cache/lm-studio/bin"
+export PATH="$PATH:$HOME/.lmstudio/bin"
+export PATH="$PATH:$HOME_BIN_DIR"
+export PATH="$PATH:$HOME_BIN_DIR/bin"
+export PATH="$PATH:$HOME_BIN_DIR/helix"
+export PATH="$PATH:$HOME_BIN_DIR/odin"
+export PATH="$PATH:$HOME_BIN_DIR/jai/bin"
+export PATH="$PATH:$HOME_BIN_DIR/nodejs/bin"
+export PATH="$PATH:$HOME_BIN_DIR/google-cloud-sdk/bin"
+export PATH="$PATH:$HOME_BIN_DIR/go/bin"
+export PATH="$PATH:$HOME_BIN_DIR/spall"
+export PATH="$PATH:$HOME_BIN_DIR/nand2tetris/tools"
+export PATH="$PATH:$HOME_BIN_DIR/kafka/bin"
 export PATH="$PATH:/opt/homebrew/bin"
 export PATH="$PATH:/opt/homebrew/opt/llvm/bin"
 export PATH="$PATH:/opt/homebrew/opt/anyzig/bin"
-run_if_exists "/opt/homebrew/share/google-cloud-sdk/path.bash.inc"
 
-export PATH="$PATH:$LOCAL_BIN_DIR/kafka/bin"
+#
+# Misc. settings
+#
+
+export EDITOR="hx"
+export TSAN_OPTIONS="suppressions=$HOME/.tsan_suppressions"
+export GHOSTTY_SHELL_INTEGRATION_NO_CURSOR=1
 export JAVA_HOME="/opt/homebrew/opt/java"
+export GIT_DISCOVERY_ACROSS_FILESYSTEM=true
+export HELIX_RUNTIME=/usr/share/helix/runtime
 
-if [ -x "$(command -v brew)" ]; then
-    eval "$(/opt/homebrew/bin/brew shellenv)"
-fi
-
-alias sus="systemctl suspend -i"
-
-function bp {
-    pushd $HOME > /dev/null
-    source .bash_profile
-    popd > /dev/null
-}
+# Make bash_history record much longer (default is 500)
+export HISTFILESIZE=10000000
+export HISTSIZE=10000000
 
 function prompt {
   local BLACK="\[\033[0;30m\]"
@@ -88,41 +61,18 @@ function prompt {
   export PS1="\n$CYANBOLD\h $RED\u $BLUEBOLD\D{%F %T} $CYANBOLD\w $RESETCOLOR$GREENBOLD\n$BLUEBOLD$ $RESETCOLOR"
   export PS2=" | → $RESETCOLOR"
 }
-
 prompt
 
-#
-# Make bash_history record much longer (default is 500)
-#
-export HISTFILESIZE=10000000
-export HISTSIZE=10000000
-
-#
 # Overrides some default keybindings so vim controls work
-#
 if [ -t 0 ] && [ -t 1 ]; then
     stty -ixon
 fi
 
 #
-# Iterm2 color scheme
+# Dotfile management
 #
-export CLICOLOR=1
 
-#
-# rabbitmq is installed to /usr/local/sbin over homebrew
-#
-export PATH="$PATH:/usr/local/sbin"
-
-#
-# Set Arch keybindings
-#
-xmodmap ~/.xmodmap &> /dev/null
-xset r rate 275 50 &> /dev/null
-
-#
-# Save dotfiles in the $HOME directory to source control
-#
+# save dotfiles to source control
 function sd {
     echo -n "Are you sure (y/N)? "
     read answer
@@ -141,6 +91,8 @@ function sd {
 
     echo "Done"
 }
+
+# pull dotfiles from source control
 function pd {
     pushd "$HOME/misc/dotfiles" > /dev/null
     git pull -r origin main
@@ -150,20 +102,12 @@ function pd {
 }
 
 #
-# Use brew's python over local system python
-#
-export PATH="usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/.local/bin:$HOME/bin:$PATH"
-
-#
-# On centos, check for modern versions of gcc first
-#
-export PATH="/opt/rh/devtoolset-10/root/bin:$PATH"
-
-#
 # Logbook
 #
+
 export LOGBOOK="$HOME/misc/logbook"
 
+# open today's log
 function lb() {
     CP=cp
     if [ $(uname -s) == "Darwin" ]; then
@@ -180,9 +124,7 @@ function lb() {
     $EDITOR $FULL_PATH
 }
 
-#
-# Save logs
-#
+# commit local logs
 function clog {
     pushd $LOGBOOK > /dev/null
     git add -A
@@ -191,18 +133,14 @@ function clog {
     popd > /dev/null
 }
 
-#
-# Pull latest logs
-#
+# pull latest logs
 function pl {
     pushd $LOGBOOK > /dev/null
     git pull -r origin main
     popd > /dev/null
 }
 
-#
-# Open yesterday's logs
-#
+# open yesterday's logs
 function logbook {
     TARGET_DATE=$1
     if [ -z "$TARGET_DATE" ]; then
@@ -217,50 +155,35 @@ function logbook {
     curl "https://$GITHUB_TOKEN@raw.githubusercontent.com/jcalabro/logbook/main/$DIRECTORY/$TARGET_DATE.md"
 }
 
-
-#
-# Initialize pyenv if it is installed
-#
-which pyenv &> /dev/null
-if [ "$?" -eq "0" ]; then
-    eval "$(pyenv init -)"
-    export PYTHONPATH=".:$PYTHONPATH"
-    export PYENV_ROOT=$HOME/.pyenv
-    export PYENV_VIRTUALENV_DISABLE_PROMPT=1
-    export PATH=$PYENV_ROOT/bin:${PATH}
-fi
-
 #
 # SSH keys
 #
+
 which ssh-agent &> /dev/null
 if [ "$?" -eq "0" ]; then
     eval `ssh-agent` > /dev/null
     ssh-add -A > /dev/null 2>&1
 
-    eval `ssh-add $HOME/.ssh/jim_public.pem > /dev/null 2>&1`
-    eval `ssh-add $HOME/.ssh/jim_bsky.pem > /dev/null 2>&1`
-    eval `ssh-add $HOME/.ssh/jcalabro.pem > /dev/null 2>&1`
+    eval `ssh-add $HOME/.ssh/*.pem > /dev/null 2>&1`
 fi
 
 #
-# Resets the local DNS cache in macOS 10.12+
+# Misc helper functions
 #
+
+# execute another script if it exists
+function run_if_exists {
+    if [ -f $1 ]; then
+        source $1
+    fi
+}
+
+# resets the local DNS cache in macOS 10.12+
 function flush_dns {
     sudo killall -HUP mDNSResponder
 }
 
-#
-# Filter dupes function returns the set of unique rows
-# for the given input
-#
-function filter_dupes {
-    awk '!a[$0]++'
-}
-
-#
-# Quick base64 decode
-#
+# quick base64 decode
 function decode64 {
     if [ $(uname -s) != "Linux" ]; then
         echo "$1" | base64 -D
@@ -269,13 +192,12 @@ function decode64 {
     fi
 }
 
-#
-# Find/Replace function
-#
+# find/replace
 function replace {
     grep -rl "$1" . | xargs sed -i "" "s/$1/$2/g"
 }
 
+# delete kubernetes pods
 function delpod {
     if [ ! -z "$1" ]; then
         kubectl get pods | grep $1 | cut -f 1 -d " " | xargs -L 1 kubectl delete pod
@@ -284,90 +206,12 @@ function delpod {
     fi
 }
 
-#
-# Initialize a public github repo with email and signing key
-#
-function init_public_repo {
-    git config --local user.email jamesrcalabro@gmail.com
-    git config --local user.signingkey "$HOME_SIGN_KEY"
-}
-function init_work_repo {
-    git config --local user.email "$WORK_EMAIL"
-    git config --local user.signingkey "$WORK_SIGN_KEY"
-}
-
+# find my current IP
 function whatsmyip {
     curl https://ipinfo.io
 }
 
-function restart_logtech {
-    ps aux | grep -i logi | grep -v login | awk '{print $2}' | xargs -L1 sudo kill -9
-}
-
-function kill_processes {
-    echo -n "Are you sure you want to kill everything matching $1 (y/N)? "
-    read answer
-    if [ "$answer" != "${answer#[Yy]}" ] ;then
-        echo "Killing $1"
-        ps aux | rg $1 | awk '{print $2}' | xargs kill
-    else
-        echo "Exiting"
-        return
-    fi
-}
-
-#
-# Run other files
-#
-run_if_exists ~/.bash_secrets
-run_if_exists ~/.bash_aliases
-run_if_exists ~/.bash_w
-run_if_exists ~/.bash_go
-
-export GIT_DISCOVERY_ACROSS_FILESYSTEM=true
-
-#
-# Go tooling takes priority
-#
-export PATH="$HOME/go/bin:$PATH"
-if [ -x "$(command -v cargo)" ]; then
-    . "$HOME/.cargo/env"
-fi
-
-export HELIX_RUNTIME=/usr/share/helix/runtime
-
-# Added by LM Studio CLI tool (lms)
-export PATH="$PATH:/Users/jcalabro/.cache/lm-studio/bin"
-
-#
-# Remap keys in i3
-#
-
-if pgrep -x "i3" > /dev/null; then
-    xmodmap -e "remove lock = Caps_Lock" > /dev/null 2>&1
-    xmodmap -e "keycode 66 = Control_L"  > /dev/null 2>&1
-    xmodmap -e "add control = Control_L" > /dev/null 2>&1
-fi
-
-eval "$(direnv hook bash)"
-
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-
-# add Pulumi to the PATH
-export PATH=$PATH:/home/jcalabro/.pulumi/bin
-
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/jcalabro/.lmstudio/bin"
-# End of LM Studio CLI section
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-eval "$(rbenv init - bash)"
-
+# build zls from source and install it to all relevant paths
 function install_zls {
     mkdir -p $HOME/local/bin
     mkdir -p $HOME/.local/share/nvim/mason/packages/zls/bin
@@ -376,3 +220,78 @@ function install_zls {
     cp zig-out/bin/zls $HOME/local/bin
     cp zig-out/bin/zls $HOME/.local/share/nvim/mason/packages/zls/bin
 }
+
+# initialize a public github repo with email and signing key
+function init_public_repo {
+    git config --local user.email jamesrcalabro@gmail.com
+    git config --local user.signingkey "$HOME_SIGN_KEY"
+}
+
+# initialize a public github repo with email and signing key
+function init_work_repo {
+    git config --local user.email "$WORK_EMAIL"
+    git config --local user.signingkey "$WORK_SIGN_KEY"
+}
+
+# re-run dotfiles for this session
+function bp {
+    pushd $HOME > /dev/null
+    source .bash_profile
+    popd > /dev/null
+}
+
+#
+# X11 options
+#
+
+if [ -x "$(command -v setxkbmap)" ] && [ -n "$DISPLAY" ] && [ "$XDG_SESSION_TYPE" == "x11" ]; then
+    setxkbmap -option caps:ctrl_modifier
+fi
+
+# Remap keys in i3
+if pgrep -x "i3" > /dev/null; then
+    xmodmap -e "remove lock = Caps_Lock" > /dev/null 2>&1
+    xmodmap -e "keycode 66 = Control_L"  > /dev/null 2>&1
+    xmodmap -e "add control = Control_L" > /dev/null 2>&1
+fi
+
+#
+# Misc. tooling setup
+#
+
+# go tooling takes priority
+export PATH="$HOME/go/bin:$PATH"
+if [ -x "$(command -v cargo)" ]; then
+    . "$HOME/.cargo/env"
+fi
+
+# setup direnv
+eval "$(direnv hook bash)"
+
+# setup Bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# add Pulumi to the PATH
+export PATH=$PATH:/home/jcalabro/.pulumi/bin
+
+# nvm (node version manager)
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# homebrew
+if [ -x "$(command -v brew)" ]; then
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
+#
+# Run other files
+#
+
+run_if_exists ~/.bash_secrets
+run_if_exists ~/.bash_aliases
+run_if_exists ~/.bash_w
+run_if_exists ~/.bash_go
+run_if_exists ~/.git-completion.bash
+run_if_exists "/opt/homebrew/share/google-cloud-sdk/path.bash.inc"
