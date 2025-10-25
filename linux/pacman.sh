@@ -5,6 +5,7 @@ PACKAGES=(
     blueman
     brightnessctl
     chromium
+    discord
     docker
     docker-compose
     firefox
