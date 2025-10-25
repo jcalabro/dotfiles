@@ -220,8 +220,9 @@ bindsym --locked XF86AudioPrev exec playerctl previous
 # Special keys to adjust brightness via brightnessctl
 bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
 bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
-# Special key to take a screenshot with grim
-bindsym Print exec grim - | wl-copy
+# Special keys to take a screenshot with grim
+bindsym Print exec grim - | wl-copy # screenshot the whole screen
+bindsym $mod+p exec grim -g "$(slurp)" - | wl-copy # screenshot a portion of the screen
 
 #
 # Status Bar:

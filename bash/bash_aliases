@@ -209,9 +209,11 @@ function gen_password {
     openssl rand -base64 $1 | tr -dc 'A-Za-z0-9' | head -c $1
 }
 
-if ! command -v pbcopy &> /dev/null
-then
+if command -v xclip &> /dev/null; then
     alias pbcopy="xclip -selection clipboard -i"
+fi
+if command -v wl-copy &> /dev/null; then
+    alias pbcopy="wl-copy"
 fi
 
 #
