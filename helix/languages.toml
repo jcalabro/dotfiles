@@ -21,6 +21,7 @@ language-servers = [ { name = "typescript-language-server", except-features = [ 
 
 [[language]]
 name = "go"
+formatter = { command = "goimports" }
 
 [[language]]
 name = "gdbinit"
