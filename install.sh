@@ -148,6 +148,7 @@ function install_dotfiles {
     #
     sudo mkdir -p /etc/keyd
     sudo ln -sf $DOTFILE_BASE/linux/keyd.conf "/etc/keyd/default.conf"
+    sudo ln -sf $DOTFILE_BASE/linux/keyd_apple.conf "/etc/keyd/apple.conf"
 
     #
     # Alacritty (make a local copy)

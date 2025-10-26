@@ -12,6 +12,7 @@ PACKAGES=(
     ghostty
     grim
     keyd
+    man
     nvm
     obsidian
     pipewire
