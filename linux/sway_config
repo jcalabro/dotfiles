@@ -228,6 +228,7 @@ bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
 
 # Take a screenshot with grim
 bindsym Print exec grim - | wl-copy # screenshot the whole screen
+bindsym $mod+shift+p exec grim - | wl-copy # screenshot the whole screen
 bindsym $mod+p exec grim -g "$(slurp)" - | wl-copy # screenshot a portion of the screen
 
 #
