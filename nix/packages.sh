@@ -7,6 +7,7 @@ PACKAGES=(
     btop
     c3c
     clang
+    cloc
     difftastic
     direnv
     dust
