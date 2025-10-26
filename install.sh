@@ -54,7 +54,8 @@ function install_dotfiles {
     ln -sf $DOTFILE_BASE/linux/sway_config $HOME/.config/sway/config
 
     mkdir -p $HOME/.config/waybar
-    ln -sf $DOTFILE_BASE/linux/waybar_config $HOME/.config/waybar/config
+    ln -sf $DOTFILE_BASE/linux/waybar_config.json $HOME/.config/waybar/config
+    ln -sf $DOTFILE_BASE/linux/waybar_modules.json $HOME/.config/waybar/modules.json
     ln -sf $DOTFILE_BASE/linux/waybar_style.css $HOME/.config/waybar/style.css
 
     mkdir -p $HOME/.config/xdg-desktop-portals

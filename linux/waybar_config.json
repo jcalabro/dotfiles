@@ -1,0 +1,23 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 24,
+    "spacing": 2,
+    "modules-left": [
+        "sway/workspaces"
+    ],
+    "modules-center": [],
+    "modules-right": [
+        "idle_inhibitor",
+        "pulseaudio",
+        "network",
+        "cpu",
+        "memory",
+        "temperature",
+        "battery",
+        "clock"
+    ],
+    "include": [
+		"~/.config/waybar/modules.json"
+	]
+}

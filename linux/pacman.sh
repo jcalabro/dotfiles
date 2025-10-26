@@ -21,6 +21,8 @@ PACKAGES=(
     swayidle
     swaylock
     tailscale
+    ttf-nerd-fonts-symbols
+    ttf-nerd-fonts-symbols-mono
     waybar
     wireplumber
     wl-clipboard
