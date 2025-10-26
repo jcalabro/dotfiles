@@ -19,6 +19,12 @@ set $menu wmenu-run
 set $resize_px 80px
 
 #
+# Style
+#
+
+default_border none
+
+#
 # Output configuration
 #
 
@@ -66,10 +72,6 @@ exec_always {
     gsettings set $gnome-schema gtk-theme 'Adwaita-dark'
     gsettings set $gnome-schema color-scheme 'prefer-dark'
 }
-
-#
-# Key bindings
-#
 
 # 
 # Basics:
@@ -191,6 +193,7 @@ bindsym $mod+minus scratchpad show
 #
 # Resizing containers:
 #
+
 mode "resize" {
     bindsym $left resize shrink width $resize_px
     bindsym $down resize grow height $resize_px
@@ -207,20 +210,23 @@ bindsym $mod+r mode "resize"
 # Utilities:
 #
 
-# Special keys to adjust volume via PulseAudio
+# Adjust volume via PulseAudio
 bindsym --locked XF86AudioMute exec pactl set-sink-mute \@DEFAULT_SINK@ toggle
 bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@ -5%
 bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +5%
 bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
-# Special keys to control media playback
+
+# Control media playback
 bindsym --locked XF86AudioPlay exec playerctl play-pause
 bindsym --locked XF86AudioPause exec playerctl pause
 bindsym --locked XF86AudioNext exec playerctl next
 bindsym --locked XF86AudioPrev exec playerctl previous
-# Special keys to adjust brightness via brightnessctl
+
+# Adjust brightness via brightnessctl
 bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
 bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
-# Special keys to take a screenshot with grim
+
+# Take a screenshot with grim
 bindsym Print exec grim - | wl-copy # screenshot the whole screen
 bindsym $mod+p exec grim -g "$(slurp)" - | wl-copy # screenshot a portion of the screen
 
@@ -231,23 +237,5 @@ bindsym $mod+p exec grim -g "$(slurp)" - | wl-copy # screenshot a portion of the
 bar {
     swaybar_command waybar
 }
-
-# bar {
-#     position top
-#     status_command while date +'%Y-%m-%d %X'; do sleep 1; done
-#     colors {
-#         statusline #ffffff
-#         background #1a1a1a
-#         inactive_workspace #32323200 #32323200 #5c5c5c
-
-#         # Manually set the colors for the workspace picker so it's
-#         # not transparent and impacted by the desktop background
-#         focused_workspace  #4c7899 #285577 #ffffff
-#         active_workspace   #333333 #5f676a #ffffff
-#         inactive_workspace #333333 #222222 #888888
-#         urgent_workspace   #2f343a #900000 #ffffff
-#         binding_mode       #2f343a #900000 #ffffff
-#     }
-# }
 
 include /etc/sway/config.d/*
