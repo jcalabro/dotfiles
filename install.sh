@@ -181,6 +181,7 @@ function install_dotfiles {
     #
 
     git config --global pull.rebase false
+    git config --global url.ssh://git@github.com/.insteadOf https://github.com/
     git config --global user.name jcalabro
     git config --global user.email jamesrcalabro@gmail.com
     git config --global user.signingkey 3C944F6B91F0659F

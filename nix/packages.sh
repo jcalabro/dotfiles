@@ -29,6 +29,7 @@ PACKAGES=(
     lldb
     helix
     mtr
+    netcat
     neovim
     odin
     postgresql_17
@@ -44,6 +45,7 @@ PACKAGES=(
     valgrind
     vultr-cli
     websocat
+    whois
     xh
     xorg.xrandr
     xorg.xset
