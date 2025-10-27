@@ -20,6 +20,7 @@ PACKAGES=(
     google-cloud-sdk
     go
     gopls
+    htop
     just
     kafkactl
     kubectl
