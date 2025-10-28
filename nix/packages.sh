@@ -13,6 +13,7 @@ PACKAGES=(
     dust
     dysk
     eksctl
+    etcd
     eza
     fd
     flyctl
