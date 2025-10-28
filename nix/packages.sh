@@ -39,6 +39,7 @@ PACKAGES=(
     rbenv
     redis
     ripgrep
+    rsync
     samply
     talosctl
     tio
