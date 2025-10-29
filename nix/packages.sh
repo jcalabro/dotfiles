@@ -22,6 +22,7 @@ PACKAGES=(
     go
     gopls
     htop
+    jq
     just
     kafkactl
     kubectl
