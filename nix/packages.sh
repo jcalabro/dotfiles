@@ -31,7 +31,7 @@ PACKAGES=(
     lldb
     helix
     mtr
-    netcat
+    netcat-gnu
     neovim
     odin
     postgresql_17
