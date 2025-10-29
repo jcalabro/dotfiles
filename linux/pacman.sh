@@ -17,6 +17,7 @@ PACKAGES=(
     obsidian
     pipewire
     playerctl
+    pulumi
     sway
     swaybg
     swayidle
