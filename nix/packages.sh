@@ -10,6 +10,7 @@ PACKAGES=(
     cloc
     difftastic
     direnv
+    dog
     dust
     dysk
     eksctl
