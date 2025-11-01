@@ -13,6 +13,7 @@ PACKAGES=(
     grim
     keyd
     man
+    net-tools
     nvm
     obsidian
     pipewire
