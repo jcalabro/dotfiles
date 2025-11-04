@@ -23,6 +23,7 @@ PACKAGES=(
     go
     gopls
     htop
+    httpie
     jq
     just
     kafkactl
