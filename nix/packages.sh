@@ -37,6 +37,7 @@ PACKAGES=(
     netcat-gnu
     neovim
     odin
+    oha
     postgresql_17
     protobuf
     rbenv
