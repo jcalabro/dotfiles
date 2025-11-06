@@ -47,6 +47,7 @@ PACKAGES=(
     talosctl
     tio
     tmux
+    tree
     uv
     valgrind
     vultr-cli
