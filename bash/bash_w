@@ -8,7 +8,7 @@ alias bs="gh bluesky-social"
 alias bi="bs bsky-infra"
 alias bt="bs tango"
 alias sm="bs seeemore"
-alias mydid="echo did:plc:4uz2445cjiw7w4nobfgnu35f"
+alias mydid="echo -n did:plc:4uz2445cjiw7w4nobfgnu35f"
 alias ub="source <(yubi.sh)"
 
 function bsh {
