@@ -15,6 +15,10 @@ function bsh {
   ssh -A root@$1.internal.$2.$BSKY_DOMAIN "${@:3}"
 }
 
+function bbsh {
+  ssh -A bsky@$1.internal.$2.$BSKY_DOMAIN "${@:3}"
+}
+
 function ush {
   ssh -A ubuntu@$1 "${@:3}"
 }
