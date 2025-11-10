@@ -139,6 +139,7 @@ function klogs {
 # Misc
 #
 alias rsh="ssh -A -l root"
+alias bssh="ssh -A -l bsky"
 alias e="./unix.sh -run"
 alias m="make"
 alias fail="tail -f"
