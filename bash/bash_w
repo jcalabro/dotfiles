@@ -23,6 +23,11 @@ function ush {
   ssh -A ubuntu@$1 "${@:3}"
 }
 
+function hex_decode {
+  echo
+  echo -n $1 | sed 's/0x//' | xxd -r -p
+}
+
 #
 # Indigo
 #
