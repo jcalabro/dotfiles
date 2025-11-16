@@ -13,6 +13,7 @@ PACKAGES=(
     direnv
     dogdns
     dust
+    dwarfdump
     dysk
     eksctl
     etcd
