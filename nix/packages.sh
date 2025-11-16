@@ -3,6 +3,7 @@
 PACKAGES=(
     awscli2
     bat
+    bpftools
     bore
     btop
     c3c
