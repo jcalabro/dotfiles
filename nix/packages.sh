@@ -55,6 +55,7 @@ PACKAGES=(
     valgrind
     vultr-cli
     websocat
+    wget
     whois
     xh
     xorg.xrandr
