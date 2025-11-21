@@ -50,6 +50,7 @@ PACKAGES=(
     talosctl
     tio
     tmux
+    traceroute
     tree
     uv
     valgrind
