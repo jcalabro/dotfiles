@@ -19,6 +19,7 @@ PACKAGES=(
     pipewire
     playerctl
     pulumi
+    signal-desktop
     sway
     swaybg
     swayidle
