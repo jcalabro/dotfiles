@@ -112,11 +112,6 @@ alias tma="tmux a"
 alias a="tmux a"
 
 #
-# Grep/ripgrep
-#
-alias r="rg"
-
-#
 # Docker/docker-compose/kubernetes
 #
 alias dps="docker ps"
