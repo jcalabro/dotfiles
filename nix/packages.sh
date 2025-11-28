@@ -47,6 +47,7 @@ PACKAGES=(
     ripgrep
     rsync
     samply
+    strace
     talosctl
     tio
     tmux
