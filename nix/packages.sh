@@ -7,7 +7,6 @@ PACKAGES=(
     bore
     btop
     c3c
-    clang
     cloc
     difftastic
     direnv
