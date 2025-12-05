@@ -42,7 +42,7 @@ export RELAY_ADMIN_PASSWORD=dummy
 # Tango
 #
 
-alias gta="go test ./atlantis/bsky/server/... -race -covermode=atomic -v -count=1"
+alias jta="just test ./atlantis/bsky/server/..."
 
 #
 # social-app
