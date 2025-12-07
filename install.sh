@@ -35,6 +35,8 @@ function install_dotfiles {
         sudo chown root:root /etc/sudoers.d/ykman
 
         xdg-settings set default-web-browser firefox.desktop
+
+        sudo ln -sf $DOTFILE_BASE/linux/sysctl.conf /etc/sysctl.d/99-jcalabro.conf
     fi
 
     #
