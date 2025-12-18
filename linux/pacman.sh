@@ -10,6 +10,7 @@ PACKAGES=(
     docker-compose
     firefox
     ghostty
+    git-lfs
     grim
     keyd
     man

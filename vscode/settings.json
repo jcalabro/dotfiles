@@ -61,5 +61,6 @@
     "editor.stickyScroll.enabled": false,
     "testMate.cpp.discovery.loadOnStartup": true,
     "chat.agent.enabled": false,
-    "github.copilot.nextEditSuggestions.enabled": true
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "lldb.suppressUpdateNotifications": true
 }
