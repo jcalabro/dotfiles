@@ -17,6 +17,7 @@ alias gtq="go test ./... -race -covermode=atomic -count=1"
 # Cloning in to the GOPATH
 #
 function goclone {
+    HOST=$1
     ORG=$2
     REPO=$3
 
@@ -26,13 +27,14 @@ function goclone {
         REPO=$(echo $PROJECT | cut -d ' ' -f 2)
     fi
 
-    CLONE_PATH="$GOPATH/src/github.com/$ORG"
+    CLONE_PATH="$GOPATH/src/$HOST/$ORG"
     mkdir -p $CLONE_PATH
     cd $CLONE_PATH
-    git clone "git@github.com:$ORG/$REPO" "$REPO"
+    git clone "git@$HOST:$ORG/$REPO" "$REPO"
     cd "$REPO"
 }
 alias clone="goclone github.com"
+alias cbclone="goclone codeberg.org"
 
 #
 # Function to easily jump to anywhere in the GOPATH
