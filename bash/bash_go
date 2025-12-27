@@ -97,6 +97,8 @@ function godir {
 }
 alias gh="godir github.com"
 alias gj="godir github.com jcalabro"
+alias cb="godir codeberg.org"
+alias cj="godir codeberg.org jcalabro"
 
 #
 # Run a main file under a cmd folder
