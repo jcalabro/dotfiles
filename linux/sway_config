@@ -30,7 +30,6 @@ default_floating_border pixel 1
 # Output configuration
 #
 
-# Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 output * bg /home/jcalabro/local/backgrounds/moon.jpeg fill
 
 #
@@ -56,6 +55,7 @@ output DP-1 {
     scale 1.0
     resolution 5120x1440@240Hz
     adaptive_sync on
+    bg /home/jcalabro/local/backgrounds/hills.jpeg fill
 }
 
 #
