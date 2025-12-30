@@ -49,6 +49,13 @@ exec swayidle -w \
 
 output eDP-1 scale 2
 
+# Odyssey G9
+output DP-1 {
+    scale 1.0
+    resolution 5120x1440@240Hz
+    adaptive_sync on
+}
+
 #
 # Input configuration
 #
@@ -204,6 +211,7 @@ mode "resize" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
+
 bindsym $mod+r mode "resize"
 
 #
