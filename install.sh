@@ -194,6 +194,12 @@ function install_dotfiles {
     #
 
     sudo usermod -aG uucp $USER
+
+    #
+    # Configure NTP
+    #
+
+    sudo timedatectl set-ntp true
 }
 
 echo -n "Are you sure (y/N)? "
