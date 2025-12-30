@@ -22,7 +22,9 @@ set $resize_px 80px
 # Style
 #
 
-default_border none
+# Window borders
+default_border pixel 1
+default_floating_border pixel 1
 
 #
 # Output configuration
