@@ -98,6 +98,9 @@ bindsym $mod+Shift+q kill
 # Start the launcher
 bindsym $mod+d exec $menu
 
+# Float and center the window ($mod+Shift+Space to return to tiled mode)
+bindsym $mod+c floating enable, resize set 60 ppt 100 ppt, move position center
+
 # Drag floating windows by holding down $mod and left mouse button.
 # Resize them with right mouse button + $mod.
 # Despite the name, also works for non-floating windows.
