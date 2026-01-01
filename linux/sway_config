@@ -99,7 +99,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec $menu
 
 # Float and center the window ($mod+Shift+Space to return to tiled mode)
-bindsym $mod+c floating enable, resize set 60 ppt 100 ppt, move position center
+bindsym $mod+Shift+c floating enable, resize set 50 ppt 100 ppt, move position center
 
 # Drag floating windows by holding down $mod and left mouse button.
 # Resize them with right mouse button + $mod.
@@ -109,7 +109,7 @@ bindsym $mod+c floating enable, resize set 60 ppt 100 ppt, move position center
 floating_modifier $mod normal
 
 # Reload the configuration file
-bindsym $mod+Shift+c reload
+bindsym $mod+c reload
 
 # Exit sway (logs you out of your Wayland session)
 bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
