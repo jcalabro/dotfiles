@@ -15,6 +15,7 @@ export PATH="$PATH:$HOME_BIN_DIR/bin"
 export PATH="$PATH:$HOME_BIN_DIR/helix"
 export PATH="$PATH:$HOME_BIN_DIR/odin"
 export PATH="$PATH:$HOME_BIN_DIR/jai/bin"
+export PATH="$PATH:$HOME_BIN_DIR/kafka/bin"
 export PATH="$PATH:$HOME_BIN_DIR/nodejs/bin"
 export PATH="$PATH:$HOME_BIN_DIR/google-cloud-sdk/bin"
 export PATH="$PATH:$HOME_BIN_DIR/go/bin"
@@ -33,6 +34,7 @@ export EDITOR="hx"
 export TSAN_OPTIONS="suppressions=$HOME/.tsan_suppressions"
 export GHOSTTY_SHELL_INTEGRATION_NO_CURSOR=1
 export JAVA_HOME="/opt/homebrew/opt/java"
+export JAVA_HOME=/usr/lib/jvm/default-runtime
 export GIT_DISCOVERY_ACROSS_FILESYSTEM=true
 export HELIX_RUNTIME=/usr/share/helix/runtime
 
