@@ -156,6 +156,7 @@ alias jt="just t"
 alias ve="source .venv/bin/activate"
 alias sus="systemctl suspend -i"
 alias off="sudo systemctl poweroff"
+alias cl="chainlink"
 
 function clear_zig_caches {
     rm -rf .zig
