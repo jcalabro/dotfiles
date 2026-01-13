@@ -55,7 +55,7 @@ output DP-1 {
     scale 1.0
     resolution 5120x1440@240Hz
     adaptive_sync on
-    bg /home/jcalabro/local/backgrounds/hills.jpeg fill
+    # bg /home/jcalabro/local/backgrounds/hills.jpeg fill
 }
 
 #
