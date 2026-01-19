@@ -81,24 +81,6 @@ if [ "$?" -eq "0" ]; then
     alias cat="bat"
 fi
 
-# du/dust
-which dust &> /dev/null
-if [ "$?" -eq "0" ]; then
-    alias du="dust"
-fi
-
-# df/dysk
-which dysk &> /dev/null
-if [ "$?" -eq "0" ]; then
-    alias df="dysk"
-fi
-
-# find/fd
-which fd &> /dev/null
-if [ "$?" -eq "0" ]; then
-    alias find="fd"
-fi
-
 #
 # tmux
 #
