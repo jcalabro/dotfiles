@@ -16,7 +16,6 @@ PACKAGES=(
     man
     net-tools
     nvm
-    obs-studio
     obsidian
     pipewire
     playerctl
