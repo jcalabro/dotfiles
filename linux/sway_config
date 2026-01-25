@@ -256,3 +256,19 @@ bar {
 }
 
 include /etc/sway/config.d/*
+
+#
+# Screen sharing configuration
+#
+
+# Create virtual output and open mirror
+bindsym $mod+m exec ~/local/bin/screen-share-start.sh
+
+# Kill all virtual output devices
+bindsym $mod+Shift+m exec ~/local/bin/screen-share-stop.sh
+
+# Send focused window to virtual output
+bindsym $mod+Shift+s exec ~/local/bin/screen-share-move.sh
+
+# Bring focused window back to main monitor
+bindsym $mod+Shift+d move to output DP-1

@@ -21,6 +21,7 @@ PACKAGES=(
     playerctl
     pulumi
     signal-desktop
+    slurp
     sway
     swaybg
     swayidle
@@ -31,6 +32,7 @@ PACKAGES=(
     waybar
     wireplumber
     wl-clipboard
+    wl-mirror
     wmenu
     xdg-desktop-portal
     xdg-desktop-portal-wlr

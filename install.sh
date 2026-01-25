@@ -63,6 +63,10 @@ function install_dotfiles {
     mkdir -p $HOME/.config/xdg-desktop-portals
     ln -sf $DOTFILE_BASE/linux/xdg_desktop_portals.conf $HOME/.config/xdg-desktop-portals/portals.conf
 
+    ln -sf $DOTFILE_BASE/linux/screen-share-start.sh $HOME/local/bin
+    ln -sf $DOTFILE_BASE/linux/screen-share-stop.sh $HOME/local/bin
+    ln -sf $DOTFILE_BASE/linux/screen-share-move.sh $HOME/local/bin
+
     #
     # Aerospace
     #
