@@ -19,6 +19,7 @@ PACKAGES=(
     eza
     fd
     flyctl
+    glow
     gnuplot
     google-cloud-sdk
     go
