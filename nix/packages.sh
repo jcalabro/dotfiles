@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 PACKAGES=(
+    argocd
     awscli2
     bat
     bpftools
