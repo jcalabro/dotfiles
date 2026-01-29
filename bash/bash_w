@@ -6,7 +6,7 @@ export GOPRIVATE="github.com/bluesky-social/*"
 
 alias bs="gh bluesky-social"
 alias bi="bs bsky-infra"
-alias bi="bd deploy"
+alias bd="bd deploy"
 alias bt="bs tango"
 alias sm="bs seeemore"
 alias mydid="echo -n did:plc:4uz2445cjiw7w4nobfgnu35f"
