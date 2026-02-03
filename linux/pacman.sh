@@ -4,6 +4,8 @@ PACKAGES=(
     bind
     blueman
     brightnessctl
+    certbot
+    certbot-dns-route53
     chromium
     discord
     docker
