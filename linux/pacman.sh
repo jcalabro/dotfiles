@@ -4,8 +4,6 @@ PACKAGES=(
     bind
     blueman
     brightnessctl
-    certbot
-    certbot-dns-route53
     chromium
     discord
     docker
@@ -33,6 +31,8 @@ PACKAGES=(
     ttf-nerd-fonts-symbols-mono
     waybar
     wireplumber
+    wireshark-cli
+    wireshark-qt
     wl-clipboard
     wl-mirror
     wmenu
