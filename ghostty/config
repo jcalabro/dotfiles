@@ -9,3 +9,4 @@ mouse-hide-while-typing = true
 shell-integration = bash
 window-decoration = server
 bell-features = no-system,no-attention,no-title,no-border,no-audio
+app-notifications = no-clipboard-copy
