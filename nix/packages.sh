@@ -9,6 +9,7 @@ PACKAGES=(
     btop
     c3c
     cloc
+    cloudflared
     difftastic
     direnv
     dogdns
