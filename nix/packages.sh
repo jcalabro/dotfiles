@@ -28,6 +28,7 @@ PACKAGES=(
     gopls
     htop
     httpie
+    ipmitool
     jq
     just
     kafkactl
