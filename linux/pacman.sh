@@ -30,6 +30,7 @@ PACKAGES=(
     ttf-nerd-fonts-symbols
     ttf-nerd-fonts-symbols-mono
     waybar
+    wf-recorder
     wireplumber
     wireshark-cli
     wireshark-qt
