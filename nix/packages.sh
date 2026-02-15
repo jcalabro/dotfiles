@@ -59,6 +59,7 @@ PACKAGES=(
     uv
     valgrind
     vultr-cli
+    wasmtime
     websocat
     wget
     whois
