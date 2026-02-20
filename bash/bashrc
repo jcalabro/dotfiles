@@ -37,6 +37,7 @@ export JAVA_HOME="/opt/homebrew/opt/java"
 export JAVA_HOME=/usr/lib/jvm/default-runtime
 export GIT_DISCOVERY_ACROSS_FILESYSTEM=true
 export HELIX_RUNTIME=/usr/share/helix/runtime
+export CLAUDE_CODE_MAX_OUTPUT_TOKENS=100000
 
 # Make bash_history record much longer (default is 500)
 export HISTFILESIZE=10000000
