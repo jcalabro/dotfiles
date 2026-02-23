@@ -15,6 +15,8 @@ PACKAGES=(
     keyd
     man
     net-tools
+    noto-fonts-cjk
+    noto-fonts-extra
     nvm
     obsidian
     pipewire
