@@ -45,7 +45,8 @@ export RELAY_ADMIN_PASSWORD=dummy
 # Tango
 #
 
-alias jta="just test ./atlantis/..."
+alias jta="just t ./atlantis/..."
+alias jtar="just test ./atlantis/..."
 
 #
 # social-app
