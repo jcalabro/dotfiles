@@ -49,7 +49,7 @@ PACKAGES=(
 
 sudo pacman -Sy --noconfirm ${PACKAGES[@]}
 
-sudo systemctl enable --now keyd docker pcscd
+sudo systemctl enable --now keyd docker pcscd ollama
 sudo usermod -aG docker jcalabro
 
 source /usr/share/nvm/init-nvm.sh
