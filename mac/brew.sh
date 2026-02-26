@@ -92,7 +92,6 @@ CASKS=(
     keymapp
     nikitabobko/tap/aerospace
     obsidian
-    postman
     slack
     spotify
     sublime-text
