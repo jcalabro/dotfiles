@@ -5,6 +5,7 @@ PACKAGES=(
     blueman
     brightnessctl
     chromium
+    cuda
     discord
     docker
     docker-compose
@@ -18,6 +19,7 @@ PACKAGES=(
     noto-fonts-cjk
     noto-fonts-extra
     nvm
+    nvtop
     obsidian
     pipewire
     playerctl
