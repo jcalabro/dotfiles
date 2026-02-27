@@ -3,6 +3,8 @@
 PACKAGES=(
     bind
     blueman
+    bluez
+    bluez-utils
     brightnessctl
     chromium
     cuda
