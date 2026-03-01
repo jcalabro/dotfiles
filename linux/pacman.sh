@@ -24,6 +24,7 @@ PACKAGES=(
     nvtop
     obsidian
     ollama-cuda
+    perf
     pipewire
     playerctl
     pulumi
