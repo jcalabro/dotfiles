@@ -41,6 +41,7 @@ PACKAGES=(
     helix
     mtr
     netcat-gnu
+    ngrok
     neovim
     odin
     oha
@@ -69,6 +70,8 @@ PACKAGES=(
     xorg.xset
     yarn
 )
+
+export NIXPKGS_ALLOW_UNFREE=1
 
 for PKG in ${PACKAGES[@]}; do
     nix-env -iA nixpkgs.$PKG
