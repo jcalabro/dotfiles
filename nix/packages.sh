@@ -10,6 +10,7 @@ PACKAGES=(
     c3c
     cloc
     cloudflared
+    deno
     difftastic
     direnv
     dogdns
