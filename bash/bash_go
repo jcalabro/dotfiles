@@ -10,8 +10,10 @@ export PATH="$PATH:$GOPATH/bin"
 alias g='go run -race -ldflags="-compressdwarf=false" main.go'
 alias gr='go run -ldflags="-compressdwarf=false" main.go'
 
-alias gt="go test ./... -race -covermode=atomic -v -count=1"
-alias gtq="go test ./... -race -covermode=atomic -count=1"
+alias gt="go test ./... -covermode=atomic -v -count=1"
+alias gtr="go test ./... -race -covermode=atomic -v -count=1"
+alias gtq="go test ./... -covermode=atomic -count=1"
+alias gtrq="go test ./... -race -covermode=atomic -count=1"
 
 #
 # Cloning in to the GOPATH

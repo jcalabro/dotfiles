@@ -10,6 +10,7 @@ PACKAGES=(
     cuda
     discord
     docker
+    docker-buildx
     docker-compose
     firefox
     ghostty
