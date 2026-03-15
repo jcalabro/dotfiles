@@ -97,7 +97,7 @@ function godir {
         fi
     fi
 }
-alias gh="godir github.com"
+alias gith="godir github.com"
 alias gj="godir github.com jcalabro"
 alias cb="godir codeberg.org"
 alias cj="godir codeberg.org jcalabro"

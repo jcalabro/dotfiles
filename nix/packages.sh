@@ -22,6 +22,7 @@ PACKAGES=(
     eza
     fd
     flyctl
+    gh
     glow
     gnuplot
     google-cloud-sdk
@@ -56,6 +57,7 @@ PACKAGES=(
     talosctl
     tio
     tmux
+    tokei
     traceroute
     tree
     uv

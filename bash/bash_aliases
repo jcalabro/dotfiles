@@ -116,6 +116,7 @@ function klogs {
 #
 # Misc
 #
+alias cdd="cd ~/misc/dotfiles"
 alias rsh="ssh -A -l root"
 alias bssh="ssh -A -l bsky"
 alias e="./unix.sh -run"

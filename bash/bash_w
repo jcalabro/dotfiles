@@ -4,7 +4,7 @@ export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
 export GOPRIVATE="github.com/bluesky-social/*"
 
-alias bs="gh bluesky-social"
+alias bs="gith bluesky-social"
 alias bi="bs bsky-infra"
 alias bi2="bs bsky-infra2"
 alias bi3="bs bsky-infra3"
