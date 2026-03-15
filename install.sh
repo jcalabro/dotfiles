@@ -47,6 +47,12 @@ function install_dotfiles {
     sudo ln -sf $DOTFILE_BASE/nix/profile.sh /etc/profile.d/nix.sh
 
     #
+    # Claude
+    #
+    mkdir -p $HOME/.claude
+    cp $DOTFILE_BASE/claude/settings.json $HOME/.claude/settings.json
+
+    #
     # i3/sway
     #
     mkdir -p $HOME/.config/i3
